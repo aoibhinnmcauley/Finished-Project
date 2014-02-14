@@ -1,0 +1,340 @@
+\hypertarget{classl_shape_opp}{\section{l\-Shape\-Opp Class Reference}
+\label{classl_shape_opp}\index{l\-Shape\-Opp@{l\-Shape\-Opp}}
+}
+
+
+{\ttfamily \#include $<$l\-Shape\-Opp.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classl_shape_opp_a6b47570c2f406d7399c38fcf2104a2ec}{Direction\-Facing} \{ \hyperlink{classl_shape_opp_a6b47570c2f406d7399c38fcf2104a2eca6bd81b7efd6e38d818b0b129628b2f95}{right}, 
+\hyperlink{classl_shape_opp_a6b47570c2f406d7399c38fcf2104a2ecab03d6287b7d65c227a57f99d92d3cf79}{left}, 
+\hyperlink{classl_shape_opp_a6b47570c2f406d7399c38fcf2104a2ecae0ab6b2e2cf7bb35f3b83a67334a4a8d}{backwards}, 
+\hyperlink{classl_shape_opp_a6b47570c2f406d7399c38fcf2104a2eca9e0d9616c0633da2f474db26d5e6a042}{forwards}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classl_shape_opp_a7a0b2895e0a938ce7cc7c20226aec7a3}{l\-Shape\-Opp} (Ogre\-::\-Scene\-Manager $\ast$, string, string)
+\item 
+void \hyperlink{classl_shape_opp_af4306c51154f8ceaabec8c98fca73cd8}{Update} (double, O\-I\-S\-::\-Keyboard $\ast$, vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D, int main\-Tick\-Value)
+\item 
+void \hyperlink{classl_shape_opp_a2a6bed136faac6df5e4962a7b909d126}{rotate\-Right} (double, O\-I\-S\-::\-Keyboard $\ast$, vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D)
+\item 
+void \hyperlink{classl_shape_opp_afe1f6f03d46c0043b170961d4bc1f1b4}{rotate\-Left} (double, O\-I\-S\-::\-Keyboard $\ast$, vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D)
+\item 
+void \hyperlink{classl_shape_opp_a1f41e4ace4ae07adbad0524a3cd80013}{rotate\-Y} (double, O\-I\-S\-::\-Keyboard $\ast$, vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D)
+\item 
+void \hyperlink{classl_shape_opp_a6da0e90ceec19c7906694b782f1e316d}{is\-Dropping} (vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D)
+\item 
+void \hyperlink{classl_shape_opp_a0942fefd0a4706a9805f831805d00270}{rotate\-Y\-Opp} (double, O\-I\-S\-::\-Keyboard $\ast$, vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D)
+\item 
+void \hyperlink{classl_shape_opp_a270e1c268e5dd52cc7eb529a39cccf13}{Check\-Bounds} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classl_shape_opp_a8604c36ae3e6b6f6db19fbbb590f46ba}{cube0boundary\-X}
+\item 
+int \hyperlink{classl_shape_opp_a1584503f7aac34030f0008baac89927e}{cube0boundary\-X2}
+\item 
+int \hyperlink{classl_shape_opp_aafeb6b7a4003331e6ae1bf820682559e}{cube1boundary\-X}
+\item 
+int \hyperlink{classl_shape_opp_a8da42a4b9c13d36899a84c9c62e066aa}{cube1boundary\-X2}
+\item 
+int \hyperlink{classl_shape_opp_a9771f0ea1b5d4205170556bb32a4286f}{cube2boundary\-X}
+\item 
+int \hyperlink{classl_shape_opp_ae67737706da52a9b065aeec1360b33a8}{cube2boundary\-X2}
+\item 
+int \hyperlink{classl_shape_opp_a21f68444475a0826de7bef710b700230}{cube3boundary\-X}
+\item 
+int \hyperlink{classl_shape_opp_af3075944e36c92a7d8c4f7c894446b70}{cube3boundary\-X2}
+\item 
+int \hyperlink{classl_shape_opp_a68f2d97b3f79fc3f942f08ffb925ab04}{cell\-X}
+\item 
+int \hyperlink{classl_shape_opp_a45d07e647c16b8c13e03bbe72011487c}{cell\-Y}
+\item 
+int \hyperlink{classl_shape_opp_a3d1c6dfb9ca0b54c9a44f12adbc52186}{cell\-Z}
+\item 
+int \hyperlink{classl_shape_opp_a270c01126b5374b2898aec1e8422a427}{cube0boundary\-Z}
+\item 
+int \hyperlink{classl_shape_opp_a6398c8aa24f758c51dc216fdc0edbab3}{cube0boundary\-Z2}
+\item 
+int \hyperlink{classl_shape_opp_aa09841484e4e01251b5c426e463de02c}{cube1boundary\-Z}
+\item 
+int \hyperlink{classl_shape_opp_aadfb455f2af083b1cf6d4a64188766db}{cube1boundary\-Z2}
+\item 
+int \hyperlink{classl_shape_opp_a52fcc6503edb002e11cfa955df123d15}{cube2boundary\-Z}
+\item 
+int \hyperlink{classl_shape_opp_add65476fb1d578e1322a7d6c615a84a3}{cube2boundary\-Z2}
+\item 
+int \hyperlink{classl_shape_opp_a29e8e0ed3f39a3ce64d23d7b24950e6c}{cube3boundary\-Z}
+\item 
+int \hyperlink{classl_shape_opp_ac8f375c93b18c7ecb5271136d7d59b62}{cube3boundary\-Z2}
+\item 
+int \hyperlink{classl_shape_opp_ab47401e2831e8fbebda5cf1bca10c768}{cube\-Amount}
+\item 
+int \hyperlink{classl_shape_opp_a4314bc7ac701a665eb73b397b9f883bd}{cube0\-Boundary\-Y}
+\item 
+bool \hyperlink{classl_shape_opp_a1bfd42ead4f729d742201b8348901508}{shadow\-Off}
+\item 
+bool \hyperlink{classl_shape_opp_a4ddddfd93dd1c10f0d6681cce2adbf3f}{alive}
+\item 
+bool \hyperlink{classl_shape_opp_a869749e9b10c2ec5a8f093644a4eda1e}{rotated\-Y}
+\item 
+bool \hyperlink{classl_shape_opp_a12b818c7fe5f7b1cdbe77f00b36ffb4d}{rotated\-X}
+\item 
+string \hyperlink{classl_shape_opp_a72072c1bfc3d452ba201926525fc4582}{my\-Name}
+\item 
+Ogre\-::\-Timer \hyperlink{classl_shape_opp_a80d9cd54854e8af22d8922c99024bbd5}{rotate\-\_\-timer}
+\item 
+double \hyperlink{classl_shape_opp_aee4e57d432f4f4e19c50e8878f9e87b7}{rotate\-Tick}
+\item 
+Ogre\-::\-Timer \hyperlink{classl_shape_opp_ac0baad0ea71f63393ecc9311120dd321}{move\-\_\-timer}
+\item 
+double \hyperlink{classl_shape_opp_a1a6b36a3ca17a596fcec122ce871e320}{move\-Tick}
+\item 
+Ogre\-::\-Timer \hyperlink{classl_shape_opp_abd9743d641bc2d4d7288a032021bbba3}{\-\_\-timer}
+\item 
+double \hyperlink{classl_shape_opp_af4608ed51c99004548a9bdf2cae47f9f}{tick}
+\item 
+double \hyperlink{classl_shape_opp_af3c48655ae6f164e74d29a880c3458a4}{tick\-Value}
+\item 
+int \hyperlink{classl_shape_opp_a004f76632d9012218835d49fb6e5e7a2}{cell\-Size}
+\item 
+int \hyperlink{classl_shape_opp_aef174fd2adc27dd52c3dacd62be802ab}{time}
+\item 
+int \hyperlink{classl_shape_opp_a5ca5f7c8b6b0faf17d04bc2212966c3e}{z\-Direction}
+\item 
+int \hyperlink{classl_shape_opp_a101294c9ea1dc2f1a37fb95a87426702}{x\-Direction}
+\item 
+int \hyperlink{classl_shape_opp_a0340df57978d442190a30927a919f34e}{y\-Direction}
+\item 
+vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$ \hyperlink{classl_shape_opp_a4972b990d86d08878ab07ae12b769108}{cubes}
+\item 
+enum \hyperlink{classl_shape_opp_a6b47570c2f406d7399c38fcf2104a2ec}{l\-Shape\-Opp\-::\-Direction\-Facing} \hyperlink{classl_shape_opp_a03a9b1dc6384306c810468734b299699}{direction\-Facing}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classl_shape_opp_a6b47570c2f406d7399c38fcf2104a2ec}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!Direction\-Facing@{Direction\-Facing}}
+\index{Direction\-Facing@{Direction\-Facing}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{Direction\-Facing}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf l\-Shape\-Opp\-::\-Direction\-Facing}}}\label{classl_shape_opp_a6b47570c2f406d7399c38fcf2104a2ec}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{right@{right}!l\-Shape\-Opp@{l\-Shape\-Opp}}\index{l\-Shape\-Opp@{l\-Shape\-Opp}!right@{right}}\item[{\em 
+\hypertarget{classl_shape_opp_a6b47570c2f406d7399c38fcf2104a2eca6bd81b7efd6e38d818b0b129628b2f95}{right}\label{classl_shape_opp_a6b47570c2f406d7399c38fcf2104a2eca6bd81b7efd6e38d818b0b129628b2f95}
+}]\index{left@{left}!l\-Shape\-Opp@{l\-Shape\-Opp}}\index{l\-Shape\-Opp@{l\-Shape\-Opp}!left@{left}}\item[{\em 
+\hypertarget{classl_shape_opp_a6b47570c2f406d7399c38fcf2104a2ecab03d6287b7d65c227a57f99d92d3cf79}{left}\label{classl_shape_opp_a6b47570c2f406d7399c38fcf2104a2ecab03d6287b7d65c227a57f99d92d3cf79}
+}]\index{backwards@{backwards}!l\-Shape\-Opp@{l\-Shape\-Opp}}\index{l\-Shape\-Opp@{l\-Shape\-Opp}!backwards@{backwards}}\item[{\em 
+\hypertarget{classl_shape_opp_a6b47570c2f406d7399c38fcf2104a2ecae0ab6b2e2cf7bb35f3b83a67334a4a8d}{backwards}\label{classl_shape_opp_a6b47570c2f406d7399c38fcf2104a2ecae0ab6b2e2cf7bb35f3b83a67334a4a8d}
+}]\index{forwards@{forwards}!l\-Shape\-Opp@{l\-Shape\-Opp}}\index{l\-Shape\-Opp@{l\-Shape\-Opp}!forwards@{forwards}}\item[{\em 
+\hypertarget{classl_shape_opp_a6b47570c2f406d7399c38fcf2104a2eca9e0d9616c0633da2f474db26d5e6a042}{forwards}\label{classl_shape_opp_a6b47570c2f406d7399c38fcf2104a2eca9e0d9616c0633da2f474db26d5e6a042}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classl_shape_opp_a7a0b2895e0a938ce7cc7c20226aec7a3}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!l\-Shape\-Opp@{l\-Shape\-Opp}}
+\index{l\-Shape\-Opp@{l\-Shape\-Opp}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{l\-Shape\-Opp}]{\setlength{\rightskip}{0pt plus 5cm}l\-Shape\-Opp\-::l\-Shape\-Opp (
+\begin{DoxyParamCaption}
+\item[{Ogre\-::\-Scene\-Manager $\ast$}]{, }
+\item[{string}]{, }
+\item[{string}]{}
+\end{DoxyParamCaption}
+)}}\label{classl_shape_opp_a7a0b2895e0a938ce7cc7c20226aec7a3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classl_shape_opp_a270e1c268e5dd52cc7eb529a39cccf13}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!Check\-Bounds@{Check\-Bounds}}
+\index{Check\-Bounds@{Check\-Bounds}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{Check\-Bounds}]{\setlength{\rightskip}{0pt plus 5cm}void l\-Shape\-Opp\-::\-Check\-Bounds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classl_shape_opp_a270e1c268e5dd52cc7eb529a39cccf13}
+\hypertarget{classl_shape_opp_a6da0e90ceec19c7906694b782f1e316d}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!is\-Dropping@{is\-Dropping}}
+\index{is\-Dropping@{is\-Dropping}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{is\-Dropping}]{\setlength{\rightskip}{0pt plus 5cm}void l\-Shape\-Opp\-::is\-Dropping (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D}
+\end{DoxyParamCaption}
+)}}\label{classl_shape_opp_a6da0e90ceec19c7906694b782f1e316d}
+\hypertarget{classl_shape_opp_afe1f6f03d46c0043b170961d4bc1f1b4}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!rotate\-Left@{rotate\-Left}}
+\index{rotate\-Left@{rotate\-Left}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{rotate\-Left}]{\setlength{\rightskip}{0pt plus 5cm}void l\-Shape\-Opp\-::rotate\-Left (
+\begin{DoxyParamCaption}
+\item[{double}]{, }
+\item[{O\-I\-S\-::\-Keyboard $\ast$}]{, }
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D}
+\end{DoxyParamCaption}
+)}}\label{classl_shape_opp_afe1f6f03d46c0043b170961d4bc1f1b4}
+\hypertarget{classl_shape_opp_a2a6bed136faac6df5e4962a7b909d126}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!rotate\-Right@{rotate\-Right}}
+\index{rotate\-Right@{rotate\-Right}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{rotate\-Right}]{\setlength{\rightskip}{0pt plus 5cm}void l\-Shape\-Opp\-::rotate\-Right (
+\begin{DoxyParamCaption}
+\item[{double}]{, }
+\item[{O\-I\-S\-::\-Keyboard $\ast$}]{, }
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D}
+\end{DoxyParamCaption}
+)}}\label{classl_shape_opp_a2a6bed136faac6df5e4962a7b909d126}
+\hypertarget{classl_shape_opp_a1f41e4ace4ae07adbad0524a3cd80013}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!rotate\-Y@{rotate\-Y}}
+\index{rotate\-Y@{rotate\-Y}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{rotate\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void l\-Shape\-Opp\-::rotate\-Y (
+\begin{DoxyParamCaption}
+\item[{double}]{, }
+\item[{O\-I\-S\-::\-Keyboard $\ast$}]{, }
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D}
+\end{DoxyParamCaption}
+)}}\label{classl_shape_opp_a1f41e4ace4ae07adbad0524a3cd80013}
+\hypertarget{classl_shape_opp_a0942fefd0a4706a9805f831805d00270}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!rotate\-Y\-Opp@{rotate\-Y\-Opp}}
+\index{rotate\-Y\-Opp@{rotate\-Y\-Opp}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{rotate\-Y\-Opp}]{\setlength{\rightskip}{0pt plus 5cm}void l\-Shape\-Opp\-::rotate\-Y\-Opp (
+\begin{DoxyParamCaption}
+\item[{double}]{, }
+\item[{O\-I\-S\-::\-Keyboard $\ast$}]{, }
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D}
+\end{DoxyParamCaption}
+)}}\label{classl_shape_opp_a0942fefd0a4706a9805f831805d00270}
+\hypertarget{classl_shape_opp_af4306c51154f8ceaabec8c98fca73cd8}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!Update@{Update}}
+\index{Update@{Update}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void l\-Shape\-Opp\-::\-Update (
+\begin{DoxyParamCaption}
+\item[{double}]{, }
+\item[{O\-I\-S\-::\-Keyboard $\ast$}]{, }
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D, }
+\item[{int}]{main\-Tick\-Value}
+\end{DoxyParamCaption}
+)}}\label{classl_shape_opp_af4306c51154f8ceaabec8c98fca73cd8}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classl_shape_opp_abd9743d641bc2d4d7288a032021bbba3}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!\-\_\-timer@{\-\_\-timer}}
+\index{\-\_\-timer@{\-\_\-timer}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Timer l\-Shape\-Opp\-::\-\_\-timer}}\label{classl_shape_opp_abd9743d641bc2d4d7288a032021bbba3}
+\hypertarget{classl_shape_opp_a4ddddfd93dd1c10f0d6681cce2adbf3f}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!alive@{alive}}
+\index{alive@{alive}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{alive}]{\setlength{\rightskip}{0pt plus 5cm}bool l\-Shape\-Opp\-::alive}}\label{classl_shape_opp_a4ddddfd93dd1c10f0d6681cce2adbf3f}
+\hypertarget{classl_shape_opp_a004f76632d9012218835d49fb6e5e7a2}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cell\-Size@{cell\-Size}}
+\index{cell\-Size@{cell\-Size}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cell\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cell\-Size}}\label{classl_shape_opp_a004f76632d9012218835d49fb6e5e7a2}
+\hypertarget{classl_shape_opp_a68f2d97b3f79fc3f942f08ffb925ab04}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cell\-X@{cell\-X}}
+\index{cell\-X@{cell\-X}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cell\-X}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cell\-X}}\label{classl_shape_opp_a68f2d97b3f79fc3f942f08ffb925ab04}
+\hypertarget{classl_shape_opp_a45d07e647c16b8c13e03bbe72011487c}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cell\-Y@{cell\-Y}}
+\index{cell\-Y@{cell\-Y}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cell\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cell\-Y}}\label{classl_shape_opp_a45d07e647c16b8c13e03bbe72011487c}
+\hypertarget{classl_shape_opp_a3d1c6dfb9ca0b54c9a44f12adbc52186}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cell\-Z@{cell\-Z}}
+\index{cell\-Z@{cell\-Z}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cell\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cell\-Z}}\label{classl_shape_opp_a3d1c6dfb9ca0b54c9a44f12adbc52186}
+\hypertarget{classl_shape_opp_a8604c36ae3e6b6f6db19fbbb590f46ba}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube0boundary\-X@{cube0boundary\-X}}
+\index{cube0boundary\-X@{cube0boundary\-X}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube0boundary\-X}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube0boundary\-X}}\label{classl_shape_opp_a8604c36ae3e6b6f6db19fbbb590f46ba}
+this is entire class is very similar to \hyperlink{classl_shape}{l\-Shape} although has some different bounds checking a rotation \hypertarget{classl_shape_opp_a1584503f7aac34030f0008baac89927e}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube0boundary\-X2@{cube0boundary\-X2}}
+\index{cube0boundary\-X2@{cube0boundary\-X2}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube0boundary\-X2}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube0boundary\-X2}}\label{classl_shape_opp_a1584503f7aac34030f0008baac89927e}
+\hypertarget{classl_shape_opp_a4314bc7ac701a665eb73b397b9f883bd}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube0\-Boundary\-Y@{cube0\-Boundary\-Y}}
+\index{cube0\-Boundary\-Y@{cube0\-Boundary\-Y}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube0\-Boundary\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube0\-Boundary\-Y}}\label{classl_shape_opp_a4314bc7ac701a665eb73b397b9f883bd}
+\hypertarget{classl_shape_opp_a270c01126b5374b2898aec1e8422a427}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube0boundary\-Z@{cube0boundary\-Z}}
+\index{cube0boundary\-Z@{cube0boundary\-Z}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube0boundary\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube0boundary\-Z}}\label{classl_shape_opp_a270c01126b5374b2898aec1e8422a427}
+\hypertarget{classl_shape_opp_a6398c8aa24f758c51dc216fdc0edbab3}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube0boundary\-Z2@{cube0boundary\-Z2}}
+\index{cube0boundary\-Z2@{cube0boundary\-Z2}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube0boundary\-Z2}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube0boundary\-Z2}}\label{classl_shape_opp_a6398c8aa24f758c51dc216fdc0edbab3}
+\hypertarget{classl_shape_opp_aafeb6b7a4003331e6ae1bf820682559e}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube1boundary\-X@{cube1boundary\-X}}
+\index{cube1boundary\-X@{cube1boundary\-X}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube1boundary\-X}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube1boundary\-X}}\label{classl_shape_opp_aafeb6b7a4003331e6ae1bf820682559e}
+\hypertarget{classl_shape_opp_a8da42a4b9c13d36899a84c9c62e066aa}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube1boundary\-X2@{cube1boundary\-X2}}
+\index{cube1boundary\-X2@{cube1boundary\-X2}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube1boundary\-X2}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube1boundary\-X2}}\label{classl_shape_opp_a8da42a4b9c13d36899a84c9c62e066aa}
+\hypertarget{classl_shape_opp_aa09841484e4e01251b5c426e463de02c}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube1boundary\-Z@{cube1boundary\-Z}}
+\index{cube1boundary\-Z@{cube1boundary\-Z}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube1boundary\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube1boundary\-Z}}\label{classl_shape_opp_aa09841484e4e01251b5c426e463de02c}
+\hypertarget{classl_shape_opp_aadfb455f2af083b1cf6d4a64188766db}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube1boundary\-Z2@{cube1boundary\-Z2}}
+\index{cube1boundary\-Z2@{cube1boundary\-Z2}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube1boundary\-Z2}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube1boundary\-Z2}}\label{classl_shape_opp_aadfb455f2af083b1cf6d4a64188766db}
+\hypertarget{classl_shape_opp_a9771f0ea1b5d4205170556bb32a4286f}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube2boundary\-X@{cube2boundary\-X}}
+\index{cube2boundary\-X@{cube2boundary\-X}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube2boundary\-X}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube2boundary\-X}}\label{classl_shape_opp_a9771f0ea1b5d4205170556bb32a4286f}
+\hypertarget{classl_shape_opp_ae67737706da52a9b065aeec1360b33a8}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube2boundary\-X2@{cube2boundary\-X2}}
+\index{cube2boundary\-X2@{cube2boundary\-X2}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube2boundary\-X2}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube2boundary\-X2}}\label{classl_shape_opp_ae67737706da52a9b065aeec1360b33a8}
+\hypertarget{classl_shape_opp_a52fcc6503edb002e11cfa955df123d15}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube2boundary\-Z@{cube2boundary\-Z}}
+\index{cube2boundary\-Z@{cube2boundary\-Z}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube2boundary\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube2boundary\-Z}}\label{classl_shape_opp_a52fcc6503edb002e11cfa955df123d15}
+\hypertarget{classl_shape_opp_add65476fb1d578e1322a7d6c615a84a3}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube2boundary\-Z2@{cube2boundary\-Z2}}
+\index{cube2boundary\-Z2@{cube2boundary\-Z2}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube2boundary\-Z2}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube2boundary\-Z2}}\label{classl_shape_opp_add65476fb1d578e1322a7d6c615a84a3}
+\hypertarget{classl_shape_opp_a21f68444475a0826de7bef710b700230}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube3boundary\-X@{cube3boundary\-X}}
+\index{cube3boundary\-X@{cube3boundary\-X}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube3boundary\-X}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube3boundary\-X}}\label{classl_shape_opp_a21f68444475a0826de7bef710b700230}
+\hypertarget{classl_shape_opp_af3075944e36c92a7d8c4f7c894446b70}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube3boundary\-X2@{cube3boundary\-X2}}
+\index{cube3boundary\-X2@{cube3boundary\-X2}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube3boundary\-X2}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube3boundary\-X2}}\label{classl_shape_opp_af3075944e36c92a7d8c4f7c894446b70}
+\hypertarget{classl_shape_opp_a29e8e0ed3f39a3ce64d23d7b24950e6c}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube3boundary\-Z@{cube3boundary\-Z}}
+\index{cube3boundary\-Z@{cube3boundary\-Z}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube3boundary\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube3boundary\-Z}}\label{classl_shape_opp_a29e8e0ed3f39a3ce64d23d7b24950e6c}
+\hypertarget{classl_shape_opp_ac8f375c93b18c7ecb5271136d7d59b62}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube3boundary\-Z2@{cube3boundary\-Z2}}
+\index{cube3boundary\-Z2@{cube3boundary\-Z2}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube3boundary\-Z2}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube3boundary\-Z2}}\label{classl_shape_opp_ac8f375c93b18c7ecb5271136d7d59b62}
+\hypertarget{classl_shape_opp_ab47401e2831e8fbebda5cf1bca10c768}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cube\-Amount@{cube\-Amount}}
+\index{cube\-Amount@{cube\-Amount}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cube\-Amount}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::cube\-Amount}}\label{classl_shape_opp_ab47401e2831e8fbebda5cf1bca10c768}
+\hypertarget{classl_shape_opp_a4972b990d86d08878ab07ae12b769108}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!cubes@{cubes}}
+\index{cubes@{cubes}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{cubes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Cube}$\ast$$>$ l\-Shape\-Opp\-::cubes}}\label{classl_shape_opp_a4972b990d86d08878ab07ae12b769108}
+\hypertarget{classl_shape_opp_a03a9b1dc6384306c810468734b299699}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!direction\-Facing@{direction\-Facing}}
+\index{direction\-Facing@{direction\-Facing}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{direction\-Facing}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf l\-Shape\-Opp\-::\-Direction\-Facing}  l\-Shape\-Opp\-::direction\-Facing}}\label{classl_shape_opp_a03a9b1dc6384306c810468734b299699}
+\hypertarget{classl_shape_opp_ac0baad0ea71f63393ecc9311120dd321}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!move\-\_\-timer@{move\-\_\-timer}}
+\index{move\-\_\-timer@{move\-\_\-timer}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{move\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Timer l\-Shape\-Opp\-::move\-\_\-timer}}\label{classl_shape_opp_ac0baad0ea71f63393ecc9311120dd321}
+\hypertarget{classl_shape_opp_a1a6b36a3ca17a596fcec122ce871e320}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!move\-Tick@{move\-Tick}}
+\index{move\-Tick@{move\-Tick}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{move\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}double l\-Shape\-Opp\-::move\-Tick}}\label{classl_shape_opp_a1a6b36a3ca17a596fcec122ce871e320}
+\hypertarget{classl_shape_opp_a72072c1bfc3d452ba201926525fc4582}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!my\-Name@{my\-Name}}
+\index{my\-Name@{my\-Name}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{my\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string l\-Shape\-Opp\-::my\-Name}}\label{classl_shape_opp_a72072c1bfc3d452ba201926525fc4582}
+\hypertarget{classl_shape_opp_a80d9cd54854e8af22d8922c99024bbd5}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!rotate\-\_\-timer@{rotate\-\_\-timer}}
+\index{rotate\-\_\-timer@{rotate\-\_\-timer}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{rotate\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Timer l\-Shape\-Opp\-::rotate\-\_\-timer}}\label{classl_shape_opp_a80d9cd54854e8af22d8922c99024bbd5}
+\hypertarget{classl_shape_opp_a12b818c7fe5f7b1cdbe77f00b36ffb4d}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!rotated\-X@{rotated\-X}}
+\index{rotated\-X@{rotated\-X}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{rotated\-X}]{\setlength{\rightskip}{0pt plus 5cm}bool l\-Shape\-Opp\-::rotated\-X}}\label{classl_shape_opp_a12b818c7fe5f7b1cdbe77f00b36ffb4d}
+\hypertarget{classl_shape_opp_a869749e9b10c2ec5a8f093644a4eda1e}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!rotated\-Y@{rotated\-Y}}
+\index{rotated\-Y@{rotated\-Y}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{rotated\-Y}]{\setlength{\rightskip}{0pt plus 5cm}bool l\-Shape\-Opp\-::rotated\-Y}}\label{classl_shape_opp_a869749e9b10c2ec5a8f093644a4eda1e}
+\hypertarget{classl_shape_opp_aee4e57d432f4f4e19c50e8878f9e87b7}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!rotate\-Tick@{rotate\-Tick}}
+\index{rotate\-Tick@{rotate\-Tick}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{rotate\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}double l\-Shape\-Opp\-::rotate\-Tick}}\label{classl_shape_opp_aee4e57d432f4f4e19c50e8878f9e87b7}
+\hypertarget{classl_shape_opp_a1bfd42ead4f729d742201b8348901508}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!shadow\-Off@{shadow\-Off}}
+\index{shadow\-Off@{shadow\-Off}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{shadow\-Off}]{\setlength{\rightskip}{0pt plus 5cm}bool l\-Shape\-Opp\-::shadow\-Off}}\label{classl_shape_opp_a1bfd42ead4f729d742201b8348901508}
+\hypertarget{classl_shape_opp_af4608ed51c99004548a9bdf2cae47f9f}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!tick@{tick}}
+\index{tick@{tick}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{tick}]{\setlength{\rightskip}{0pt plus 5cm}double l\-Shape\-Opp\-::tick}}\label{classl_shape_opp_af4608ed51c99004548a9bdf2cae47f9f}
+\hypertarget{classl_shape_opp_af3c48655ae6f164e74d29a880c3458a4}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!tick\-Value@{tick\-Value}}
+\index{tick\-Value@{tick\-Value}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{tick\-Value}]{\setlength{\rightskip}{0pt plus 5cm}double l\-Shape\-Opp\-::tick\-Value}}\label{classl_shape_opp_af3c48655ae6f164e74d29a880c3458a4}
+\hypertarget{classl_shape_opp_aef174fd2adc27dd52c3dacd62be802ab}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!time@{time}}
+\index{time@{time}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{time}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::time}}\label{classl_shape_opp_aef174fd2adc27dd52c3dacd62be802ab}
+\hypertarget{classl_shape_opp_a101294c9ea1dc2f1a37fb95a87426702}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!x\-Direction@{x\-Direction}}
+\index{x\-Direction@{x\-Direction}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{x\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::x\-Direction}}\label{classl_shape_opp_a101294c9ea1dc2f1a37fb95a87426702}
+\hypertarget{classl_shape_opp_a0340df57978d442190a30927a919f34e}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!y\-Direction@{y\-Direction}}
+\index{y\-Direction@{y\-Direction}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{y\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::y\-Direction}}\label{classl_shape_opp_a0340df57978d442190a30927a919f34e}
+\hypertarget{classl_shape_opp_a5ca5f7c8b6b0faf17d04bc2212966c3e}{\index{l\-Shape\-Opp@{l\-Shape\-Opp}!z\-Direction@{z\-Direction}}
+\index{z\-Direction@{z\-Direction}!lShapeOpp@{l\-Shape\-Opp}}
+\subsubsection[{z\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}int l\-Shape\-Opp\-::z\-Direction}}\label{classl_shape_opp_a5ca5f7c8b6b0faf17d04bc2212966c3e}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Aoibhinn/\-Desktop/finished/\-Project\-Colour/\-Project\-One/\-Project\-One/\-Project\-One/include/\hyperlink{l_shape_opp_8h}{l\-Shape\-Opp.\-h}\end{DoxyCompactItemize}

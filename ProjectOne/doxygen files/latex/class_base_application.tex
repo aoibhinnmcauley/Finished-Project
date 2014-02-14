@@ -1,0 +1,645 @@
+\hypertarget{class_base_application}{\section{Base\-Application Class Reference}
+\label{class_base_application}\index{Base\-Application@{Base\-Application}}
+}
+
+
+{\ttfamily \#include $<$Base\-Application.\-h$>$}
+
+Inheritance diagram for Base\-Application\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.382979cm]{class_base_application}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_base_application_a7c897f08816cc064568ae1ec71026719}{Base\-Application} (void)
+\item 
+virtual \hyperlink{class_base_application_a39133f736b9eb70263cebaca3e6d2cad}{$\sim$\-Base\-Application} (void)
+\item 
+virtual void \hyperlink{class_base_application_aed497661d1817ed9d659fb4de671ac1c}{go} (void)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_base_application_adf36bb25e5d307e0b4433489c8227b46}{main\-Tick\-Value}
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_base_application_abc714ee35568ef8090a07419fd391ba7}{Current\-Shape\-Type} \{ \\*
+\hyperlink{class_base_application_abc714ee35568ef8090a07419fd391ba7a59004bd3d877f5b50fff8444129015c4}{z\-Shape\-Type}, 
+\hyperlink{class_base_application_abc714ee35568ef8090a07419fd391ba7a72677ae713741fdbf098c0c842f56a98}{box\-Type}, 
+\hyperlink{class_base_application_abc714ee35568ef8090a07419fd391ba7a880f3e0a05f87a1bac9f20f4e6cbc007}{t\-Shape\-Type}, 
+\hyperlink{class_base_application_abc714ee35568ef8090a07419fd391ba7a810cb2b1cc6fdb0b47584be2c47c105e}{t\-Shape\-Opp\-Type}, 
+\\*
+\hyperlink{class_base_application_abc714ee35568ef8090a07419fd391ba7a8b2e01912467d9c21dfdfeb53197067d}{l\-Shape\-Type}, 
+\hyperlink{class_base_application_abc714ee35568ef8090a07419fd391ba7a0e9b09f1f30d29533864917d93a02ae7}{l\-Shape\-Opp\-Type}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_base_application_ae548b5e3ac0cf92d4dc7d478a8f01922}{setup} ()
+\item 
+virtual bool \hyperlink{class_base_application_a7882a8f2e08e8d6cde00e8c29b2153b0}{configure} (void)
+\item 
+virtual void \hyperlink{class_base_application_a0cf5e311b1c7426590ad6831e4c5352a}{choose\-Scene\-Manager} (void)
+\item 
+virtual void \hyperlink{class_base_application_ad1285286a30e44011746fe80f3bc1aa0}{create\-Camera} (void)
+\item 
+virtual void \hyperlink{class_base_application_ab672d2b969b8530ee753f8b000d219c6}{create\-Frame\-Listener} (void)
+\item 
+virtual void \hyperlink{class_base_application_aa97beeb4059b17d0ec22eae33286ec2d}{create\-Scene} (void)=0
+\item 
+virtual void \hyperlink{class_base_application_ab61c91a38b99f98ff369ce8098a91133}{destroy\-Scene} (void)
+\item 
+virtual void \hyperlink{class_base_application_a8e35ac97bd0cf7a3f90b280c8826389c}{create\-Viewports} (void)
+\item 
+virtual void \hyperlink{class_base_application_aa71428aeca821504352f5f795e6a9226}{setup\-Resources} (void)
+\item 
+virtual void \hyperlink{class_base_application_a9e916d51e4d73e355091d0662c175d85}{create\-Resource\-Listener} (void)
+\item 
+virtual void \hyperlink{class_base_application_a7d72de4f9e3d17ce0a4a034d780baf67}{load\-Resources} (void)
+\item 
+virtual bool \hyperlink{class_base_application_adea8d433b93b66ec7ab48b7e244661df}{frame\-Rendering\-Queued} (const Ogre\-::\-Frame\-Event \&evt)
+\item 
+virtual bool \hyperlink{class_base_application_ad79efa8c9d6f0f6a3cf8a34c25a1bd5f}{key\-Pressed} (const O\-I\-S\-::\-Key\-Event \&arg)
+\item 
+virtual bool \hyperlink{class_base_application_a72dbb7e590af8f96904bc55eb1875a56}{key\-Released} (const O\-I\-S\-::\-Key\-Event \&arg)
+\item 
+virtual bool \hyperlink{class_base_application_abbb67365fb496300701dc7a6953936fe}{mouse\-Moved} (const O\-I\-S\-::\-Mouse\-Event \&arg)
+\item 
+virtual bool \hyperlink{class_base_application_a51b515984916eb7a1582499ee3309ac5}{mouse\-Pressed} (const O\-I\-S\-::\-Mouse\-Event \&arg, O\-I\-S\-::\-Mouse\-Button\-I\-D id)
+\item 
+virtual bool \hyperlink{class_base_application_ae347f583327e4ba1eb83f2df286c1d76}{mouse\-Released} (const O\-I\-S\-::\-Mouse\-Event \&arg, O\-I\-S\-::\-Mouse\-Button\-I\-D id)
+\item 
+virtual void \hyperlink{class_base_application_afe5d7ca9e0f0575b4046c1412e314e69}{window\-Resized} (Ogre\-::\-Render\-Window $\ast$rw)
+\item 
+virtual void \hyperlink{class_base_application_aa7130c376136aa3a9b121e2dee561aed}{window\-Closed} (Ogre\-::\-Render\-Window $\ast$rw)
+\item 
+virtual void \hyperlink{class_base_application_a0bc96be61b7f2cc41e3b7ac416900c91}{random\-Shape} ()
+\item 
+void \hyperlink{class_base_application_ae2e1a92373a8ca12dcc8a9d51bb0a4cb}{create\-G\-U\-I} ()
+\item 
+virtual void \hyperlink{class_base_application_a67bbbb14b9643246ce747ef27cc04c45}{drop\-Level\-In3\-D\-Array} (int array\-Clear\-Height\-New)
+\item 
+virtual void \hyperlink{class_base_application_a344f227b3fb9c4ed73823d4f6ec8e30c}{next\-Level} ()
+\item 
+virtual void \hyperlink{class_base_application_a0ca8072328f7b377d1df88b8173c42cd}{check\-For\-End\-Game} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_base_application_a1c1a812d975a0a98781314580f84c920}{array\-Clear\-Height}
+\item 
+int \hyperlink{class_base_application_a6a0a6b2fd0467a5d206da0a60c68b660}{array\-Height}
+\item 
+int \hyperlink{class_base_application_a7d8a377aa221a84cdf095927bcb48526}{array\-Width}
+\item 
+int \hyperlink{class_base_application_a365f02117f2afc6bc4d54aa7569cbee5}{array\-Depth}
+\item 
+Ogre\-::\-Log $\ast$ \hyperlink{class_base_application_a24c535ef10e1f77e477e0adc783b2245}{m\-\_\-p\-Log}
+\item 
+Ogre\-::\-Root $\ast$ \hyperlink{class_base_application_add84ba707dc6c57e6283f214b1274110}{m\-Root}
+\item 
+Ogre\-::\-Camera $\ast$ \hyperlink{class_base_application_a3829c6b12afe911e97e6b4524b33a38b}{m\-Camera}
+\item 
+Ogre\-::\-Scene\-Manager $\ast$ \hyperlink{class_base_application_a8a7684f4f9a57ed3089048ad1a913b2d}{m\-Scene\-Mgr}
+\item 
+Ogre\-::\-Render\-Window $\ast$ \hyperlink{class_base_application_ac5d8e9c81e036897bc82f81eff8c570f}{m\-Window}
+\item 
+Ogre\-::\-String \hyperlink{class_base_application_a765e0df01c141a16df3178ab4f17afe6}{m\-Resources\-Cfg}
+\item 
+Ogre\-::\-String \hyperlink{class_base_application_a04f2fe47fa164fd78d986dc0df70b7fb}{m\-Plugins\-Cfg}
+\item 
+Ogre\-Bites\-::\-Sdk\-Tray\-Manager $\ast$ \hyperlink{class_base_application_a7faa397f4f4861ee8c361a01e90b4416}{m\-Tray\-Mgr}
+\item 
+Ogre\-Bites\-::\-Sdk\-Camera\-Man $\ast$ \hyperlink{class_base_application_a9ae38dea6316058549151fff66a91fcd}{m\-Camera\-Man}
+\item 
+Ogre\-Bites\-::\-Params\-Panel $\ast$ \hyperlink{class_base_application_a6a11054ca61efdf558e0ff1b2de43a12}{m\-Details\-Panel}
+\item 
+bool \hyperlink{class_base_application_ac7e861799862cb645f1d78b170aef80d}{m\-Cursor\-Was\-Visible}
+\item 
+bool \hyperlink{class_base_application_a755f26d3a9915aaf830750d877e39d86}{m\-Shut\-Down}
+\item 
+vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$ $>$ $>$ \hyperlink{class_base_application_a1d4876d5a2f4d69a9a0fae61ee8f5127}{array3\-D}
+\item 
+Gui3\-D\-::\-Gui3\-D $\ast$ \hyperlink{class_base_application_aaa51f685a5ab1f23b6152f12dbdd86a5}{m\-Gui3\-D}
+\item 
+Gui3\-D\-::\-Panel $\ast$ \hyperlink{class_base_application_ad367e0814cd650819f0a6b8460488f2f}{m\-Panel}
+\item 
+\hyperlink{struct_my_simple_demo_panel_colors}{My\-Simple\-Demo\-Panel\-Colors} \hyperlink{class_base_application_ae282cc9731cc19ae3f7c1889091c6480}{m\-My\-Simple\-Demo\-Panel\-Colors}
+\item 
+enum \\*
+\hyperlink{class_base_application_abc714ee35568ef8090a07419fd391ba7}{Base\-Application\-::\-Current\-Shape\-Type} \hyperlink{class_base_application_ae6b860cfe7188f6c1dd32bd6fecfd2a9}{current\-Shape\-Type}
+\item 
+bool \hyperlink{class_base_application_abde703d00837e1f9c80698e820529a95}{used\-Z\-Shape}
+\item 
+bool \hyperlink{class_base_application_a97e267ce8eda15e4bec536817d9546ee}{used\-Box\-Shape}
+\item 
+bool \hyperlink{class_base_application_a77fa12fbd79ae12dc609b29859452e51}{used\-T\-Shape}
+\item 
+bool \hyperlink{class_base_application_a0997587550f66c6425a2fae78f64e2b1}{used\-T\-Shape\-Opp}
+\item 
+bool \hyperlink{class_base_application_a1192e80769f65e87c5cc6d7aa37d3040}{usedl\-Shape}
+\item 
+bool \hyperlink{class_base_application_a1617c0606b49229803b7a3ecb2d6f936}{usedl\-Shape\-Opp}
+\item 
+int \hyperlink{class_base_application_a9bff1519bcaf61fc3cbcc3c66ec273a3}{current\-Z\-Shape\-Cell}
+\item 
+int \hyperlink{class_base_application_a6cc81cb0cda55bee078cd0fe4a053a55}{current\-Box\-Shape\-Cell}
+\item 
+int \hyperlink{class_base_application_ae43613d0e1142a6e9b12723d5b49da1b}{current\-T\-Shape\-Cell}
+\item 
+int \hyperlink{class_base_application_a46497f2f8c6f6b9e34bcb7986882715f}{current\-T\-Shape\-Opp\-Cell}
+\item 
+int \hyperlink{class_base_application_a53b5c467e53fde6b453021bff907b26d}{currentl\-Shape\-Cell}
+\item 
+int \hyperlink{class_base_application_ad8dd5ed80f7ab80b4c8a88e83b251b05}{currentl\-Shape\-Opp\-Cell}
+\item 
+vector$<$ \hyperlink{classbox}{box} $\ast$ $>$ \hyperlink{class_base_application_ade32bf8c002709296ed8d0a789d8cbba}{boxes}
+\item 
+vector$<$ \hyperlink{classz_shape}{z\-Shape} $\ast$ $>$ \hyperlink{class_base_application_aa412bf0f968f597ca1ab77738eafd5f5}{z\-Shapes}
+\item 
+vector$<$ \hyperlink{classt_shape}{t\-Shape} $\ast$ $>$ \hyperlink{class_base_application_aec2d0eebbcdd4364649da4f412cdbb24}{t\-Shapes}
+\item 
+vector$<$ \hyperlink{classt_shape_opp}{t\-Shape\-Opp} $\ast$ $>$ \hyperlink{class_base_application_a38ff9c55061692b43d1d56de9bf3a363}{t\-Opp\-Shapes}
+\item 
+vector$<$ \hyperlink{classl_shape}{l\-Shape} $\ast$ $>$ \hyperlink{class_base_application_a064956fbdf1b5ae2c187530ec7642b68}{l\-Shapes}
+\item 
+vector$<$ \hyperlink{classl_shape_opp}{l\-Shape\-Opp} $\ast$ $>$ \hyperlink{class_base_application_ad4c357854ba045adac9bd2016452bb8b}{l\-Opp\-Shapes}
+\item 
+O\-I\-S\-::\-Input\-Manager $\ast$ \hyperlink{class_base_application_abc9503c8462e225b5d0d55c952d9e4a9}{m\-Input\-Manager}
+\item 
+O\-I\-S\-::\-Mouse $\ast$ \hyperlink{class_base_application_add9b97fbe64da2814d3af113bac58c43}{m\-Mouse}
+\item 
+O\-I\-S\-::\-Keyboard $\ast$ \hyperlink{class_base_application_a9d6e19cf50c47379fbaae55bff28079c}{m\-Keyboard}
+\item 
+int \hyperlink{class_base_application_a854f2a19c04bc06c187fcf5f771966cc}{layers\-Cleared}
+\item 
+int \hyperlink{class_base_application_abaf901b9f1c0b913235a8d818ece8772}{next\-Level\-Int}
+\item 
+int \hyperlink{class_base_application_a48aa9aa0d39fac2805d912b9f4e8d593}{next\-Level\-Amount}
+\item 
+int \hyperlink{class_base_application_a1408e82cf9d072d8b35505b7f42d8565}{current\-Level}
+\item 
+int \hyperlink{class_base_application_a681cfe91d2cee55f8d783651a074fdcf}{score}
+\item 
+int \hyperlink{class_base_application_a4484039f7dfe0e4eaa962a4fa781bc88}{score\-Multiplier}
+\item 
+Ogre\-::\-Timer \hyperlink{class_base_application_a7e2bb2cec7b0185bf861d5bf5f8c015c}{\-\_\-timer}
+\item 
+bool \hyperlink{class_base_application_a3cd36d39f168b56476c22d27cf9cb429}{music}
+\item 
+bool \hyperlink{class_base_application_a4a21a832334bce0266af82d97208c5d1}{effects}
+\item 
+bool \hyperlink{class_base_application_adadae473e6c936a899153c205c2de07d}{init}
+\item 
+int \hyperlink{class_base_application_aad18724507e497250a90dd9d12d24920}{timer\-C\-H\-E\-C\-K}
+\item 
+F\-M\-O\-D\-::\-System $\ast$ \hyperlink{class_base_application_ac45b5d8be5f852e28d13b2009c45b5a5}{F\-M\-O\-Dsys}
+\item 
+F\-M\-O\-D\-\_\-\-R\-E\-S\-U\-L\-T \hyperlink{class_base_application_ad50a268c7b77ee4e910eca0d96430705}{result}
+\item 
+F\-M\-O\-D\-::\-Sound $\ast$ \hyperlink{class_base_application_aea4ddf4bf2fe2f475e75ac1754e64b0c}{sound}
+\item 
+F\-M\-O\-D\-::\-Sound $\ast$ \hyperlink{class_base_application_ac1cb587fccc3d6d0a263d484bc6829bc}{sound\-Start}
+\item 
+F\-M\-O\-D\-::\-Sound $\ast$ \hyperlink{class_base_application_aab866d736fb7032813be4f0692bf40a6}{sound\-Drop}
+\item 
+F\-M\-O\-D\-::\-Channel $\ast$ \hyperlink{class_base_application_ab6938e41749182bbe867f455ad52cf09}{channel}
+\item 
+F\-M\-O\-D\-::\-Channel $\ast$ \hyperlink{class_base_application_aceea4286991e9718baa4278671d8c836}{channel2}
+\item 
+F\-M\-O\-D\-::\-Channel $\ast$ \hyperlink{class_base_application_adfa511eb6241720fc95c1c32f92deb80}{channel3}
+\item 
+F\-M\-O\-D\-::\-Reverb $\ast$ \hyperlink{class_base_application_a92820c32798f0d3928fcce24787eda1f}{reverb}
+\item 
+F\-M\-O\-D\-::\-Reverb $\ast$ \hyperlink{class_base_application_a1b0ab0994f1beef254a3020b5b2a0945}{reverb2}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_base_application_abc714ee35568ef8090a07419fd391ba7}{\index{Base\-Application@{Base\-Application}!Current\-Shape\-Type@{Current\-Shape\-Type}}
+\index{Current\-Shape\-Type@{Current\-Shape\-Type}!BaseApplication@{Base\-Application}}
+\subsubsection[{Current\-Shape\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Base\-Application\-::\-Current\-Shape\-Type}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_abc714ee35568ef8090a07419fd391ba7}
+an enumeration used to indicate what the current shape type being used by the player is \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{z\-Shape\-Type@{z\-Shape\-Type}!Base\-Application@{Base\-Application}}\index{Base\-Application@{Base\-Application}!z\-Shape\-Type@{z\-Shape\-Type}}\item[{\em 
+\hypertarget{class_base_application_abc714ee35568ef8090a07419fd391ba7a59004bd3d877f5b50fff8444129015c4}{z\-Shape\-Type}\label{class_base_application_abc714ee35568ef8090a07419fd391ba7a59004bd3d877f5b50fff8444129015c4}
+}]\index{box\-Type@{box\-Type}!Base\-Application@{Base\-Application}}\index{Base\-Application@{Base\-Application}!box\-Type@{box\-Type}}\item[{\em 
+\hypertarget{class_base_application_abc714ee35568ef8090a07419fd391ba7a72677ae713741fdbf098c0c842f56a98}{box\-Type}\label{class_base_application_abc714ee35568ef8090a07419fd391ba7a72677ae713741fdbf098c0c842f56a98}
+}]\index{t\-Shape\-Type@{t\-Shape\-Type}!Base\-Application@{Base\-Application}}\index{Base\-Application@{Base\-Application}!t\-Shape\-Type@{t\-Shape\-Type}}\item[{\em 
+\hypertarget{class_base_application_abc714ee35568ef8090a07419fd391ba7a880f3e0a05f87a1bac9f20f4e6cbc007}{t\-Shape\-Type}\label{class_base_application_abc714ee35568ef8090a07419fd391ba7a880f3e0a05f87a1bac9f20f4e6cbc007}
+}]\index{t\-Shape\-Opp\-Type@{t\-Shape\-Opp\-Type}!Base\-Application@{Base\-Application}}\index{Base\-Application@{Base\-Application}!t\-Shape\-Opp\-Type@{t\-Shape\-Opp\-Type}}\item[{\em 
+\hypertarget{class_base_application_abc714ee35568ef8090a07419fd391ba7a810cb2b1cc6fdb0b47584be2c47c105e}{t\-Shape\-Opp\-Type}\label{class_base_application_abc714ee35568ef8090a07419fd391ba7a810cb2b1cc6fdb0b47584be2c47c105e}
+}]\index{l\-Shape\-Type@{l\-Shape\-Type}!Base\-Application@{Base\-Application}}\index{Base\-Application@{Base\-Application}!l\-Shape\-Type@{l\-Shape\-Type}}\item[{\em 
+\hypertarget{class_base_application_abc714ee35568ef8090a07419fd391ba7a8b2e01912467d9c21dfdfeb53197067d}{l\-Shape\-Type}\label{class_base_application_abc714ee35568ef8090a07419fd391ba7a8b2e01912467d9c21dfdfeb53197067d}
+}]\index{l\-Shape\-Opp\-Type@{l\-Shape\-Opp\-Type}!Base\-Application@{Base\-Application}}\index{Base\-Application@{Base\-Application}!l\-Shape\-Opp\-Type@{l\-Shape\-Opp\-Type}}\item[{\em 
+\hypertarget{class_base_application_abc714ee35568ef8090a07419fd391ba7a0e9b09f1f30d29533864917d93a02ae7}{l\-Shape\-Opp\-Type}\label{class_base_application_abc714ee35568ef8090a07419fd391ba7a0e9b09f1f30d29533864917d93a02ae7}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_base_application_a7c897f08816cc064568ae1ec71026719}{\index{Base\-Application@{Base\-Application}!Base\-Application@{Base\-Application}}
+\index{Base\-Application@{Base\-Application}!BaseApplication@{Base\-Application}}
+\subsubsection[{Base\-Application}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Application\-::\-Base\-Application (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_base_application_a7c897f08816cc064568ae1ec71026719}
+\hypertarget{class_base_application_a39133f736b9eb70263cebaca3e6d2cad}{\index{Base\-Application@{Base\-Application}!$\sim$\-Base\-Application@{$\sim$\-Base\-Application}}
+\index{$\sim$\-Base\-Application@{$\sim$\-Base\-Application}!BaseApplication@{Base\-Application}}
+\subsubsection[{$\sim$\-Base\-Application}]{\setlength{\rightskip}{0pt plus 5cm}virtual Base\-Application\-::$\sim$\-Base\-Application (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_base_application_a39133f736b9eb70263cebaca3e6d2cad}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_base_application_a0ca8072328f7b377d1df88b8173c42cd}{\index{Base\-Application@{Base\-Application}!check\-For\-End\-Game@{check\-For\-End\-Game}}
+\index{check\-For\-End\-Game@{check\-For\-End\-Game}!BaseApplication@{Base\-Application}}
+\subsubsection[{check\-For\-End\-Game}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\-Application\-::check\-For\-End\-Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_a0ca8072328f7b377d1df88b8173c42cd}
+This method checks if the cells above the array are empty and if not it ends the game \hypertarget{class_base_application_a0cf5e311b1c7426590ad6831e4c5352a}{\index{Base\-Application@{Base\-Application}!choose\-Scene\-Manager@{choose\-Scene\-Manager}}
+\index{choose\-Scene\-Manager@{choose\-Scene\-Manager}!BaseApplication@{Base\-Application}}
+\subsubsection[{choose\-Scene\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\-Application\-::choose\-Scene\-Manager (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_a0cf5e311b1c7426590ad6831e4c5352a}
+\hypertarget{class_base_application_a7882a8f2e08e8d6cde00e8c29b2153b0}{\index{Base\-Application@{Base\-Application}!configure@{configure}}
+\index{configure@{configure}!BaseApplication@{Base\-Application}}
+\subsubsection[{configure}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Base\-Application\-::configure (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_a7882a8f2e08e8d6cde00e8c29b2153b0}
+\hypertarget{class_base_application_ad1285286a30e44011746fe80f3bc1aa0}{\index{Base\-Application@{Base\-Application}!create\-Camera@{create\-Camera}}
+\index{create\-Camera@{create\-Camera}!BaseApplication@{Base\-Application}}
+\subsubsection[{create\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\-Application\-::create\-Camera (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_ad1285286a30e44011746fe80f3bc1aa0}
+\hypertarget{class_base_application_ab672d2b969b8530ee753f8b000d219c6}{\index{Base\-Application@{Base\-Application}!create\-Frame\-Listener@{create\-Frame\-Listener}}
+\index{create\-Frame\-Listener@{create\-Frame\-Listener}!BaseApplication@{Base\-Application}}
+\subsubsection[{create\-Frame\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\-Application\-::create\-Frame\-Listener (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_ab672d2b969b8530ee753f8b000d219c6}
+\hypertarget{class_base_application_ae2e1a92373a8ca12dcc8a9d51bb0a4cb}{\index{Base\-Application@{Base\-Application}!create\-G\-U\-I@{create\-G\-U\-I}}
+\index{create\-G\-U\-I@{create\-G\-U\-I}!BaseApplication@{Base\-Application}}
+\subsubsection[{create\-G\-U\-I}]{\setlength{\rightskip}{0pt plus 5cm}void Base\-Application\-::create\-G\-U\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_ae2e1a92373a8ca12dcc8a9d51bb0a4cb}
+creates the G\-U\-I interface \hypertarget{class_base_application_a9e916d51e4d73e355091d0662c175d85}{\index{Base\-Application@{Base\-Application}!create\-Resource\-Listener@{create\-Resource\-Listener}}
+\index{create\-Resource\-Listener@{create\-Resource\-Listener}!BaseApplication@{Base\-Application}}
+\subsubsection[{create\-Resource\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\-Application\-::create\-Resource\-Listener (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_a9e916d51e4d73e355091d0662c175d85}
+\hypertarget{class_base_application_aa97beeb4059b17d0ec22eae33286ec2d}{\index{Base\-Application@{Base\-Application}!create\-Scene@{create\-Scene}}
+\index{create\-Scene@{create\-Scene}!BaseApplication@{Base\-Application}}
+\subsubsection[{create\-Scene}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\-Application\-::create\-Scene (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_base_application_aa97beeb4059b17d0ec22eae33286ec2d}
+
+
+Implemented in \hyperlink{class_project_one_a61b71d677e7e4e3ac80071431b65ca5c}{Project\-One}.
+
+\hypertarget{class_base_application_a8e35ac97bd0cf7a3f90b280c8826389c}{\index{Base\-Application@{Base\-Application}!create\-Viewports@{create\-Viewports}}
+\index{create\-Viewports@{create\-Viewports}!BaseApplication@{Base\-Application}}
+\subsubsection[{create\-Viewports}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\-Application\-::create\-Viewports (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_a8e35ac97bd0cf7a3f90b280c8826389c}
+\hypertarget{class_base_application_ab61c91a38b99f98ff369ce8098a91133}{\index{Base\-Application@{Base\-Application}!destroy\-Scene@{destroy\-Scene}}
+\index{destroy\-Scene@{destroy\-Scene}!BaseApplication@{Base\-Application}}
+\subsubsection[{destroy\-Scene}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\-Application\-::destroy\-Scene (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_ab61c91a38b99f98ff369ce8098a91133}
+\hypertarget{class_base_application_a67bbbb14b9643246ce747ef27cc04c45}{\index{Base\-Application@{Base\-Application}!drop\-Level\-In3\-D\-Array@{drop\-Level\-In3\-D\-Array}}
+\index{drop\-Level\-In3\-D\-Array@{drop\-Level\-In3\-D\-Array}!BaseApplication@{Base\-Application}}
+\subsubsection[{drop\-Level\-In3\-D\-Array}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\-Application\-::drop\-Level\-In3\-D\-Array (
+\begin{DoxyParamCaption}
+\item[{int}]{array\-Clear\-Height\-New}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_a67bbbb14b9643246ce747ef27cc04c45}
+This method goes through the 3\-D array starting from the clear\-Height and moves each cell above the height down one in the y-\/direction (if the cell is not null) \hypertarget{class_base_application_adea8d433b93b66ec7ab48b7e244661df}{\index{Base\-Application@{Base\-Application}!frame\-Rendering\-Queued@{frame\-Rendering\-Queued}}
+\index{frame\-Rendering\-Queued@{frame\-Rendering\-Queued}!BaseApplication@{Base\-Application}}
+\subsubsection[{frame\-Rendering\-Queued}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Base\-Application\-::frame\-Rendering\-Queued (
+\begin{DoxyParamCaption}
+\item[{const Ogre\-::\-Frame\-Event \&}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_adea8d433b93b66ec7ab48b7e244661df}
+Ogre\-::\-Frame\-Listener \hypertarget{class_base_application_aed497661d1817ed9d659fb4de671ac1c}{\index{Base\-Application@{Base\-Application}!go@{go}}
+\index{go@{go}!BaseApplication@{Base\-Application}}
+\subsubsection[{go}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\-Application\-::go (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_base_application_aed497661d1817ed9d659fb4de671ac1c}
+\hypertarget{class_base_application_ad79efa8c9d6f0f6a3cf8a34c25a1bd5f}{\index{Base\-Application@{Base\-Application}!key\-Pressed@{key\-Pressed}}
+\index{key\-Pressed@{key\-Pressed}!BaseApplication@{Base\-Application}}
+\subsubsection[{key\-Pressed}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Base\-Application\-::key\-Pressed (
+\begin{DoxyParamCaption}
+\item[{const O\-I\-S\-::\-Key\-Event \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_ad79efa8c9d6f0f6a3cf8a34c25a1bd5f}
+O\-I\-S\-::\-Key\-Listener \hypertarget{class_base_application_a72dbb7e590af8f96904bc55eb1875a56}{\index{Base\-Application@{Base\-Application}!key\-Released@{key\-Released}}
+\index{key\-Released@{key\-Released}!BaseApplication@{Base\-Application}}
+\subsubsection[{key\-Released}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Base\-Application\-::key\-Released (
+\begin{DoxyParamCaption}
+\item[{const O\-I\-S\-::\-Key\-Event \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_a72dbb7e590af8f96904bc55eb1875a56}
+\hypertarget{class_base_application_a7d72de4f9e3d17ce0a4a034d780baf67}{\index{Base\-Application@{Base\-Application}!load\-Resources@{load\-Resources}}
+\index{load\-Resources@{load\-Resources}!BaseApplication@{Base\-Application}}
+\subsubsection[{load\-Resources}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\-Application\-::load\-Resources (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_a7d72de4f9e3d17ce0a4a034d780baf67}
+\hypertarget{class_base_application_abbb67365fb496300701dc7a6953936fe}{\index{Base\-Application@{Base\-Application}!mouse\-Moved@{mouse\-Moved}}
+\index{mouse\-Moved@{mouse\-Moved}!BaseApplication@{Base\-Application}}
+\subsubsection[{mouse\-Moved}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Base\-Application\-::mouse\-Moved (
+\begin{DoxyParamCaption}
+\item[{const O\-I\-S\-::\-Mouse\-Event \&}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_abbb67365fb496300701dc7a6953936fe}
+O\-I\-S\-::\-Mouse\-Listener \hypertarget{class_base_application_a51b515984916eb7a1582499ee3309ac5}{\index{Base\-Application@{Base\-Application}!mouse\-Pressed@{mouse\-Pressed}}
+\index{mouse\-Pressed@{mouse\-Pressed}!BaseApplication@{Base\-Application}}
+\subsubsection[{mouse\-Pressed}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Base\-Application\-::mouse\-Pressed (
+\begin{DoxyParamCaption}
+\item[{const O\-I\-S\-::\-Mouse\-Event \&}]{arg, }
+\item[{O\-I\-S\-::\-Mouse\-Button\-I\-D}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_a51b515984916eb7a1582499ee3309ac5}
+\hypertarget{class_base_application_ae347f583327e4ba1eb83f2df286c1d76}{\index{Base\-Application@{Base\-Application}!mouse\-Released@{mouse\-Released}}
+\index{mouse\-Released@{mouse\-Released}!BaseApplication@{Base\-Application}}
+\subsubsection[{mouse\-Released}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Base\-Application\-::mouse\-Released (
+\begin{DoxyParamCaption}
+\item[{const O\-I\-S\-::\-Mouse\-Event \&}]{arg, }
+\item[{O\-I\-S\-::\-Mouse\-Button\-I\-D}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_ae347f583327e4ba1eb83f2df286c1d76}
+\hypertarget{class_base_application_a344f227b3fb9c4ed73823d4f6ec8e30c}{\index{Base\-Application@{Base\-Application}!next\-Level@{next\-Level}}
+\index{next\-Level@{next\-Level}!BaseApplication@{Base\-Application}}
+\subsubsection[{next\-Level}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\-Application\-::next\-Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_a344f227b3fb9c4ed73823d4f6ec8e30c}
+This method iterates up a level to the next level \hypertarget{class_base_application_a0bc96be61b7f2cc41e3b7ac416900c91}{\index{Base\-Application@{Base\-Application}!random\-Shape@{random\-Shape}}
+\index{random\-Shape@{random\-Shape}!BaseApplication@{Base\-Application}}
+\subsubsection[{random\-Shape}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\-Application\-::random\-Shape (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_a0bc96be61b7f2cc41e3b7ac416900c91}
+This method gets a random shape from an option of 6 and then sets a bool to true to say that shape has been used, This is an adaptation of the 7 bag algorithm used in tetris the shape cannot be used again until all shapes bools have been set to true (This creates semi-\/randomly generated shapes as completely random would make the game unplayable) \hypertarget{class_base_application_ae548b5e3ac0cf92d4dc7d478a8f01922}{\index{Base\-Application@{Base\-Application}!setup@{setup}}
+\index{setup@{setup}!BaseApplication@{Base\-Application}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Base\-Application\-::setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_ae548b5e3ac0cf92d4dc7d478a8f01922}
+\hypertarget{class_base_application_aa71428aeca821504352f5f795e6a9226}{\index{Base\-Application@{Base\-Application}!setup\-Resources@{setup\-Resources}}
+\index{setup\-Resources@{setup\-Resources}!BaseApplication@{Base\-Application}}
+\subsubsection[{setup\-Resources}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\-Application\-::setup\-Resources (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_aa71428aeca821504352f5f795e6a9226}
+\hypertarget{class_base_application_aa7130c376136aa3a9b121e2dee561aed}{\index{Base\-Application@{Base\-Application}!window\-Closed@{window\-Closed}}
+\index{window\-Closed@{window\-Closed}!BaseApplication@{Base\-Application}}
+\subsubsection[{window\-Closed}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\-Application\-::window\-Closed (
+\begin{DoxyParamCaption}
+\item[{Ogre\-::\-Render\-Window $\ast$}]{rw}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_aa7130c376136aa3a9b121e2dee561aed}
+\hypertarget{class_base_application_afe5d7ca9e0f0575b4046c1412e314e69}{\index{Base\-Application@{Base\-Application}!window\-Resized@{window\-Resized}}
+\index{window\-Resized@{window\-Resized}!BaseApplication@{Base\-Application}}
+\subsubsection[{window\-Resized}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\-Application\-::window\-Resized (
+\begin{DoxyParamCaption}
+\item[{Ogre\-::\-Render\-Window $\ast$}]{rw}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_base_application_afe5d7ca9e0f0575b4046c1412e314e69}
+Ogre\-::\-Window\-Event\-Listener 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_base_application_a7e2bb2cec7b0185bf861d5bf5f8c015c}{\index{Base\-Application@{Base\-Application}!\-\_\-timer@{\-\_\-timer}}
+\index{\-\_\-timer@{\-\_\-timer}!BaseApplication@{Base\-Application}}
+\subsubsection[{\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Timer Base\-Application\-::\-\_\-timer\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a7e2bb2cec7b0185bf861d5bf5f8c015c}
+timer \hypertarget{class_base_application_a1d4876d5a2f4d69a9a0fae61ee8f5127}{\index{Base\-Application@{Base\-Application}!array3\-D@{array3\-D}}
+\index{array3\-D@{array3\-D}!BaseApplication@{Base\-Application}}
+\subsubsection[{array3\-D}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$vector$<${\bf Cube}$\ast$$>$ $>$ $>$ Base\-Application\-::array3\-D\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a1d4876d5a2f4d69a9a0fae61ee8f5127}
+(the grid) an empty 3\-D array of cubes used to store pointers to cubes as shapes drop into place into the grid constantly changed and updated with new positions \hypertarget{class_base_application_a1c1a812d975a0a98781314580f84c920}{\index{Base\-Application@{Base\-Application}!array\-Clear\-Height@{array\-Clear\-Height}}
+\index{array\-Clear\-Height@{array\-Clear\-Height}!BaseApplication@{Base\-Application}}
+\subsubsection[{array\-Clear\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::array\-Clear\-Height\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a1c1a812d975a0a98781314580f84c920}
+integer used to indicate what height a layer has been cleared from the 3\-D Array \hypertarget{class_base_application_a365f02117f2afc6bc4d54aa7569cbee5}{\index{Base\-Application@{Base\-Application}!array\-Depth@{array\-Depth}}
+\index{array\-Depth@{array\-Depth}!BaseApplication@{Base\-Application}}
+\subsubsection[{array\-Depth}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::array\-Depth\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a365f02117f2afc6bc4d54aa7569cbee5}
+integer used to store the array depth \hypertarget{class_base_application_a6a0a6b2fd0467a5d206da0a60c68b660}{\index{Base\-Application@{Base\-Application}!array\-Height@{array\-Height}}
+\index{array\-Height@{array\-Height}!BaseApplication@{Base\-Application}}
+\subsubsection[{array\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::array\-Height\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a6a0a6b2fd0467a5d206da0a60c68b660}
+integer used to store the array height \hypertarget{class_base_application_a7d8a377aa221a84cdf095927bcb48526}{\index{Base\-Application@{Base\-Application}!array\-Width@{array\-Width}}
+\index{array\-Width@{array\-Width}!BaseApplication@{Base\-Application}}
+\subsubsection[{array\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::array\-Width\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a7d8a377aa221a84cdf095927bcb48526}
+integer used to store the array width \hypertarget{class_base_application_ade32bf8c002709296ed8d0a789d8cbba}{\index{Base\-Application@{Base\-Application}!boxes@{boxes}}
+\index{boxes@{boxes}!BaseApplication@{Base\-Application}}
+\subsubsection[{boxes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf box}$\ast$$>$ Base\-Application\-::boxes\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_ade32bf8c002709296ed8d0a789d8cbba}
+vector containers used to store each type of shape and to allow for many instances of each shape ( I considered using a heterogenous container but decided not to) (also I know that there is a memory leak as I do not currently delete shapes in the cells that are not shown during gameplay \hypertarget{class_base_application_ab6938e41749182bbe867f455ad52cf09}{\index{Base\-Application@{Base\-Application}!channel@{channel}}
+\index{channel@{channel}!BaseApplication@{Base\-Application}}
+\subsubsection[{channel}]{\setlength{\rightskip}{0pt plus 5cm}F\-M\-O\-D\-::\-Channel$\ast$ Base\-Application\-::channel\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_ab6938e41749182bbe867f455ad52cf09}
+\hypertarget{class_base_application_aceea4286991e9718baa4278671d8c836}{\index{Base\-Application@{Base\-Application}!channel2@{channel2}}
+\index{channel2@{channel2}!BaseApplication@{Base\-Application}}
+\subsubsection[{channel2}]{\setlength{\rightskip}{0pt plus 5cm}F\-M\-O\-D\-::\-Channel$\ast$ Base\-Application\-::channel2\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_aceea4286991e9718baa4278671d8c836}
+\hypertarget{class_base_application_adfa511eb6241720fc95c1c32f92deb80}{\index{Base\-Application@{Base\-Application}!channel3@{channel3}}
+\index{channel3@{channel3}!BaseApplication@{Base\-Application}}
+\subsubsection[{channel3}]{\setlength{\rightskip}{0pt plus 5cm}F\-M\-O\-D\-::\-Channel$\ast$ Base\-Application\-::channel3\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_adfa511eb6241720fc95c1c32f92deb80}
+\hypertarget{class_base_application_a6cc81cb0cda55bee078cd0fe4a053a55}{\index{Base\-Application@{Base\-Application}!current\-Box\-Shape\-Cell@{current\-Box\-Shape\-Cell}}
+\index{current\-Box\-Shape\-Cell@{current\-Box\-Shape\-Cell}!BaseApplication@{Base\-Application}}
+\subsubsection[{current\-Box\-Shape\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::current\-Box\-Shape\-Cell\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a6cc81cb0cda55bee078cd0fe4a053a55}
+\hypertarget{class_base_application_a1408e82cf9d072d8b35505b7f42d8565}{\index{Base\-Application@{Base\-Application}!current\-Level@{current\-Level}}
+\index{current\-Level@{current\-Level}!BaseApplication@{Base\-Application}}
+\subsubsection[{current\-Level}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::current\-Level\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a1408e82cf9d072d8b35505b7f42d8565}
+The current level \hypertarget{class_base_application_a53b5c467e53fde6b453021bff907b26d}{\index{Base\-Application@{Base\-Application}!currentl\-Shape\-Cell@{currentl\-Shape\-Cell}}
+\index{currentl\-Shape\-Cell@{currentl\-Shape\-Cell}!BaseApplication@{Base\-Application}}
+\subsubsection[{currentl\-Shape\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::currentl\-Shape\-Cell\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a53b5c467e53fde6b453021bff907b26d}
+\hypertarget{class_base_application_ad8dd5ed80f7ab80b4c8a88e83b251b05}{\index{Base\-Application@{Base\-Application}!currentl\-Shape\-Opp\-Cell@{currentl\-Shape\-Opp\-Cell}}
+\index{currentl\-Shape\-Opp\-Cell@{currentl\-Shape\-Opp\-Cell}!BaseApplication@{Base\-Application}}
+\subsubsection[{currentl\-Shape\-Opp\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::currentl\-Shape\-Opp\-Cell\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_ad8dd5ed80f7ab80b4c8a88e83b251b05}
+\hypertarget{class_base_application_ae6b860cfe7188f6c1dd32bd6fecfd2a9}{\index{Base\-Application@{Base\-Application}!current\-Shape\-Type@{current\-Shape\-Type}}
+\index{current\-Shape\-Type@{current\-Shape\-Type}!BaseApplication@{Base\-Application}}
+\subsubsection[{current\-Shape\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Base\-Application\-::\-Current\-Shape\-Type}  Base\-Application\-::current\-Shape\-Type\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_ae6b860cfe7188f6c1dd32bd6fecfd2a9}
+\hypertarget{class_base_application_ae43613d0e1142a6e9b12723d5b49da1b}{\index{Base\-Application@{Base\-Application}!current\-T\-Shape\-Cell@{current\-T\-Shape\-Cell}}
+\index{current\-T\-Shape\-Cell@{current\-T\-Shape\-Cell}!BaseApplication@{Base\-Application}}
+\subsubsection[{current\-T\-Shape\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::current\-T\-Shape\-Cell\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_ae43613d0e1142a6e9b12723d5b49da1b}
+\hypertarget{class_base_application_a46497f2f8c6f6b9e34bcb7986882715f}{\index{Base\-Application@{Base\-Application}!current\-T\-Shape\-Opp\-Cell@{current\-T\-Shape\-Opp\-Cell}}
+\index{current\-T\-Shape\-Opp\-Cell@{current\-T\-Shape\-Opp\-Cell}!BaseApplication@{Base\-Application}}
+\subsubsection[{current\-T\-Shape\-Opp\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::current\-T\-Shape\-Opp\-Cell\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a46497f2f8c6f6b9e34bcb7986882715f}
+\hypertarget{class_base_application_a9bff1519bcaf61fc3cbcc3c66ec273a3}{\index{Base\-Application@{Base\-Application}!current\-Z\-Shape\-Cell@{current\-Z\-Shape\-Cell}}
+\index{current\-Z\-Shape\-Cell@{current\-Z\-Shape\-Cell}!BaseApplication@{Base\-Application}}
+\subsubsection[{current\-Z\-Shape\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::current\-Z\-Shape\-Cell\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a9bff1519bcaf61fc3cbcc3c66ec273a3}
+an integer value for each shape used to iterate through the vector for every type of shape and to keep track of the current position in the vectors \hypertarget{class_base_application_a4a21a832334bce0266af82d97208c5d1}{\index{Base\-Application@{Base\-Application}!effects@{effects}}
+\index{effects@{effects}!BaseApplication@{Base\-Application}}
+\subsubsection[{effects}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\-Application\-::effects\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a4a21a832334bce0266af82d97208c5d1}
+\hypertarget{class_base_application_ac45b5d8be5f852e28d13b2009c45b5a5}{\index{Base\-Application@{Base\-Application}!F\-M\-O\-Dsys@{F\-M\-O\-Dsys}}
+\index{F\-M\-O\-Dsys@{F\-M\-O\-Dsys}!BaseApplication@{Base\-Application}}
+\subsubsection[{F\-M\-O\-Dsys}]{\setlength{\rightskip}{0pt plus 5cm}F\-M\-O\-D\-::\-System$\ast$ Base\-Application\-::\-F\-M\-O\-Dsys\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_ac45b5d8be5f852e28d13b2009c45b5a5}
+all F\-M\-O\-D obejects needed for sound \hypertarget{class_base_application_adadae473e6c936a899153c205c2de07d}{\index{Base\-Application@{Base\-Application}!init@{init}}
+\index{init@{init}!BaseApplication@{Base\-Application}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\-Application\-::init\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_adadae473e6c936a899153c205c2de07d}
+initialisation bool for when game starts to show G\-U\-I and to call the first random shape \hypertarget{class_base_application_a854f2a19c04bc06c187fcf5f771966cc}{\index{Base\-Application@{Base\-Application}!layers\-Cleared@{layers\-Cleared}}
+\index{layers\-Cleared@{layers\-Cleared}!BaseApplication@{Base\-Application}}
+\subsubsection[{layers\-Cleared}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::layers\-Cleared\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a854f2a19c04bc06c187fcf5f771966cc}
+amount of full layers cleared \hypertarget{class_base_application_ad4c357854ba045adac9bd2016452bb8b}{\index{Base\-Application@{Base\-Application}!l\-Opp\-Shapes@{l\-Opp\-Shapes}}
+\index{l\-Opp\-Shapes@{l\-Opp\-Shapes}!BaseApplication@{Base\-Application}}
+\subsubsection[{l\-Opp\-Shapes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf l\-Shape\-Opp}$\ast$$>$ Base\-Application\-::l\-Opp\-Shapes\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_ad4c357854ba045adac9bd2016452bb8b}
+\hypertarget{class_base_application_a064956fbdf1b5ae2c187530ec7642b68}{\index{Base\-Application@{Base\-Application}!l\-Shapes@{l\-Shapes}}
+\index{l\-Shapes@{l\-Shapes}!BaseApplication@{Base\-Application}}
+\subsubsection[{l\-Shapes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf l\-Shape}$\ast$$>$ Base\-Application\-::l\-Shapes\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a064956fbdf1b5ae2c187530ec7642b68}
+\hypertarget{class_base_application_a24c535ef10e1f77e477e0adc783b2245}{\index{Base\-Application@{Base\-Application}!m\-\_\-p\-Log@{m\-\_\-p\-Log}}
+\index{m\-\_\-p\-Log@{m\-\_\-p\-Log}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-\_\-p\-Log}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Log$\ast$ Base\-Application\-::m\-\_\-p\-Log\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a24c535ef10e1f77e477e0adc783b2245}
+logger used for error checking \hypertarget{class_base_application_adf36bb25e5d307e0b4433489c8227b46}{\index{Base\-Application@{Base\-Application}!main\-Tick\-Value@{main\-Tick\-Value}}
+\index{main\-Tick\-Value@{main\-Tick\-Value}!BaseApplication@{Base\-Application}}
+\subsubsection[{main\-Tick\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::main\-Tick\-Value}}\label{class_base_application_adf36bb25e5d307e0b4433489c8227b46}
+the main tick value for dropping shapes in milliseconds (changes the speed in which the shapes dropp) \hypertarget{class_base_application_a3829c6b12afe911e97e6b4524b33a38b}{\index{Base\-Application@{Base\-Application}!m\-Camera@{m\-Camera}}
+\index{m\-Camera@{m\-Camera}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Camera$\ast$ Base\-Application\-::m\-Camera\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a3829c6b12afe911e97e6b4524b33a38b}
+camera \hypertarget{class_base_application_a9ae38dea6316058549151fff66a91fcd}{\index{Base\-Application@{Base\-Application}!m\-Camera\-Man@{m\-Camera\-Man}}
+\index{m\-Camera\-Man@{m\-Camera\-Man}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-Camera\-Man}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-Bites\-::\-Sdk\-Camera\-Man$\ast$ Base\-Application\-::m\-Camera\-Man\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a9ae38dea6316058549151fff66a91fcd}
+\hypertarget{class_base_application_ac7e861799862cb645f1d78b170aef80d}{\index{Base\-Application@{Base\-Application}!m\-Cursor\-Was\-Visible@{m\-Cursor\-Was\-Visible}}
+\index{m\-Cursor\-Was\-Visible@{m\-Cursor\-Was\-Visible}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-Cursor\-Was\-Visible}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\-Application\-::m\-Cursor\-Was\-Visible\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_ac7e861799862cb645f1d78b170aef80d}
+\hypertarget{class_base_application_a6a11054ca61efdf558e0ff1b2de43a12}{\index{Base\-Application@{Base\-Application}!m\-Details\-Panel@{m\-Details\-Panel}}
+\index{m\-Details\-Panel@{m\-Details\-Panel}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-Details\-Panel}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-Bites\-::\-Params\-Panel$\ast$ Base\-Application\-::m\-Details\-Panel\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a6a11054ca61efdf558e0ff1b2de43a12}
+\hypertarget{class_base_application_aaa51f685a5ab1f23b6152f12dbdd86a5}{\index{Base\-Application@{Base\-Application}!m\-Gui3\-D@{m\-Gui3\-D}}
+\index{m\-Gui3\-D@{m\-Gui3\-D}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-Gui3\-D}]{\setlength{\rightskip}{0pt plus 5cm}Gui3\-D\-::\-Gui3\-D$\ast$ Base\-Application\-::m\-Gui3\-D\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_aaa51f685a5ab1f23b6152f12dbdd86a5}
+G\-U\-I\-D main object \hypertarget{class_base_application_abc9503c8462e225b5d0d55c952d9e4a9}{\index{Base\-Application@{Base\-Application}!m\-Input\-Manager@{m\-Input\-Manager}}
+\index{m\-Input\-Manager@{m\-Input\-Manager}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-Input\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}O\-I\-S\-::\-Input\-Manager$\ast$ Base\-Application\-::m\-Input\-Manager\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_abc9503c8462e225b5d0d55c952d9e4a9}
+Input devices \hypertarget{class_base_application_a9d6e19cf50c47379fbaae55bff28079c}{\index{Base\-Application@{Base\-Application}!m\-Keyboard@{m\-Keyboard}}
+\index{m\-Keyboard@{m\-Keyboard}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-Keyboard}]{\setlength{\rightskip}{0pt plus 5cm}O\-I\-S\-::\-Keyboard$\ast$ Base\-Application\-::m\-Keyboard\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a9d6e19cf50c47379fbaae55bff28079c}
+\hypertarget{class_base_application_add9b97fbe64da2814d3af113bac58c43}{\index{Base\-Application@{Base\-Application}!m\-Mouse@{m\-Mouse}}
+\index{m\-Mouse@{m\-Mouse}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-Mouse}]{\setlength{\rightskip}{0pt plus 5cm}O\-I\-S\-::\-Mouse$\ast$ Base\-Application\-::m\-Mouse\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_add9b97fbe64da2814d3af113bac58c43}
+\hypertarget{class_base_application_ae282cc9731cc19ae3f7c1889091c6480}{\index{Base\-Application@{Base\-Application}!m\-My\-Simple\-Demo\-Panel\-Colors@{m\-My\-Simple\-Demo\-Panel\-Colors}}
+\index{m\-My\-Simple\-Demo\-Panel\-Colors@{m\-My\-Simple\-Demo\-Panel\-Colors}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-My\-Simple\-Demo\-Panel\-Colors}]{\setlength{\rightskip}{0pt plus 5cm}{\bf My\-Simple\-Demo\-Panel\-Colors} Base\-Application\-::m\-My\-Simple\-Demo\-Panel\-Colors\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_ae282cc9731cc19ae3f7c1889091c6480}
+\hypertarget{class_base_application_ad367e0814cd650819f0a6b8460488f2f}{\index{Base\-Application@{Base\-Application}!m\-Panel@{m\-Panel}}
+\index{m\-Panel@{m\-Panel}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-Panel}]{\setlength{\rightskip}{0pt plus 5cm}Gui3\-D\-::\-Panel$\ast$ Base\-Application\-::m\-Panel\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_ad367e0814cd650819f0a6b8460488f2f}
+The Main Panel \hypertarget{class_base_application_a04f2fe47fa164fd78d986dc0df70b7fb}{\index{Base\-Application@{Base\-Application}!m\-Plugins\-Cfg@{m\-Plugins\-Cfg}}
+\index{m\-Plugins\-Cfg@{m\-Plugins\-Cfg}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-Plugins\-Cfg}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-String Base\-Application\-::m\-Plugins\-Cfg\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a04f2fe47fa164fd78d986dc0df70b7fb}
+\hypertarget{class_base_application_a765e0df01c141a16df3178ab4f17afe6}{\index{Base\-Application@{Base\-Application}!m\-Resources\-Cfg@{m\-Resources\-Cfg}}
+\index{m\-Resources\-Cfg@{m\-Resources\-Cfg}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-Resources\-Cfg}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-String Base\-Application\-::m\-Resources\-Cfg\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a765e0df01c141a16df3178ab4f17afe6}
+\hypertarget{class_base_application_add84ba707dc6c57e6283f214b1274110}{\index{Base\-Application@{Base\-Application}!m\-Root@{m\-Root}}
+\index{m\-Root@{m\-Root}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-Root}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Root$\ast$ Base\-Application\-::m\-Root\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_add84ba707dc6c57e6283f214b1274110}
+\hypertarget{class_base_application_a8a7684f4f9a57ed3089048ad1a913b2d}{\index{Base\-Application@{Base\-Application}!m\-Scene\-Mgr@{m\-Scene\-Mgr}}
+\index{m\-Scene\-Mgr@{m\-Scene\-Mgr}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-Scene\-Mgr}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Scene\-Manager$\ast$ Base\-Application\-::m\-Scene\-Mgr\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a8a7684f4f9a57ed3089048ad1a913b2d}
+scene\-Manager \hypertarget{class_base_application_a755f26d3a9915aaf830750d877e39d86}{\index{Base\-Application@{Base\-Application}!m\-Shut\-Down@{m\-Shut\-Down}}
+\index{m\-Shut\-Down@{m\-Shut\-Down}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-Shut\-Down}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\-Application\-::m\-Shut\-Down\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a755f26d3a9915aaf830750d877e39d86}
+bool used to end the game \hypertarget{class_base_application_a7faa397f4f4861ee8c361a01e90b4416}{\index{Base\-Application@{Base\-Application}!m\-Tray\-Mgr@{m\-Tray\-Mgr}}
+\index{m\-Tray\-Mgr@{m\-Tray\-Mgr}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-Tray\-Mgr}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-Bites\-::\-Sdk\-Tray\-Manager$\ast$ Base\-Application\-::m\-Tray\-Mgr\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a7faa397f4f4861ee8c361a01e90b4416}
+Ogre bites \hypertarget{class_base_application_a3cd36d39f168b56476c22d27cf9cb429}{\index{Base\-Application@{Base\-Application}!music@{music}}
+\index{music@{music}!BaseApplication@{Base\-Application}}
+\subsubsection[{music}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\-Application\-::music\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a3cd36d39f168b56476c22d27cf9cb429}
+music and effects for F\-M\-O\-D \hypertarget{class_base_application_ac5d8e9c81e036897bc82f81eff8c570f}{\index{Base\-Application@{Base\-Application}!m\-Window@{m\-Window}}
+\index{m\-Window@{m\-Window}!BaseApplication@{Base\-Application}}
+\subsubsection[{m\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Render\-Window$\ast$ Base\-Application\-::m\-Window\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_ac5d8e9c81e036897bc82f81eff8c570f}
+render\-Window \hypertarget{class_base_application_a48aa9aa0d39fac2805d912b9f4e8d593}{\index{Base\-Application@{Base\-Application}!next\-Level\-Amount@{next\-Level\-Amount}}
+\index{next\-Level\-Amount@{next\-Level\-Amount}!BaseApplication@{Base\-Application}}
+\subsubsection[{next\-Level\-Amount}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::next\-Level\-Amount\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a48aa9aa0d39fac2805d912b9f4e8d593}
+the amount of layers that need to be cleared before progressing to the next level \hypertarget{class_base_application_abaf901b9f1c0b913235a8d818ece8772}{\index{Base\-Application@{Base\-Application}!next\-Level\-Int@{next\-Level\-Int}}
+\index{next\-Level\-Int@{next\-Level\-Int}!BaseApplication@{Base\-Application}}
+\subsubsection[{next\-Level\-Int}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::next\-Level\-Int\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_abaf901b9f1c0b913235a8d818ece8772}
+variable used to store an integer to progressing to the next level \hypertarget{class_base_application_ad50a268c7b77ee4e910eca0d96430705}{\index{Base\-Application@{Base\-Application}!result@{result}}
+\index{result@{result}!BaseApplication@{Base\-Application}}
+\subsubsection[{result}]{\setlength{\rightskip}{0pt plus 5cm}F\-M\-O\-D\-\_\-\-R\-E\-S\-U\-L\-T Base\-Application\-::result\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_ad50a268c7b77ee4e910eca0d96430705}
+\hypertarget{class_base_application_a92820c32798f0d3928fcce24787eda1f}{\index{Base\-Application@{Base\-Application}!reverb@{reverb}}
+\index{reverb@{reverb}!BaseApplication@{Base\-Application}}
+\subsubsection[{reverb}]{\setlength{\rightskip}{0pt plus 5cm}F\-M\-O\-D\-::\-Reverb$\ast$ Base\-Application\-::reverb\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a92820c32798f0d3928fcce24787eda1f}
+\hypertarget{class_base_application_a1b0ab0994f1beef254a3020b5b2a0945}{\index{Base\-Application@{Base\-Application}!reverb2@{reverb2}}
+\index{reverb2@{reverb2}!BaseApplication@{Base\-Application}}
+\subsubsection[{reverb2}]{\setlength{\rightskip}{0pt plus 5cm}F\-M\-O\-D\-::\-Reverb$\ast$ Base\-Application\-::reverb2\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a1b0ab0994f1beef254a3020b5b2a0945}
+\hypertarget{class_base_application_a681cfe91d2cee55f8d783651a074fdcf}{\index{Base\-Application@{Base\-Application}!score@{score}}
+\index{score@{score}!BaseApplication@{Base\-Application}}
+\subsubsection[{score}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::score\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a681cfe91d2cee55f8d783651a074fdcf}
+score \hypertarget{class_base_application_a4484039f7dfe0e4eaa962a4fa781bc88}{\index{Base\-Application@{Base\-Application}!score\-Multiplier@{score\-Multiplier}}
+\index{score\-Multiplier@{score\-Multiplier}!BaseApplication@{Base\-Application}}
+\subsubsection[{score\-Multiplier}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::score\-Multiplier\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a4484039f7dfe0e4eaa962a4fa781bc88}
+score multiplier \hypertarget{class_base_application_aea4ddf4bf2fe2f475e75ac1754e64b0c}{\index{Base\-Application@{Base\-Application}!sound@{sound}}
+\index{sound@{sound}!BaseApplication@{Base\-Application}}
+\subsubsection[{sound}]{\setlength{\rightskip}{0pt plus 5cm}F\-M\-O\-D\-::\-Sound$\ast$ Base\-Application\-::sound\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_aea4ddf4bf2fe2f475e75ac1754e64b0c}
+\hypertarget{class_base_application_aab866d736fb7032813be4f0692bf40a6}{\index{Base\-Application@{Base\-Application}!sound\-Drop@{sound\-Drop}}
+\index{sound\-Drop@{sound\-Drop}!BaseApplication@{Base\-Application}}
+\subsubsection[{sound\-Drop}]{\setlength{\rightskip}{0pt plus 5cm}F\-M\-O\-D\-::\-Sound$\ast$ Base\-Application\-::sound\-Drop\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_aab866d736fb7032813be4f0692bf40a6}
+\hypertarget{class_base_application_ac1cb587fccc3d6d0a263d484bc6829bc}{\index{Base\-Application@{Base\-Application}!sound\-Start@{sound\-Start}}
+\index{sound\-Start@{sound\-Start}!BaseApplication@{Base\-Application}}
+\subsubsection[{sound\-Start}]{\setlength{\rightskip}{0pt plus 5cm}F\-M\-O\-D\-::\-Sound$\ast$ Base\-Application\-::sound\-Start\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_ac1cb587fccc3d6d0a263d484bc6829bc}
+\hypertarget{class_base_application_aad18724507e497250a90dd9d12d24920}{\index{Base\-Application@{Base\-Application}!timer\-C\-H\-E\-C\-K@{timer\-C\-H\-E\-C\-K}}
+\index{timer\-C\-H\-E\-C\-K@{timer\-C\-H\-E\-C\-K}!BaseApplication@{Base\-Application}}
+\subsubsection[{timer\-C\-H\-E\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}int Base\-Application\-::timer\-C\-H\-E\-C\-K\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_aad18724507e497250a90dd9d12d24920}
+\hypertarget{class_base_application_a38ff9c55061692b43d1d56de9bf3a363}{\index{Base\-Application@{Base\-Application}!t\-Opp\-Shapes@{t\-Opp\-Shapes}}
+\index{t\-Opp\-Shapes@{t\-Opp\-Shapes}!BaseApplication@{Base\-Application}}
+\subsubsection[{t\-Opp\-Shapes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf t\-Shape\-Opp}$\ast$$>$ Base\-Application\-::t\-Opp\-Shapes\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a38ff9c55061692b43d1d56de9bf3a363}
+\hypertarget{class_base_application_aec2d0eebbcdd4364649da4f412cdbb24}{\index{Base\-Application@{Base\-Application}!t\-Shapes@{t\-Shapes}}
+\index{t\-Shapes@{t\-Shapes}!BaseApplication@{Base\-Application}}
+\subsubsection[{t\-Shapes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf t\-Shape}$\ast$$>$ Base\-Application\-::t\-Shapes\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_aec2d0eebbcdd4364649da4f412cdbb24}
+\hypertarget{class_base_application_a97e267ce8eda15e4bec536817d9546ee}{\index{Base\-Application@{Base\-Application}!used\-Box\-Shape@{used\-Box\-Shape}}
+\index{used\-Box\-Shape@{used\-Box\-Shape}!BaseApplication@{Base\-Application}}
+\subsubsection[{used\-Box\-Shape}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\-Application\-::used\-Box\-Shape\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a97e267ce8eda15e4bec536817d9546ee}
+\hypertarget{class_base_application_a1192e80769f65e87c5cc6d7aa37d3040}{\index{Base\-Application@{Base\-Application}!usedl\-Shape@{usedl\-Shape}}
+\index{usedl\-Shape@{usedl\-Shape}!BaseApplication@{Base\-Application}}
+\subsubsection[{usedl\-Shape}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\-Application\-::usedl\-Shape\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a1192e80769f65e87c5cc6d7aa37d3040}
+\hypertarget{class_base_application_a1617c0606b49229803b7a3ecb2d6f936}{\index{Base\-Application@{Base\-Application}!usedl\-Shape\-Opp@{usedl\-Shape\-Opp}}
+\index{usedl\-Shape\-Opp@{usedl\-Shape\-Opp}!BaseApplication@{Base\-Application}}
+\subsubsection[{usedl\-Shape\-Opp}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\-Application\-::usedl\-Shape\-Opp\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a1617c0606b49229803b7a3ecb2d6f936}
+\hypertarget{class_base_application_a77fa12fbd79ae12dc609b29859452e51}{\index{Base\-Application@{Base\-Application}!used\-T\-Shape@{used\-T\-Shape}}
+\index{used\-T\-Shape@{used\-T\-Shape}!BaseApplication@{Base\-Application}}
+\subsubsection[{used\-T\-Shape}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\-Application\-::used\-T\-Shape\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a77fa12fbd79ae12dc609b29859452e51}
+\hypertarget{class_base_application_a0997587550f66c6425a2fae78f64e2b1}{\index{Base\-Application@{Base\-Application}!used\-T\-Shape\-Opp@{used\-T\-Shape\-Opp}}
+\index{used\-T\-Shape\-Opp@{used\-T\-Shape\-Opp}!BaseApplication@{Base\-Application}}
+\subsubsection[{used\-T\-Shape\-Opp}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\-Application\-::used\-T\-Shape\-Opp\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_a0997587550f66c6425a2fae78f64e2b1}
+\hypertarget{class_base_application_abde703d00837e1f9c80698e820529a95}{\index{Base\-Application@{Base\-Application}!used\-Z\-Shape@{used\-Z\-Shape}}
+\index{used\-Z\-Shape@{used\-Z\-Shape}!BaseApplication@{Base\-Application}}
+\subsubsection[{used\-Z\-Shape}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\-Application\-::used\-Z\-Shape\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_abde703d00837e1f9c80698e820529a95}
+a bool for each shape used to indicate if the shape has been used in one iteration of the 7 bag algorithm (will reset to false when every shape has been used once allowing the shapes to be used again) \hypertarget{class_base_application_aa412bf0f968f597ca1ab77738eafd5f5}{\index{Base\-Application@{Base\-Application}!z\-Shapes@{z\-Shapes}}
+\index{z\-Shapes@{z\-Shapes}!BaseApplication@{Base\-Application}}
+\subsubsection[{z\-Shapes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf z\-Shape}$\ast$$>$ Base\-Application\-::z\-Shapes\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_base_application_aa412bf0f968f597ca1ab77738eafd5f5}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Aoibhinn/\-Desktop/finished/\-Project\-Colour/\-Project\-One/\-Project\-One/\-Project\-One/include/\hyperlink{_base_application_8h}{Base\-Application.\-h}\end{DoxyCompactItemize}

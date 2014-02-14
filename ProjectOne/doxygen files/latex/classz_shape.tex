@@ -1,0 +1,286 @@
+\hypertarget{classz_shape}{\section{z\-Shape Class Reference}
+\label{classz_shape}\index{z\-Shape@{z\-Shape}}
+}
+
+
+{\ttfamily \#include $<$z\-Shape.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classz_shape_ab60d2ccafff31987c3134b99ffdfc168}{Direction\-Facing} \{ \hyperlink{classz_shape_ab60d2ccafff31987c3134b99ffdfc168a98b5b9f6eef05dacfae77a1c2c5f673e}{forward}, 
+\hyperlink{classz_shape_ab60d2ccafff31987c3134b99ffdfc168a015e7b2c5830dee71428db58cbe54e91}{backward}, 
+\hyperlink{classz_shape_ab60d2ccafff31987c3134b99ffdfc168ac37933597ccfb2403963ab3478b1ba02}{left}, 
+\hyperlink{classz_shape_ab60d2ccafff31987c3134b99ffdfc168a577911cbdcc7c610f87e71814cfdad6c}{right}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classz_shape_a43735d5c74aa0ab56ba2dcdc392d5212}{z\-Shape} (Ogre\-::\-Scene\-Manager $\ast$, string m\-Name, string)
+\item 
+void \hyperlink{classz_shape_a2d6800f8defaa73954657e103257a520}{Update} (double, O\-I\-S\-::\-Keyboard $\ast$, vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D, int main\-Tick\-Value)
+\item 
+void \hyperlink{classz_shape_aebd07968a31f6bf2e3378227d3a4f1a7}{rotate\-Right} (double, vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D)
+\item 
+void \hyperlink{classz_shape_a6475eb27003e84467d73dea3603520ed}{rotate\-Left} (double, vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D)
+\item 
+void \hyperlink{classz_shape_a95fbe17176889608178c1831ade80c16}{is\-Dropping} (vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D)
+\item 
+void \hyperlink{classz_shape_ac599f1a0c6920db0ee7fee7bbe2268e9}{check\-Bounds} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classz_shape_ab573e49ed92efb74eea99eeb6015a8f0}{cube0boundary\-X}
+\item 
+int \hyperlink{classz_shape_a40fae2a3019c20406dc8dbbc9613becf}{cube0boundary\-X2}
+\item 
+int \hyperlink{classz_shape_a86d5935ac17eb4014518b32a0b7d0b20}{cube1boundary\-X}
+\item 
+int \hyperlink{classz_shape_a5195d555defef38a13c147cde4610124}{cube1boundary\-X2}
+\item 
+int \hyperlink{classz_shape_aadc304ad5e51018cd0217bc6f0a39165}{cube2boundary\-X}
+\item 
+int \hyperlink{classz_shape_a803a7236cf186faa5ea0ee7c86639ba7}{cube2boundary\-X2}
+\item 
+int \hyperlink{classz_shape_aeb96887365de974440f8494c9da2b097}{cube3boundary\-X}
+\item 
+int \hyperlink{classz_shape_ab3e6d24301edea1a2d7d35ca34d5b6ad}{cube3boundary\-X2}
+\item 
+int \hyperlink{classz_shape_a1137620e91f77e816ef97e4e2667499b}{cube0boundary\-Z}
+\item 
+int \hyperlink{classz_shape_a2d03d0e4d7a150d8d0f5370a4514262f}{cube0boundary\-Z2}
+\item 
+int \hyperlink{classz_shape_ab1ef86f5f194e4d9cd51488b33ed6642}{cube1boundary\-Z}
+\item 
+int \hyperlink{classz_shape_aec2d4ff13d10eae9c3b8bca21cbe53a6}{cube1boundary\-Z2}
+\item 
+int \hyperlink{classz_shape_a6e834a60e1cdeef415deae7f9d1af42d}{cube2boundary\-Z}
+\item 
+int \hyperlink{classz_shape_a125d6ca0a1894e10414668fd7d24a74b}{cube2boundary\-Z2}
+\item 
+int \hyperlink{classz_shape_ace4bd139f834c009fc28e38d8712cd65}{cube3boundary\-Z}
+\item 
+int \hyperlink{classz_shape_afdf3c0ed9499a640373394223bcf5c3e}{cube3boundary\-Z2}
+\item 
+string \hyperlink{classz_shape_a751cf070b6e1b1ee3936020f01beeab3}{my\-Name}
+\item 
+Ogre\-::\-Timer \hyperlink{classz_shape_ac8cc62dd7693b1b06d49b837b9a95b6e}{rotate\-\_\-timer}
+\item 
+double \hyperlink{classz_shape_ababb157263bf9c66de983ac1e5ddec6d}{rotate\-Tick}
+\item 
+Ogre\-::\-Timer \hyperlink{classz_shape_a56e2cca0a696cf28fa4244ce20267fb4}{move\-\_\-timer}
+\item 
+double \hyperlink{classz_shape_a06a862d298b4fe36236834a39af1d7b4}{move\-Tick}
+\item 
+Ogre\-::\-Timer \hyperlink{classz_shape_a2e34a7774c32ab986afcb352bee6de9b}{\-\_\-timer}
+\item 
+double \hyperlink{classz_shape_add03bb3345a58059a1f76a4cfaaedb54}{tick}
+\item 
+double \hyperlink{classz_shape_af8baf4bfde98df012d1389768d9571b0}{tick\-Value}
+\item 
+enum \hyperlink{classz_shape_ab60d2ccafff31987c3134b99ffdfc168}{z\-Shape\-::\-Direction\-Facing} \hyperlink{classz_shape_a22d2f5fca91a1b455a17d5e8fbe4a280}{direction\-Facing}
+\item 
+int \hyperlink{classz_shape_a0437d50ec76bf6fbe2522ead9b3184e0}{cell\-Size}
+\item 
+int \hyperlink{classz_shape_a772c76f69f30fefa4b8d08a9d1546dba}{time}
+\item 
+int \hyperlink{classz_shape_a4ec37982be7b7b02dbb92135629218f2}{z\-Direction}
+\item 
+int \hyperlink{classz_shape_ab05ebfad3001a2ff2747f7e788efaf06}{x\-Direction}
+\item 
+bool \hyperlink{classz_shape_a1796431468e8e0b2073e28d94bc4c5bd}{alive}
+\item 
+bool \hyperlink{classz_shape_a893430248d4812e90d8deca062d39820}{shadow\-Off}
+\item 
+int \hyperlink{classz_shape_a720c53d979680d3ccd67f453cf45be7e}{cube\-Amount}
+\item 
+int \hyperlink{classz_shape_a6fb508e0180de23b90db911b1bb97003}{half}
+\item 
+vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$ \hyperlink{classz_shape_aa0d1a3c2b46801c1064c43d33094f29e}{cubes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classz_shape_ab60d2ccafff31987c3134b99ffdfc168}{\index{z\-Shape@{z\-Shape}!Direction\-Facing@{Direction\-Facing}}
+\index{Direction\-Facing@{Direction\-Facing}!zShape@{z\-Shape}}
+\subsubsection[{Direction\-Facing}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf z\-Shape\-::\-Direction\-Facing}}}\label{classz_shape_ab60d2ccafff31987c3134b99ffdfc168}
+tracks the orientation of the shape \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{forward@{forward}!z\-Shape@{z\-Shape}}\index{z\-Shape@{z\-Shape}!forward@{forward}}\item[{\em 
+\hypertarget{classz_shape_ab60d2ccafff31987c3134b99ffdfc168a98b5b9f6eef05dacfae77a1c2c5f673e}{forward}\label{classz_shape_ab60d2ccafff31987c3134b99ffdfc168a98b5b9f6eef05dacfae77a1c2c5f673e}
+}]\index{backward@{backward}!z\-Shape@{z\-Shape}}\index{z\-Shape@{z\-Shape}!backward@{backward}}\item[{\em 
+\hypertarget{classz_shape_ab60d2ccafff31987c3134b99ffdfc168a015e7b2c5830dee71428db58cbe54e91}{backward}\label{classz_shape_ab60d2ccafff31987c3134b99ffdfc168a015e7b2c5830dee71428db58cbe54e91}
+}]\index{left@{left}!z\-Shape@{z\-Shape}}\index{z\-Shape@{z\-Shape}!left@{left}}\item[{\em 
+\hypertarget{classz_shape_ab60d2ccafff31987c3134b99ffdfc168ac37933597ccfb2403963ab3478b1ba02}{left}\label{classz_shape_ab60d2ccafff31987c3134b99ffdfc168ac37933597ccfb2403963ab3478b1ba02}
+}]\index{right@{right}!z\-Shape@{z\-Shape}}\index{z\-Shape@{z\-Shape}!right@{right}}\item[{\em 
+\hypertarget{classz_shape_ab60d2ccafff31987c3134b99ffdfc168a577911cbdcc7c610f87e71814cfdad6c}{right}\label{classz_shape_ab60d2ccafff31987c3134b99ffdfc168a577911cbdcc7c610f87e71814cfdad6c}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classz_shape_a43735d5c74aa0ab56ba2dcdc392d5212}{\index{z\-Shape@{z\-Shape}!z\-Shape@{z\-Shape}}
+\index{z\-Shape@{z\-Shape}!zShape@{z\-Shape}}
+\subsubsection[{z\-Shape}]{\setlength{\rightskip}{0pt plus 5cm}z\-Shape\-::z\-Shape (
+\begin{DoxyParamCaption}
+\item[{Ogre\-::\-Scene\-Manager $\ast$}]{, }
+\item[{string}]{m\-Name, }
+\item[{string}]{}
+\end{DoxyParamCaption}
+)}}\label{classz_shape_a43735d5c74aa0ab56ba2dcdc392d5212}
+constructor method 
+
+\subsection{Member Function Documentation}
+\hypertarget{classz_shape_ac599f1a0c6920db0ee7fee7bbe2268e9}{\index{z\-Shape@{z\-Shape}!check\-Bounds@{check\-Bounds}}
+\index{check\-Bounds@{check\-Bounds}!zShape@{z\-Shape}}
+\subsubsection[{check\-Bounds}]{\setlength{\rightskip}{0pt plus 5cm}void z\-Shape\-::check\-Bounds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classz_shape_ac599f1a0c6920db0ee7fee7bbe2268e9}
+keeps the cube in side the matrix method \hypertarget{classz_shape_a95fbe17176889608178c1831ade80c16}{\index{z\-Shape@{z\-Shape}!is\-Dropping@{is\-Dropping}}
+\index{is\-Dropping@{is\-Dropping}!zShape@{z\-Shape}}
+\subsubsection[{is\-Dropping}]{\setlength{\rightskip}{0pt plus 5cm}void z\-Shape\-::is\-Dropping (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D}
+\end{DoxyParamCaption}
+)}}\label{classz_shape_a95fbe17176889608178c1831ade80c16}
+tracks if the cube is dropping method \hypertarget{classz_shape_a6475eb27003e84467d73dea3603520ed}{\index{z\-Shape@{z\-Shape}!rotate\-Left@{rotate\-Left}}
+\index{rotate\-Left@{rotate\-Left}!zShape@{z\-Shape}}
+\subsubsection[{rotate\-Left}]{\setlength{\rightskip}{0pt plus 5cm}void z\-Shape\-::rotate\-Left (
+\begin{DoxyParamCaption}
+\item[{double}]{, }
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D}
+\end{DoxyParamCaption}
+)}}\label{classz_shape_a6475eb27003e84467d73dea3603520ed}
+rotate left method \hypertarget{classz_shape_aebd07968a31f6bf2e3378227d3a4f1a7}{\index{z\-Shape@{z\-Shape}!rotate\-Right@{rotate\-Right}}
+\index{rotate\-Right@{rotate\-Right}!zShape@{z\-Shape}}
+\subsubsection[{rotate\-Right}]{\setlength{\rightskip}{0pt plus 5cm}void z\-Shape\-::rotate\-Right (
+\begin{DoxyParamCaption}
+\item[{double}]{, }
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D}
+\end{DoxyParamCaption}
+)}}\label{classz_shape_aebd07968a31f6bf2e3378227d3a4f1a7}
+rotate right method \hypertarget{classz_shape_a2d6800f8defaa73954657e103257a520}{\index{z\-Shape@{z\-Shape}!Update@{Update}}
+\index{Update@{Update}!zShape@{z\-Shape}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void z\-Shape\-::\-Update (
+\begin{DoxyParamCaption}
+\item[{double}]{, }
+\item[{O\-I\-S\-::\-Keyboard $\ast$}]{, }
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D, }
+\item[{int}]{main\-Tick\-Value}
+\end{DoxyParamCaption}
+)}}\label{classz_shape_a2d6800f8defaa73954657e103257a520}
+update method 
+
+\subsection{Member Data Documentation}
+\hypertarget{classz_shape_a2e34a7774c32ab986afcb352bee6de9b}{\index{z\-Shape@{z\-Shape}!\-\_\-timer@{\-\_\-timer}}
+\index{\-\_\-timer@{\-\_\-timer}!zShape@{z\-Shape}}
+\subsubsection[{\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Timer z\-Shape\-::\-\_\-timer}}\label{classz_shape_a2e34a7774c32ab986afcb352bee6de9b}
+ogre timer \hypertarget{classz_shape_a1796431468e8e0b2073e28d94bc4c5bd}{\index{z\-Shape@{z\-Shape}!alive@{alive}}
+\index{alive@{alive}!zShape@{z\-Shape}}
+\subsubsection[{alive}]{\setlength{\rightskip}{0pt plus 5cm}bool z\-Shape\-::alive}}\label{classz_shape_a1796431468e8e0b2073e28d94bc4c5bd}
+tracks if the cube is alive or not \hypertarget{classz_shape_a0437d50ec76bf6fbe2522ead9b3184e0}{\index{z\-Shape@{z\-Shape}!cell\-Size@{cell\-Size}}
+\index{cell\-Size@{cell\-Size}!zShape@{z\-Shape}}
+\subsubsection[{cell\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cell\-Size}}\label{classz_shape_a0437d50ec76bf6fbe2522ead9b3184e0}
+size of a cell in the matrix \hypertarget{classz_shape_ab573e49ed92efb74eea99eeb6015a8f0}{\index{z\-Shape@{z\-Shape}!cube0boundary\-X@{cube0boundary\-X}}
+\index{cube0boundary\-X@{cube0boundary\-X}!zShape@{z\-Shape}}
+\subsubsection[{cube0boundary\-X}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cube0boundary\-X}}\label{classz_shape_ab573e49ed92efb74eea99eeb6015a8f0}
+keeps the cube at postion 0 inside the matrix \hypertarget{classz_shape_a40fae2a3019c20406dc8dbbc9613becf}{\index{z\-Shape@{z\-Shape}!cube0boundary\-X2@{cube0boundary\-X2}}
+\index{cube0boundary\-X2@{cube0boundary\-X2}!zShape@{z\-Shape}}
+\subsubsection[{cube0boundary\-X2}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cube0boundary\-X2}}\label{classz_shape_a40fae2a3019c20406dc8dbbc9613becf}
+\hypertarget{classz_shape_a1137620e91f77e816ef97e4e2667499b}{\index{z\-Shape@{z\-Shape}!cube0boundary\-Z@{cube0boundary\-Z}}
+\index{cube0boundary\-Z@{cube0boundary\-Z}!zShape@{z\-Shape}}
+\subsubsection[{cube0boundary\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cube0boundary\-Z}}\label{classz_shape_a1137620e91f77e816ef97e4e2667499b}
+keeps the cube at postion 0 inside the matrix \hypertarget{classz_shape_a2d03d0e4d7a150d8d0f5370a4514262f}{\index{z\-Shape@{z\-Shape}!cube0boundary\-Z2@{cube0boundary\-Z2}}
+\index{cube0boundary\-Z2@{cube0boundary\-Z2}!zShape@{z\-Shape}}
+\subsubsection[{cube0boundary\-Z2}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cube0boundary\-Z2}}\label{classz_shape_a2d03d0e4d7a150d8d0f5370a4514262f}
+\hypertarget{classz_shape_a86d5935ac17eb4014518b32a0b7d0b20}{\index{z\-Shape@{z\-Shape}!cube1boundary\-X@{cube1boundary\-X}}
+\index{cube1boundary\-X@{cube1boundary\-X}!zShape@{z\-Shape}}
+\subsubsection[{cube1boundary\-X}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cube1boundary\-X}}\label{classz_shape_a86d5935ac17eb4014518b32a0b7d0b20}
+keeps the cube at postion 1 inside the matrix \hypertarget{classz_shape_a5195d555defef38a13c147cde4610124}{\index{z\-Shape@{z\-Shape}!cube1boundary\-X2@{cube1boundary\-X2}}
+\index{cube1boundary\-X2@{cube1boundary\-X2}!zShape@{z\-Shape}}
+\subsubsection[{cube1boundary\-X2}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cube1boundary\-X2}}\label{classz_shape_a5195d555defef38a13c147cde4610124}
+\hypertarget{classz_shape_ab1ef86f5f194e4d9cd51488b33ed6642}{\index{z\-Shape@{z\-Shape}!cube1boundary\-Z@{cube1boundary\-Z}}
+\index{cube1boundary\-Z@{cube1boundary\-Z}!zShape@{z\-Shape}}
+\subsubsection[{cube1boundary\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cube1boundary\-Z}}\label{classz_shape_ab1ef86f5f194e4d9cd51488b33ed6642}
+keeps the cube at postion 1 inside the matrix \hypertarget{classz_shape_aec2d4ff13d10eae9c3b8bca21cbe53a6}{\index{z\-Shape@{z\-Shape}!cube1boundary\-Z2@{cube1boundary\-Z2}}
+\index{cube1boundary\-Z2@{cube1boundary\-Z2}!zShape@{z\-Shape}}
+\subsubsection[{cube1boundary\-Z2}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cube1boundary\-Z2}}\label{classz_shape_aec2d4ff13d10eae9c3b8bca21cbe53a6}
+\hypertarget{classz_shape_aadc304ad5e51018cd0217bc6f0a39165}{\index{z\-Shape@{z\-Shape}!cube2boundary\-X@{cube2boundary\-X}}
+\index{cube2boundary\-X@{cube2boundary\-X}!zShape@{z\-Shape}}
+\subsubsection[{cube2boundary\-X}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cube2boundary\-X}}\label{classz_shape_aadc304ad5e51018cd0217bc6f0a39165}
+keeps the cube at postion 2 inside the matrix \hypertarget{classz_shape_a803a7236cf186faa5ea0ee7c86639ba7}{\index{z\-Shape@{z\-Shape}!cube2boundary\-X2@{cube2boundary\-X2}}
+\index{cube2boundary\-X2@{cube2boundary\-X2}!zShape@{z\-Shape}}
+\subsubsection[{cube2boundary\-X2}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cube2boundary\-X2}}\label{classz_shape_a803a7236cf186faa5ea0ee7c86639ba7}
+\hypertarget{classz_shape_a6e834a60e1cdeef415deae7f9d1af42d}{\index{z\-Shape@{z\-Shape}!cube2boundary\-Z@{cube2boundary\-Z}}
+\index{cube2boundary\-Z@{cube2boundary\-Z}!zShape@{z\-Shape}}
+\subsubsection[{cube2boundary\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cube2boundary\-Z}}\label{classz_shape_a6e834a60e1cdeef415deae7f9d1af42d}
+keeps the cube at postion 2 inside the matrix \hypertarget{classz_shape_a125d6ca0a1894e10414668fd7d24a74b}{\index{z\-Shape@{z\-Shape}!cube2boundary\-Z2@{cube2boundary\-Z2}}
+\index{cube2boundary\-Z2@{cube2boundary\-Z2}!zShape@{z\-Shape}}
+\subsubsection[{cube2boundary\-Z2}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cube2boundary\-Z2}}\label{classz_shape_a125d6ca0a1894e10414668fd7d24a74b}
+\hypertarget{classz_shape_aeb96887365de974440f8494c9da2b097}{\index{z\-Shape@{z\-Shape}!cube3boundary\-X@{cube3boundary\-X}}
+\index{cube3boundary\-X@{cube3boundary\-X}!zShape@{z\-Shape}}
+\subsubsection[{cube3boundary\-X}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cube3boundary\-X}}\label{classz_shape_aeb96887365de974440f8494c9da2b097}
+keeps the cube at postion 3 inside the matrix \hypertarget{classz_shape_ab3e6d24301edea1a2d7d35ca34d5b6ad}{\index{z\-Shape@{z\-Shape}!cube3boundary\-X2@{cube3boundary\-X2}}
+\index{cube3boundary\-X2@{cube3boundary\-X2}!zShape@{z\-Shape}}
+\subsubsection[{cube3boundary\-X2}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cube3boundary\-X2}}\label{classz_shape_ab3e6d24301edea1a2d7d35ca34d5b6ad}
+\hypertarget{classz_shape_ace4bd139f834c009fc28e38d8712cd65}{\index{z\-Shape@{z\-Shape}!cube3boundary\-Z@{cube3boundary\-Z}}
+\index{cube3boundary\-Z@{cube3boundary\-Z}!zShape@{z\-Shape}}
+\subsubsection[{cube3boundary\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cube3boundary\-Z}}\label{classz_shape_ace4bd139f834c009fc28e38d8712cd65}
+keeps the cube at postion 3 inside the matrix \hypertarget{classz_shape_afdf3c0ed9499a640373394223bcf5c3e}{\index{z\-Shape@{z\-Shape}!cube3boundary\-Z2@{cube3boundary\-Z2}}
+\index{cube3boundary\-Z2@{cube3boundary\-Z2}!zShape@{z\-Shape}}
+\subsubsection[{cube3boundary\-Z2}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cube3boundary\-Z2}}\label{classz_shape_afdf3c0ed9499a640373394223bcf5c3e}
+\hypertarget{classz_shape_a720c53d979680d3ccd67f453cf45be7e}{\index{z\-Shape@{z\-Shape}!cube\-Amount@{cube\-Amount}}
+\index{cube\-Amount@{cube\-Amount}!zShape@{z\-Shape}}
+\subsubsection[{cube\-Amount}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::cube\-Amount}}\label{classz_shape_a720c53d979680d3ccd67f453cf45be7e}
+amount of cubes in the array \hypertarget{classz_shape_aa0d1a3c2b46801c1064c43d33094f29e}{\index{z\-Shape@{z\-Shape}!cubes@{cubes}}
+\index{cubes@{cubes}!zShape@{z\-Shape}}
+\subsubsection[{cubes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Cube}$\ast$$>$ z\-Shape\-::cubes}}\label{classz_shape_aa0d1a3c2b46801c1064c43d33094f29e}
+array of cube objects \hypertarget{classz_shape_a22d2f5fca91a1b455a17d5e8fbe4a280}{\index{z\-Shape@{z\-Shape}!direction\-Facing@{direction\-Facing}}
+\index{direction\-Facing@{direction\-Facing}!zShape@{z\-Shape}}
+\subsubsection[{direction\-Facing}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf z\-Shape\-::\-Direction\-Facing}  z\-Shape\-::direction\-Facing}}\label{classz_shape_a22d2f5fca91a1b455a17d5e8fbe4a280}
+\hypertarget{classz_shape_a6fb508e0180de23b90db911b1bb97003}{\index{z\-Shape@{z\-Shape}!half@{half}}
+\index{half@{half}!zShape@{z\-Shape}}
+\subsubsection[{half}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::half}}\label{classz_shape_a6fb508e0180de23b90db911b1bb97003}
+store half \hypertarget{classz_shape_a56e2cca0a696cf28fa4244ce20267fb4}{\index{z\-Shape@{z\-Shape}!move\-\_\-timer@{move\-\_\-timer}}
+\index{move\-\_\-timer@{move\-\_\-timer}!zShape@{z\-Shape}}
+\subsubsection[{move\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Timer z\-Shape\-::move\-\_\-timer}}\label{classz_shape_a56e2cca0a696cf28fa4244ce20267fb4}
+ogre timer \hypertarget{classz_shape_a06a862d298b4fe36236834a39af1d7b4}{\index{z\-Shape@{z\-Shape}!move\-Tick@{move\-Tick}}
+\index{move\-Tick@{move\-Tick}!zShape@{z\-Shape}}
+\subsubsection[{move\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}double z\-Shape\-::move\-Tick}}\label{classz_shape_a06a862d298b4fe36236834a39af1d7b4}
+tracks the tick \hypertarget{classz_shape_a751cf070b6e1b1ee3936020f01beeab3}{\index{z\-Shape@{z\-Shape}!my\-Name@{my\-Name}}
+\index{my\-Name@{my\-Name}!zShape@{z\-Shape}}
+\subsubsection[{my\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string z\-Shape\-::my\-Name}}\label{classz_shape_a751cf070b6e1b1ee3936020f01beeab3}
+shapes name \hypertarget{classz_shape_ac8cc62dd7693b1b06d49b837b9a95b6e}{\index{z\-Shape@{z\-Shape}!rotate\-\_\-timer@{rotate\-\_\-timer}}
+\index{rotate\-\_\-timer@{rotate\-\_\-timer}!zShape@{z\-Shape}}
+\subsubsection[{rotate\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Timer z\-Shape\-::rotate\-\_\-timer}}\label{classz_shape_ac8cc62dd7693b1b06d49b837b9a95b6e}
+ogre timer \hypertarget{classz_shape_ababb157263bf9c66de983ac1e5ddec6d}{\index{z\-Shape@{z\-Shape}!rotate\-Tick@{rotate\-Tick}}
+\index{rotate\-Tick@{rotate\-Tick}!zShape@{z\-Shape}}
+\subsubsection[{rotate\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}double z\-Shape\-::rotate\-Tick}}\label{classz_shape_ababb157263bf9c66de983ac1e5ddec6d}
+tracks the tick \hypertarget{classz_shape_a893430248d4812e90d8deca062d39820}{\index{z\-Shape@{z\-Shape}!shadow\-Off@{shadow\-Off}}
+\index{shadow\-Off@{shadow\-Off}!zShape@{z\-Shape}}
+\subsubsection[{shadow\-Off}]{\setlength{\rightskip}{0pt plus 5cm}bool z\-Shape\-::shadow\-Off}}\label{classz_shape_a893430248d4812e90d8deca062d39820}
+tracks if the shadow is on or off \hypertarget{classz_shape_add03bb3345a58059a1f76a4cfaaedb54}{\index{z\-Shape@{z\-Shape}!tick@{tick}}
+\index{tick@{tick}!zShape@{z\-Shape}}
+\subsubsection[{tick}]{\setlength{\rightskip}{0pt plus 5cm}double z\-Shape\-::tick}}\label{classz_shape_add03bb3345a58059a1f76a4cfaaedb54}
+tracks the tick \hypertarget{classz_shape_af8baf4bfde98df012d1389768d9571b0}{\index{z\-Shape@{z\-Shape}!tick\-Value@{tick\-Value}}
+\index{tick\-Value@{tick\-Value}!zShape@{z\-Shape}}
+\subsubsection[{tick\-Value}]{\setlength{\rightskip}{0pt plus 5cm}double z\-Shape\-::tick\-Value}}\label{classz_shape_af8baf4bfde98df012d1389768d9571b0}
+tracks the tick value \hypertarget{classz_shape_a772c76f69f30fefa4b8d08a9d1546dba}{\index{z\-Shape@{z\-Shape}!time@{time}}
+\index{time@{time}!zShape@{z\-Shape}}
+\subsubsection[{time}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::time}}\label{classz_shape_a772c76f69f30fefa4b8d08a9d1546dba}
+tracks trime \hypertarget{classz_shape_ab05ebfad3001a2ff2747f7e788efaf06}{\index{z\-Shape@{z\-Shape}!x\-Direction@{x\-Direction}}
+\index{x\-Direction@{x\-Direction}!zShape@{z\-Shape}}
+\subsubsection[{x\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::x\-Direction}}\label{classz_shape_ab05ebfad3001a2ff2747f7e788efaf06}
+stores x\-Direction \hypertarget{classz_shape_a4ec37982be7b7b02dbb92135629218f2}{\index{z\-Shape@{z\-Shape}!z\-Direction@{z\-Direction}}
+\index{z\-Direction@{z\-Direction}!zShape@{z\-Shape}}
+\subsubsection[{z\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}int z\-Shape\-::z\-Direction}}\label{classz_shape_a4ec37982be7b7b02dbb92135629218f2}
+stores x\-Direction 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Aoibhinn/\-Desktop/finished/\-Project\-Colour/\-Project\-One/\-Project\-One/\-Project\-One/include/\hyperlink{z_shape_8h}{z\-Shape.\-h}\end{DoxyCompactItemize}

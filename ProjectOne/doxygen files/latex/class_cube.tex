@@ -1,0 +1,540 @@
+\hypertarget{class_cube}{\section{Cube Class Reference}
+\label{class_cube}\index{Cube@{Cube}}
+}
+
+
+{\ttfamily \#include $<$Cube.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cube_a06f3d86fb63e3aad08623610aa3c17b4}{Cube} ()
+\item 
+\hyperlink{class_cube_a3ec51b94edaa94dbca4c046dd453bc4b}{Cube} (Ogre\-::\-Scene\-Manager $\ast$, int, int, int, string, string, string, string, string, string, string, string, Ogre\-::\-Vector3, string)
+\item 
+\hyperlink{class_cube_aefa3ddc37d7821a10ab957420a710825}{$\sim$\-Cube} (void)
+\item 
+Ogre\-::\-Vector3 \hyperlink{class_cube_a0d9a7171dcd690a6117722ca99228874}{get\-Position} ()
+\item 
+Ogre\-::\-Vector3 \hyperlink{class_cube_a28d8dc5869f764e90af8d1ab6620ecc2}{get\-Velocity} ()
+\item 
+Ogre\-::\-Scene\-Node $\ast$ \hyperlink{class_cube_ae9e042cff4a069eebdeeec8e4802c7e0}{get\-Node} ()
+\item 
+double \hyperlink{class_cube_a9aee61f49c404b77e099097ee7329847}{get\-Lenth} ()
+\item 
+bool \hyperlink{class_cube_aacb284350c61df3f4fee2e59bb5abed9}{get\-Move} ()
+\item 
+int \hyperlink{class_cube_af947cc43bfdf7f35113c47d1cb6b9d95}{get\-Time} ()
+\item 
+void \hyperlink{class_cube_a8dbf7f850b052fe2071051dddcd84132}{set\-Position} (Ogre\-::\-Vector3)
+\item 
+void \hyperlink{class_cube_af4059a96c2aa6a770cdc3d6c74ddf7a2}{set\-Velocity} (Ogre\-::\-Vector3)
+\item 
+void \hyperlink{class_cube_a129e4d71a83c87fd5f2c9c38437793e2}{set\-Move} (bool)
+\item 
+void \hyperlink{class_cube_ac58b3288f0acf82a2fbbb70ce3f488e1}{set\-Dropped} (bool)
+\item 
+void \hyperlink{class_cube_a1c162b47044ad0f3f0e8590e1ebbafb1}{set\-Checked} (bool)
+\item 
+void \hyperlink{class_cube_a231459dc0fc0e14dab32baf633e90421}{set\-Alive} (bool)
+\item 
+void \hyperlink{class_cube_ab327f06fa56b11034a39dadfb74befe1}{set\-Begin} (bool)
+\item 
+void \hyperlink{class_cube_a4aee4e28135320d6d9a9e4e76183ccd7}{set\-Time} (int)
+\item 
+void \hyperlink{class_cube_a3f080ff8cdd39ed48e765e9b113214dd}{set\-Drop} (bool)
+\item 
+void \hyperlink{class_cube_ab734970da4a45cb624a33b03e4dd4dde}{Update} (double, O\-I\-S\-::\-Keyboard $\ast$, vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D, int boundary\-X, int boundary\-X2, int boundary\-Z, int boundary\-Z2)
+\item 
+void \hyperlink{class_cube_a3b48024a2741aa4ac7eb89b69eed03d2}{dropping\-Cube} (vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D)
+\item 
+void \hyperlink{class_cube_add1622d7ae88092fb3fb77616db3afc5}{instant\-Drop} (vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D)
+\item 
+void \hyperlink{class_cube_afc06499ed9e41e3d07b5599597aa2b66}{move\-Shadow} (vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D)
+\item 
+void \hyperlink{class_cube_a4d9b84d6ed1528793330f3a2ed1703db}{turn\-Shadow\-Off\-On} ()
+\item 
+int \hyperlink{class_cube_aa336b96a7919871826d7f358f8e36a0b}{get\-Grid\-Pos\-X} ()
+\item 
+int \hyperlink{class_cube_a82ded9fc1fdfa1e971fad00ea25690f4}{get\-Grid\-Pos\-Y} ()
+\item 
+int \hyperlink{class_cube_abfb4fd724f2fe9f8eb9ff8a590c57d20}{get\-Grid\-Pos\-Z} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ogre\-::\-Timer \hyperlink{class_cube_a18c8c6e055160dde284d46a60dedc92a}{\-\_\-timer}
+\item 
+Ogre\-::\-Timer \hyperlink{class_cube_ad3bb6ae7badac1e670fcf162a8221066}{drop\-\_\-timer}
+\item 
+bool \hyperlink{class_cube_a980ce3408a24527d888e4b3909824506}{alive}
+\item 
+bool \hyperlink{class_cube_a2bb4390eb460a9cf29de2ca916a4a9ec}{checked}
+\item 
+bool \hyperlink{class_cube_ad3d76d07ee2fc90ede8dfe807480002f}{merge\-Array}
+\item 
+std\-::clock\-\_\-t \hyperlink{class_cube_ab100528af7d9cd8c40aa85b3eeb582d3}{clock}
+\item 
+Ogre\-::\-Vector3 \hyperlink{class_cube_a826e1bab8cac54c8b8fdbded40deb5c4}{move\-Left}
+\item 
+Ogre\-::\-Vector3 \hyperlink{class_cube_a1fc7acbf2fea6ef489c16634f316f8c7}{move\-Right}
+\item 
+Ogre\-::\-Vector3 \hyperlink{class_cube_a753844c06abc292f38ae4e496d192cc6}{move\-Forward}
+\item 
+Ogre\-::\-Vector3 \hyperlink{class_cube_aa7536967e2fdaaaa68a01d380ae5e2ab}{move\-Backward}
+\item 
+Ogre\-::\-Vector3 \hyperlink{class_cube_a187bae124402e077fd574b245d029721}{move\-Down}
+\item 
+int \hyperlink{class_cube_aface2c639c17ae3bb1180c165727b36c}{grid\-Pos\-X}
+\item 
+int \hyperlink{class_cube_a9b3f7676b19910f48842d6a7bee025b0}{grid\-Pos\-Y}
+\item 
+int \hyperlink{class_cube_a40c395b356dbdd774dc24d870075fa7e}{grid\-Pos\-Z}
+\item 
+int \hyperlink{class_cube_af26a12fc948b957c304f584ad285b02a}{grid\-Below}
+\item 
+string \hyperlink{class_cube_a30a863d3f3d7048207a90903e961c208}{entity\-Name}
+\item 
+string \hyperlink{class_cube_a6f2b818098957d9fbc86b4c419687b40}{node\-Name}
+\item 
+string \hyperlink{class_cube_a724c741e2b66fca73a76de2b644a80e8}{entity\-Name2}
+\item 
+string \hyperlink{class_cube_adb599c7527c0a082f07e38e4085a8ded}{node\-Name2}
+\item 
+string \hyperlink{class_cube_ab9ed6ed2275f2e1a67ee13aa916ba6ea}{entity\-Name3}
+\item 
+string \hyperlink{class_cube_aa4e261bd51d36701783bfe90015cfc37}{node\-Name3}
+\item 
+string \hyperlink{class_cube_a3bb63d0dffdc360db0dee096083bd98d}{shadow\-Name3}
+\item 
+string \hyperlink{class_cube_ac59874f591b123fc0f0d7b4c88ab9130}{shadow\-Node\-Name3}
+\item 
+Ogre\-::\-Entity $\ast$ \hyperlink{class_cube_a9af90d4cbb6956867599962f58144322}{target\-Cube}
+\item 
+Ogre\-::\-Scene\-Node $\ast$ \hyperlink{class_cube_a8ff3abf1bb201413140c23d870961ea2}{target\-Node}
+\item 
+bool \hyperlink{class_cube_a5e8d56fc07da94b47dd527b80d2f5b42}{m\-\_\-move}
+\item 
+bool \hyperlink{class_cube_a5b1c8da973a047c5cc5989c105b1f642}{dropped}
+\item 
+bool \hyperlink{class_cube_a07764788ed55a68115242e81efe3afaa}{drop}
+\item 
+bool \hyperlink{class_cube_a0031d492bef46fc3b1c7f8349af10e93}{finished\-Drop}
+\item 
+bool \hyperlink{class_cube_a1eb14ea30f3a4a53cf4b889d99b0436c}{begin}
+\item 
+bool \hyperlink{class_cube_a6d5327a45addd39b6190e3d400228842}{flip\-Visibility}
+\item 
+Ogre\-::\-Plane \hyperlink{class_cube_a9f4a7fe70d1017e112c5486268ccde48}{shadow\-Plane}
+\item 
+Ogre\-::\-Entity $\ast$ \hyperlink{class_cube_af31b1b23360a7dd9daec4239cc28b1af}{shadow}
+\item 
+Ogre\-::\-Scene\-Node $\ast$ \hyperlink{class_cube_a90a483946cdb6d20ae815ec9300a7dff}{shadow\-Node}
+\item 
+Ogre\-::\-Vector3 \hyperlink{class_cube_a5b6c34989a238006fb3df95debbb5b61}{m\-\_\-shadow\-Pos}
+\item 
+float \hyperlink{class_cube_abf7ae874f1da5c76795c8aa15fa8dc36}{m\-\_\-shadow\-Len}
+\item 
+Ogre\-::\-Plane \hyperlink{class_cube_a50238beea54f1107761f375870b504ea}{shadow\-Plane2}
+\item 
+Ogre\-::\-Entity $\ast$ \hyperlink{class_cube_af1df68e410cff62cbfb3b6d6d925e0cd}{shadow2}
+\item 
+Ogre\-::\-Scene\-Node $\ast$ \hyperlink{class_cube_ab0dd9287bdc0dd3d3c86720b8063e1c7}{shadow\-Node2}
+\item 
+Ogre\-::\-Vector3 \hyperlink{class_cube_a2c7d96e22d8bf8fe5b1da82b4a919b1f}{m\-\_\-shadow\-Pos2}
+\item 
+Ogre\-::\-Plane \hyperlink{class_cube_a26706404bc0586106f3ce0539b5aefb9}{shadow\-Plane3}
+\item 
+Ogre\-::\-Entity $\ast$ \hyperlink{class_cube_a26a6af67ab33f0823ab676f918be4693}{shadow3}
+\item 
+Ogre\-::\-Scene\-Node $\ast$ \hyperlink{class_cube_a46e45c5df1c3b06a722792c0fe7a3a99}{shadow\-Node3}
+\item 
+Ogre\-::\-Vector3 \hyperlink{class_cube_a3640e2093c74415355ca18c676ce55d3}{m\-\_\-shadow\-Pos3}
+\item 
+Ogre\-::\-Vector3 \hyperlink{class_cube_aa5ab2527959955b999b24f175c8451cd}{m\-\_\-position}
+\item 
+int \hyperlink{class_cube_a7500a909cbc9f7f57056ce30d578b2f2}{m\-\_\-timer}
+\item 
+double \hyperlink{class_cube_a46f7e77fdc6bd86d23c36553356bded6}{tick}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ogre\-::\-Vector3 \hyperlink{class_cube_a516fe89321f3e9929f46b1c110abaca9}{m\-\_\-velocity}
+\item 
+double \hyperlink{class_cube_aa06856d486384e88a787d800fb981d6d}{m\-\_\-lenth}
+\item 
+Ogre\-::\-Scene\-Node $\ast$ \hyperlink{class_cube_adb69c60fc68857cb95c19aa45be0bc06}{m\-\_\-object\-Node}
+\item 
+int \hyperlink{class_cube_a0b3149f410be4e58a6ff7f8fd65cfb27}{drop\-Timer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_cube_a06f3d86fb63e3aad08623610aa3c17b4}{\index{Cube@{Cube}!Cube@{Cube}}
+\index{Cube@{Cube}!Cube@{Cube}}
+\subsubsection[{Cube}]{\setlength{\rightskip}{0pt plus 5cm}Cube\-::\-Cube (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_a06f3d86fb63e3aad08623610aa3c17b4}
+constructor \hypertarget{class_cube_a3ec51b94edaa94dbca4c046dd453bc4b}{\index{Cube@{Cube}!Cube@{Cube}}
+\index{Cube@{Cube}!Cube@{Cube}}
+\subsubsection[{Cube}]{\setlength{\rightskip}{0pt plus 5cm}Cube\-::\-Cube (
+\begin{DoxyParamCaption}
+\item[{Ogre\-::\-Scene\-Manager $\ast$}]{, }
+\item[{int}]{, }
+\item[{int}]{, }
+\item[{int}]{, }
+\item[{string}]{, }
+\item[{string}]{, }
+\item[{string}]{, }
+\item[{string}]{, }
+\item[{string}]{, }
+\item[{string}]{, }
+\item[{string}]{, }
+\item[{string}]{, }
+\item[{Ogre\-::\-Vector3}]{, }
+\item[{string}]{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_a3ec51b94edaa94dbca4c046dd453bc4b}
+constructor \hypertarget{class_cube_aefa3ddc37d7821a10ab957420a710825}{\index{Cube@{Cube}!$\sim$\-Cube@{$\sim$\-Cube}}
+\index{$\sim$\-Cube@{$\sim$\-Cube}!Cube@{Cube}}
+\subsubsection[{$\sim$\-Cube}]{\setlength{\rightskip}{0pt plus 5cm}Cube\-::$\sim$\-Cube (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_aefa3ddc37d7821a10ab957420a710825}
+destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_cube_a3b48024a2741aa4ac7eb89b69eed03d2}{\index{Cube@{Cube}!dropping\-Cube@{dropping\-Cube}}
+\index{dropping\-Cube@{dropping\-Cube}!Cube@{Cube}}
+\subsubsection[{dropping\-Cube}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\-::dropping\-Cube (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D}
+\end{DoxyParamCaption}
+)}}\label{class_cube_a3b48024a2741aa4ac7eb89b69eed03d2}
+drop the cube down the screen \hypertarget{class_cube_aa336b96a7919871826d7f358f8e36a0b}{\index{Cube@{Cube}!get\-Grid\-Pos\-X@{get\-Grid\-Pos\-X}}
+\index{get\-Grid\-Pos\-X@{get\-Grid\-Pos\-X}!Cube@{Cube}}
+\subsubsection[{get\-Grid\-Pos\-X}]{\setlength{\rightskip}{0pt plus 5cm}int Cube\-::get\-Grid\-Pos\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_aa336b96a7919871826d7f358f8e36a0b}
+get the X position of m\-\_\-postion \hypertarget{class_cube_a82ded9fc1fdfa1e971fad00ea25690f4}{\index{Cube@{Cube}!get\-Grid\-Pos\-Y@{get\-Grid\-Pos\-Y}}
+\index{get\-Grid\-Pos\-Y@{get\-Grid\-Pos\-Y}!Cube@{Cube}}
+\subsubsection[{get\-Grid\-Pos\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int Cube\-::get\-Grid\-Pos\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_a82ded9fc1fdfa1e971fad00ea25690f4}
+get the y positon of m\-\_\-postion \hypertarget{class_cube_abfb4fd724f2fe9f8eb9ff8a590c57d20}{\index{Cube@{Cube}!get\-Grid\-Pos\-Z@{get\-Grid\-Pos\-Z}}
+\index{get\-Grid\-Pos\-Z@{get\-Grid\-Pos\-Z}!Cube@{Cube}}
+\subsubsection[{get\-Grid\-Pos\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int Cube\-::get\-Grid\-Pos\-Z (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_abfb4fd724f2fe9f8eb9ff8a590c57d20}
+get the z positon of m\-\_\-postion \hypertarget{class_cube_a9aee61f49c404b77e099097ee7329847}{\index{Cube@{Cube}!get\-Lenth@{get\-Lenth}}
+\index{get\-Lenth@{get\-Lenth}!Cube@{Cube}}
+\subsubsection[{get\-Lenth}]{\setlength{\rightskip}{0pt plus 5cm}double Cube\-::get\-Lenth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_a9aee61f49c404b77e099097ee7329847}
+returns m\-\_\-radius \hypertarget{class_cube_aacb284350c61df3f4fee2e59bb5abed9}{\index{Cube@{Cube}!get\-Move@{get\-Move}}
+\index{get\-Move@{get\-Move}!Cube@{Cube}}
+\subsubsection[{get\-Move}]{\setlength{\rightskip}{0pt plus 5cm}bool Cube\-::get\-Move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_aacb284350c61df3f4fee2e59bb5abed9}
+// returns m\-\_\-move \hypertarget{class_cube_ae9e042cff4a069eebdeeec8e4802c7e0}{\index{Cube@{Cube}!get\-Node@{get\-Node}}
+\index{get\-Node@{get\-Node}!Cube@{Cube}}
+\subsubsection[{get\-Node}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Scene\-Node$\ast$ Cube\-::get\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_ae9e042cff4a069eebdeeec8e4802c7e0}
+returns Scene\-Node pointer \hypertarget{class_cube_a0d9a7171dcd690a6117722ca99228874}{\index{Cube@{Cube}!get\-Position@{get\-Position}}
+\index{get\-Position@{get\-Position}!Cube@{Cube}}
+\subsubsection[{get\-Position}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Vector3 Cube\-::get\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_a0d9a7171dcd690a6117722ca99228874}
+returns m\-\_\-position \hypertarget{class_cube_af947cc43bfdf7f35113c47d1cb6b9d95}{\index{Cube@{Cube}!get\-Time@{get\-Time}}
+\index{get\-Time@{get\-Time}!Cube@{Cube}}
+\subsubsection[{get\-Time}]{\setlength{\rightskip}{0pt plus 5cm}int Cube\-::get\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_af947cc43bfdf7f35113c47d1cb6b9d95}
+gets the time \hypertarget{class_cube_a28d8dc5869f764e90af8d1ab6620ecc2}{\index{Cube@{Cube}!get\-Velocity@{get\-Velocity}}
+\index{get\-Velocity@{get\-Velocity}!Cube@{Cube}}
+\subsubsection[{get\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Vector3 Cube\-::get\-Velocity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_a28d8dc5869f764e90af8d1ab6620ecc2}
+returns m\-\_\-velocity \hypertarget{class_cube_add1622d7ae88092fb3fb77616db3afc5}{\index{Cube@{Cube}!instant\-Drop@{instant\-Drop}}
+\index{instant\-Drop@{instant\-Drop}!Cube@{Cube}}
+\subsubsection[{instant\-Drop}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\-::instant\-Drop (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D}
+\end{DoxyParamCaption}
+)}}\label{class_cube_add1622d7ae88092fb3fb77616db3afc5}
+drop the cube into place below \hypertarget{class_cube_afc06499ed9e41e3d07b5599597aa2b66}{\index{Cube@{Cube}!move\-Shadow@{move\-Shadow}}
+\index{move\-Shadow@{move\-Shadow}!Cube@{Cube}}
+\subsubsection[{move\-Shadow}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\-::move\-Shadow (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D}
+\end{DoxyParamCaption}
+)}}\label{class_cube_afc06499ed9e41e3d07b5599597aa2b66}
+move the shadow appropriately with the shape \hypertarget{class_cube_a231459dc0fc0e14dab32baf633e90421}{\index{Cube@{Cube}!set\-Alive@{set\-Alive}}
+\index{set\-Alive@{set\-Alive}!Cube@{Cube}}
+\subsubsection[{set\-Alive}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\-::set\-Alive (
+\begin{DoxyParamCaption}
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_a231459dc0fc0e14dab32baf633e90421}
+set alive \hypertarget{class_cube_ab327f06fa56b11034a39dadfb74befe1}{\index{Cube@{Cube}!set\-Begin@{set\-Begin}}
+\index{set\-Begin@{set\-Begin}!Cube@{Cube}}
+\subsubsection[{set\-Begin}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\-::set\-Begin (
+\begin{DoxyParamCaption}
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_ab327f06fa56b11034a39dadfb74befe1}
+set begin \hypertarget{class_cube_a1c162b47044ad0f3f0e8590e1ebbafb1}{\index{Cube@{Cube}!set\-Checked@{set\-Checked}}
+\index{set\-Checked@{set\-Checked}!Cube@{Cube}}
+\subsubsection[{set\-Checked}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\-::set\-Checked (
+\begin{DoxyParamCaption}
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_a1c162b47044ad0f3f0e8590e1ebbafb1}
+set checked \hypertarget{class_cube_a3f080ff8cdd39ed48e765e9b113214dd}{\index{Cube@{Cube}!set\-Drop@{set\-Drop}}
+\index{set\-Drop@{set\-Drop}!Cube@{Cube}}
+\subsubsection[{set\-Drop}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\-::set\-Drop (
+\begin{DoxyParamCaption}
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_a3f080ff8cdd39ed48e765e9b113214dd}
+set drop \hypertarget{class_cube_ac58b3288f0acf82a2fbbb70ce3f488e1}{\index{Cube@{Cube}!set\-Dropped@{set\-Dropped}}
+\index{set\-Dropped@{set\-Dropped}!Cube@{Cube}}
+\subsubsection[{set\-Dropped}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\-::set\-Dropped (
+\begin{DoxyParamCaption}
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_ac58b3288f0acf82a2fbbb70ce3f488e1}
+sets dropped \hypertarget{class_cube_a129e4d71a83c87fd5f2c9c38437793e2}{\index{Cube@{Cube}!set\-Move@{set\-Move}}
+\index{set\-Move@{set\-Move}!Cube@{Cube}}
+\subsubsection[{set\-Move}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\-::set\-Move (
+\begin{DoxyParamCaption}
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_a129e4d71a83c87fd5f2c9c38437793e2}
+sets\-Move \hypertarget{class_cube_a8dbf7f850b052fe2071051dddcd84132}{\index{Cube@{Cube}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!Cube@{Cube}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{Ogre\-::\-Vector3}]{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_a8dbf7f850b052fe2071051dddcd84132}
+sets m\-\_\-position \hypertarget{class_cube_a4aee4e28135320d6d9a9e4e76183ccd7}{\index{Cube@{Cube}!set\-Time@{set\-Time}}
+\index{set\-Time@{set\-Time}!Cube@{Cube}}
+\subsubsection[{set\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\-::set\-Time (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_a4aee4e28135320d6d9a9e4e76183ccd7}
+set timer \hypertarget{class_cube_af4059a96c2aa6a770cdc3d6c74ddf7a2}{\index{Cube@{Cube}!set\-Velocity@{set\-Velocity}}
+\index{set\-Velocity@{set\-Velocity}!Cube@{Cube}}
+\subsubsection[{set\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\-::set\-Velocity (
+\begin{DoxyParamCaption}
+\item[{Ogre\-::\-Vector3}]{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_af4059a96c2aa6a770cdc3d6c74ddf7a2}
+sets m\-\_\-velocity \hypertarget{class_cube_a4d9b84d6ed1528793330f3a2ed1703db}{\index{Cube@{Cube}!turn\-Shadow\-Off\-On@{turn\-Shadow\-Off\-On}}
+\index{turn\-Shadow\-Off\-On@{turn\-Shadow\-Off\-On}!Cube@{Cube}}
+\subsubsection[{turn\-Shadow\-Off\-On}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\-::turn\-Shadow\-Off\-On (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cube_a4d9b84d6ed1528793330f3a2ed1703db}
+turn the shadow on and off \hypertarget{class_cube_ab734970da4a45cb624a33b03e4dd4dde}{\index{Cube@{Cube}!Update@{Update}}
+\index{Update@{Update}!Cube@{Cube}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\-::\-Update (
+\begin{DoxyParamCaption}
+\item[{double}]{, }
+\item[{O\-I\-S\-::\-Keyboard $\ast$}]{, }
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D, }
+\item[{int}]{boundary\-X, }
+\item[{int}]{boundary\-X2, }
+\item[{int}]{boundary\-Z, }
+\item[{int}]{boundary\-Z2}
+\end{DoxyParamCaption}
+)}}\label{class_cube_ab734970da4a45cb624a33b03e4dd4dde}
+Update method 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_cube_a18c8c6e055160dde284d46a60dedc92a}{\index{Cube@{Cube}!\-\_\-timer@{\-\_\-timer}}
+\index{\-\_\-timer@{\-\_\-timer}!Cube@{Cube}}
+\subsubsection[{\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Timer Cube\-::\-\_\-timer}}\label{class_cube_a18c8c6e055160dde284d46a60dedc92a}
+ogre timer \hypertarget{class_cube_a980ce3408a24527d888e4b3909824506}{\index{Cube@{Cube}!alive@{alive}}
+\index{alive@{alive}!Cube@{Cube}}
+\subsubsection[{alive}]{\setlength{\rightskip}{0pt plus 5cm}bool Cube\-::alive}}\label{class_cube_a980ce3408a24527d888e4b3909824506}
+alive or not \hypertarget{class_cube_a1eb14ea30f3a4a53cf4b889d99b0436c}{\index{Cube@{Cube}!begin@{begin}}
+\index{begin@{begin}!Cube@{Cube}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}bool Cube\-::begin}}\label{class_cube_a1eb14ea30f3a4a53cf4b889d99b0436c}
+check if starting \hypertarget{class_cube_a2bb4390eb460a9cf29de2ca916a4a9ec}{\index{Cube@{Cube}!checked@{checked}}
+\index{checked@{checked}!Cube@{Cube}}
+\subsubsection[{checked}]{\setlength{\rightskip}{0pt plus 5cm}bool Cube\-::checked}}\label{class_cube_a2bb4390eb460a9cf29de2ca916a4a9ec}
+checked or not \hypertarget{class_cube_ab100528af7d9cd8c40aa85b3eeb582d3}{\index{Cube@{Cube}!clock@{clock}}
+\index{clock@{clock}!Cube@{Cube}}
+\subsubsection[{clock}]{\setlength{\rightskip}{0pt plus 5cm}std\-::clock\-\_\-t Cube\-::clock}}\label{class_cube_ab100528af7d9cd8c40aa85b3eeb582d3}
+oger clock \hypertarget{class_cube_a07764788ed55a68115242e81efe3afaa}{\index{Cube@{Cube}!drop@{drop}}
+\index{drop@{drop}!Cube@{Cube}}
+\subsubsection[{drop}]{\setlength{\rightskip}{0pt plus 5cm}bool Cube\-::drop}}\label{class_cube_a07764788ed55a68115242e81efe3afaa}
+check if dropping \hypertarget{class_cube_ad3bb6ae7badac1e670fcf162a8221066}{\index{Cube@{Cube}!drop\-\_\-timer@{drop\-\_\-timer}}
+\index{drop\-\_\-timer@{drop\-\_\-timer}!Cube@{Cube}}
+\subsubsection[{drop\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Timer Cube\-::drop\-\_\-timer}}\label{class_cube_ad3bb6ae7badac1e670fcf162a8221066}
+ogrer timer \hypertarget{class_cube_a5b1c8da973a047c5cc5989c105b1f642}{\index{Cube@{Cube}!dropped@{dropped}}
+\index{dropped@{dropped}!Cube@{Cube}}
+\subsubsection[{dropped}]{\setlength{\rightskip}{0pt plus 5cm}bool Cube\-::dropped}}\label{class_cube_a5b1c8da973a047c5cc5989c105b1f642}
+check if dropped \hypertarget{class_cube_a0b3149f410be4e58a6ff7f8fd65cfb27}{\index{Cube@{Cube}!drop\-Timer@{drop\-Timer}}
+\index{drop\-Timer@{drop\-Timer}!Cube@{Cube}}
+\subsubsection[{drop\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}int Cube\-::drop\-Timer\hspace{0.3cm}{\ttfamily [private]}}}\label{class_cube_a0b3149f410be4e58a6ff7f8fd65cfb27}
+timer per drop \hypertarget{class_cube_a30a863d3f3d7048207a90903e961c208}{\index{Cube@{Cube}!entity\-Name@{entity\-Name}}
+\index{entity\-Name@{entity\-Name}!Cube@{Cube}}
+\subsubsection[{entity\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string Cube\-::entity\-Name}}\label{class_cube_a30a863d3f3d7048207a90903e961c208}
+the name of the cube enity \hypertarget{class_cube_a724c741e2b66fca73a76de2b644a80e8}{\index{Cube@{Cube}!entity\-Name2@{entity\-Name2}}
+\index{entity\-Name2@{entity\-Name2}!Cube@{Cube}}
+\subsubsection[{entity\-Name2}]{\setlength{\rightskip}{0pt plus 5cm}string Cube\-::entity\-Name2}}\label{class_cube_a724c741e2b66fca73a76de2b644a80e8}
+the name of the shadow1 enity \hypertarget{class_cube_ab9ed6ed2275f2e1a67ee13aa916ba6ea}{\index{Cube@{Cube}!entity\-Name3@{entity\-Name3}}
+\index{entity\-Name3@{entity\-Name3}!Cube@{Cube}}
+\subsubsection[{entity\-Name3}]{\setlength{\rightskip}{0pt plus 5cm}string Cube\-::entity\-Name3}}\label{class_cube_ab9ed6ed2275f2e1a67ee13aa916ba6ea}
+the name of the shadow2 enity \hypertarget{class_cube_a0031d492bef46fc3b1c7f8349af10e93}{\index{Cube@{Cube}!finished\-Drop@{finished\-Drop}}
+\index{finished\-Drop@{finished\-Drop}!Cube@{Cube}}
+\subsubsection[{finished\-Drop}]{\setlength{\rightskip}{0pt plus 5cm}bool Cube\-::finished\-Drop}}\label{class_cube_a0031d492bef46fc3b1c7f8349af10e93}
+check if finished dropping \hypertarget{class_cube_a6d5327a45addd39b6190e3d400228842}{\index{Cube@{Cube}!flip\-Visibility@{flip\-Visibility}}
+\index{flip\-Visibility@{flip\-Visibility}!Cube@{Cube}}
+\subsubsection[{flip\-Visibility}]{\setlength{\rightskip}{0pt plus 5cm}bool Cube\-::flip\-Visibility}}\label{class_cube_a6d5327a45addd39b6190e3d400228842}
+check if visible \hypertarget{class_cube_af26a12fc948b957c304f584ad285b02a}{\index{Cube@{Cube}!grid\-Below@{grid\-Below}}
+\index{grid\-Below@{grid\-Below}!Cube@{Cube}}
+\subsubsection[{grid\-Below}]{\setlength{\rightskip}{0pt plus 5cm}int Cube\-::grid\-Below}}\label{class_cube_af26a12fc948b957c304f584ad285b02a}
+check whats below \hypertarget{class_cube_aface2c639c17ae3bb1180c165727b36c}{\index{Cube@{Cube}!grid\-Pos\-X@{grid\-Pos\-X}}
+\index{grid\-Pos\-X@{grid\-Pos\-X}!Cube@{Cube}}
+\subsubsection[{grid\-Pos\-X}]{\setlength{\rightskip}{0pt plus 5cm}int Cube\-::grid\-Pos\-X}}\label{class_cube_aface2c639c17ae3bb1180c165727b36c}
+stores the x postion of m\-\_\-postion \hypertarget{class_cube_a9b3f7676b19910f48842d6a7bee025b0}{\index{Cube@{Cube}!grid\-Pos\-Y@{grid\-Pos\-Y}}
+\index{grid\-Pos\-Y@{grid\-Pos\-Y}!Cube@{Cube}}
+\subsubsection[{grid\-Pos\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int Cube\-::grid\-Pos\-Y}}\label{class_cube_a9b3f7676b19910f48842d6a7bee025b0}
+stores the y postion of m\-\_\-postion \hypertarget{class_cube_a40c395b356dbdd774dc24d870075fa7e}{\index{Cube@{Cube}!grid\-Pos\-Z@{grid\-Pos\-Z}}
+\index{grid\-Pos\-Z@{grid\-Pos\-Z}!Cube@{Cube}}
+\subsubsection[{grid\-Pos\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int Cube\-::grid\-Pos\-Z}}\label{class_cube_a40c395b356dbdd774dc24d870075fa7e}
+stores the z postion of m\-\_\-postion \hypertarget{class_cube_aa06856d486384e88a787d800fb981d6d}{\index{Cube@{Cube}!m\-\_\-lenth@{m\-\_\-lenth}}
+\index{m\-\_\-lenth@{m\-\_\-lenth}!Cube@{Cube}}
+\subsubsection[{m\-\_\-lenth}]{\setlength{\rightskip}{0pt plus 5cm}double Cube\-::m\-\_\-lenth\hspace{0.3cm}{\ttfamily [private]}}}\label{class_cube_aa06856d486384e88a787d800fb981d6d}
+cube length \hypertarget{class_cube_a5e8d56fc07da94b47dd527b80d2f5b42}{\index{Cube@{Cube}!m\-\_\-move@{m\-\_\-move}}
+\index{m\-\_\-move@{m\-\_\-move}!Cube@{Cube}}
+\subsubsection[{m\-\_\-move}]{\setlength{\rightskip}{0pt plus 5cm}bool Cube\-::m\-\_\-move}}\label{class_cube_a5e8d56fc07da94b47dd527b80d2f5b42}
+check if moving \hypertarget{class_cube_adb69c60fc68857cb95c19aa45be0bc06}{\index{Cube@{Cube}!m\-\_\-object\-Node@{m\-\_\-object\-Node}}
+\index{m\-\_\-object\-Node@{m\-\_\-object\-Node}!Cube@{Cube}}
+\subsubsection[{m\-\_\-object\-Node}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Scene\-Node$\ast$ Cube\-::m\-\_\-object\-Node\hspace{0.3cm}{\ttfamily [private]}}}\label{class_cube_adb69c60fc68857cb95c19aa45be0bc06}
+Scenenode \hypertarget{class_cube_aa5ab2527959955b999b24f175c8451cd}{\index{Cube@{Cube}!m\-\_\-position@{m\-\_\-position}}
+\index{m\-\_\-position@{m\-\_\-position}!Cube@{Cube}}
+\subsubsection[{m\-\_\-position}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Vector3 Cube\-::m\-\_\-position}}\label{class_cube_aa5ab2527959955b999b24f175c8451cd}
+cube position \hypertarget{class_cube_abf7ae874f1da5c76795c8aa15fa8dc36}{\index{Cube@{Cube}!m\-\_\-shadow\-Len@{m\-\_\-shadow\-Len}}
+\index{m\-\_\-shadow\-Len@{m\-\_\-shadow\-Len}!Cube@{Cube}}
+\subsubsection[{m\-\_\-shadow\-Len}]{\setlength{\rightskip}{0pt plus 5cm}float Cube\-::m\-\_\-shadow\-Len}}\label{class_cube_abf7ae874f1da5c76795c8aa15fa8dc36}
+shadow length \hypertarget{class_cube_a5b6c34989a238006fb3df95debbb5b61}{\index{Cube@{Cube}!m\-\_\-shadow\-Pos@{m\-\_\-shadow\-Pos}}
+\index{m\-\_\-shadow\-Pos@{m\-\_\-shadow\-Pos}!Cube@{Cube}}
+\subsubsection[{m\-\_\-shadow\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Vector3 Cube\-::m\-\_\-shadow\-Pos}}\label{class_cube_a5b6c34989a238006fb3df95debbb5b61}
+shadow position \hypertarget{class_cube_a2c7d96e22d8bf8fe5b1da82b4a919b1f}{\index{Cube@{Cube}!m\-\_\-shadow\-Pos2@{m\-\_\-shadow\-Pos2}}
+\index{m\-\_\-shadow\-Pos2@{m\-\_\-shadow\-Pos2}!Cube@{Cube}}
+\subsubsection[{m\-\_\-shadow\-Pos2}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Vector3 Cube\-::m\-\_\-shadow\-Pos2}}\label{class_cube_a2c7d96e22d8bf8fe5b1da82b4a919b1f}
+shadow positoin \hypertarget{class_cube_a3640e2093c74415355ca18c676ce55d3}{\index{Cube@{Cube}!m\-\_\-shadow\-Pos3@{m\-\_\-shadow\-Pos3}}
+\index{m\-\_\-shadow\-Pos3@{m\-\_\-shadow\-Pos3}!Cube@{Cube}}
+\subsubsection[{m\-\_\-shadow\-Pos3}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Vector3 Cube\-::m\-\_\-shadow\-Pos3}}\label{class_cube_a3640e2093c74415355ca18c676ce55d3}
+shadow position \hypertarget{class_cube_a7500a909cbc9f7f57056ce30d578b2f2}{\index{Cube@{Cube}!m\-\_\-timer@{m\-\_\-timer}}
+\index{m\-\_\-timer@{m\-\_\-timer}!Cube@{Cube}}
+\subsubsection[{m\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}int Cube\-::m\-\_\-timer}}\label{class_cube_a7500a909cbc9f7f57056ce30d578b2f2}
+timer \hypertarget{class_cube_a516fe89321f3e9929f46b1c110abaca9}{\index{Cube@{Cube}!m\-\_\-velocity@{m\-\_\-velocity}}
+\index{m\-\_\-velocity@{m\-\_\-velocity}!Cube@{Cube}}
+\subsubsection[{m\-\_\-velocity}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Vector3 Cube\-::m\-\_\-velocity\hspace{0.3cm}{\ttfamily [private]}}}\label{class_cube_a516fe89321f3e9929f46b1c110abaca9}
+cube velocity \hypertarget{class_cube_ad3d76d07ee2fc90ede8dfe807480002f}{\index{Cube@{Cube}!merge\-Array@{merge\-Array}}
+\index{merge\-Array@{merge\-Array}!Cube@{Cube}}
+\subsubsection[{merge\-Array}]{\setlength{\rightskip}{0pt plus 5cm}bool Cube\-::merge\-Array}}\label{class_cube_ad3d76d07ee2fc90ede8dfe807480002f}
+merger or not \hypertarget{class_cube_aa7536967e2fdaaaa68a01d380ae5e2ab}{\index{Cube@{Cube}!move\-Backward@{move\-Backward}}
+\index{move\-Backward@{move\-Backward}!Cube@{Cube}}
+\subsubsection[{move\-Backward}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Vector3 Cube\-::move\-Backward}}\label{class_cube_aa7536967e2fdaaaa68a01d380ae5e2ab}
+move the cube backward \hypertarget{class_cube_a187bae124402e077fd574b245d029721}{\index{Cube@{Cube}!move\-Down@{move\-Down}}
+\index{move\-Down@{move\-Down}!Cube@{Cube}}
+\subsubsection[{move\-Down}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Vector3 Cube\-::move\-Down}}\label{class_cube_a187bae124402e077fd574b245d029721}
+move the cube down \hypertarget{class_cube_a753844c06abc292f38ae4e496d192cc6}{\index{Cube@{Cube}!move\-Forward@{move\-Forward}}
+\index{move\-Forward@{move\-Forward}!Cube@{Cube}}
+\subsubsection[{move\-Forward}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Vector3 Cube\-::move\-Forward}}\label{class_cube_a753844c06abc292f38ae4e496d192cc6}
+move the cube forward \hypertarget{class_cube_a826e1bab8cac54c8b8fdbded40deb5c4}{\index{Cube@{Cube}!move\-Left@{move\-Left}}
+\index{move\-Left@{move\-Left}!Cube@{Cube}}
+\subsubsection[{move\-Left}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Vector3 Cube\-::move\-Left}}\label{class_cube_a826e1bab8cac54c8b8fdbded40deb5c4}
+move the cube left \hypertarget{class_cube_a1fc7acbf2fea6ef489c16634f316f8c7}{\index{Cube@{Cube}!move\-Right@{move\-Right}}
+\index{move\-Right@{move\-Right}!Cube@{Cube}}
+\subsubsection[{move\-Right}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Vector3 Cube\-::move\-Right}}\label{class_cube_a1fc7acbf2fea6ef489c16634f316f8c7}
+move the cube right \hypertarget{class_cube_a6f2b818098957d9fbc86b4c419687b40}{\index{Cube@{Cube}!node\-Name@{node\-Name}}
+\index{node\-Name@{node\-Name}!Cube@{Cube}}
+\subsubsection[{node\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string Cube\-::node\-Name}}\label{class_cube_a6f2b818098957d9fbc86b4c419687b40}
+the name of the cube node \hypertarget{class_cube_adb599c7527c0a082f07e38e4085a8ded}{\index{Cube@{Cube}!node\-Name2@{node\-Name2}}
+\index{node\-Name2@{node\-Name2}!Cube@{Cube}}
+\subsubsection[{node\-Name2}]{\setlength{\rightskip}{0pt plus 5cm}string Cube\-::node\-Name2}}\label{class_cube_adb599c7527c0a082f07e38e4085a8ded}
+the name of the shadow1 node \hypertarget{class_cube_aa4e261bd51d36701783bfe90015cfc37}{\index{Cube@{Cube}!node\-Name3@{node\-Name3}}
+\index{node\-Name3@{node\-Name3}!Cube@{Cube}}
+\subsubsection[{node\-Name3}]{\setlength{\rightskip}{0pt plus 5cm}string Cube\-::node\-Name3}}\label{class_cube_aa4e261bd51d36701783bfe90015cfc37}
+the name of the shadow2 node \hypertarget{class_cube_af31b1b23360a7dd9daec4239cc28b1af}{\index{Cube@{Cube}!shadow@{shadow}}
+\index{shadow@{shadow}!Cube@{Cube}}
+\subsubsection[{shadow}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Entity$\ast$ Cube\-::shadow}}\label{class_cube_af31b1b23360a7dd9daec4239cc28b1af}
+shadow entity \hypertarget{class_cube_af1df68e410cff62cbfb3b6d6d925e0cd}{\index{Cube@{Cube}!shadow2@{shadow2}}
+\index{shadow2@{shadow2}!Cube@{Cube}}
+\subsubsection[{shadow2}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Entity$\ast$ Cube\-::shadow2}}\label{class_cube_af1df68e410cff62cbfb3b6d6d925e0cd}
+Entity\-Node \hypertarget{class_cube_a26a6af67ab33f0823ab676f918be4693}{\index{Cube@{Cube}!shadow3@{shadow3}}
+\index{shadow3@{shadow3}!Cube@{Cube}}
+\subsubsection[{shadow3}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Entity$\ast$ Cube\-::shadow3}}\label{class_cube_a26a6af67ab33f0823ab676f918be4693}
+shadow plam \hypertarget{class_cube_a3bb63d0dffdc360db0dee096083bd98d}{\index{Cube@{Cube}!shadow\-Name3@{shadow\-Name3}}
+\index{shadow\-Name3@{shadow\-Name3}!Cube@{Cube}}
+\subsubsection[{shadow\-Name3}]{\setlength{\rightskip}{0pt plus 5cm}string Cube\-::shadow\-Name3}}\label{class_cube_a3bb63d0dffdc360db0dee096083bd98d}
+the name of the shadow3 node \hypertarget{class_cube_a90a483946cdb6d20ae815ec9300a7dff}{\index{Cube@{Cube}!shadow\-Node@{shadow\-Node}}
+\index{shadow\-Node@{shadow\-Node}!Cube@{Cube}}
+\subsubsection[{shadow\-Node}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Scene\-Node$\ast$ Cube\-::shadow\-Node}}\label{class_cube_a90a483946cdb6d20ae815ec9300a7dff}
+shadow\-Node \hypertarget{class_cube_ab0dd9287bdc0dd3d3c86720b8063e1c7}{\index{Cube@{Cube}!shadow\-Node2@{shadow\-Node2}}
+\index{shadow\-Node2@{shadow\-Node2}!Cube@{Cube}}
+\subsubsection[{shadow\-Node2}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Scene\-Node$\ast$ Cube\-::shadow\-Node2}}\label{class_cube_ab0dd9287bdc0dd3d3c86720b8063e1c7}
+Scene\-Node \hypertarget{class_cube_a46e45c5df1c3b06a722792c0fe7a3a99}{\index{Cube@{Cube}!shadow\-Node3@{shadow\-Node3}}
+\index{shadow\-Node3@{shadow\-Node3}!Cube@{Cube}}
+\subsubsection[{shadow\-Node3}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Scene\-Node$\ast$ Cube\-::shadow\-Node3}}\label{class_cube_a46e45c5df1c3b06a722792c0fe7a3a99}
+scene node \hypertarget{class_cube_ac59874f591b123fc0f0d7b4c88ab9130}{\index{Cube@{Cube}!shadow\-Node\-Name3@{shadow\-Node\-Name3}}
+\index{shadow\-Node\-Name3@{shadow\-Node\-Name3}!Cube@{Cube}}
+\subsubsection[{shadow\-Node\-Name3}]{\setlength{\rightskip}{0pt plus 5cm}string Cube\-::shadow\-Node\-Name3}}\label{class_cube_ac59874f591b123fc0f0d7b4c88ab9130}
+the name of the shadow node \hypertarget{class_cube_a9f4a7fe70d1017e112c5486268ccde48}{\index{Cube@{Cube}!shadow\-Plane@{shadow\-Plane}}
+\index{shadow\-Plane@{shadow\-Plane}!Cube@{Cube}}
+\subsubsection[{shadow\-Plane}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Plane Cube\-::shadow\-Plane}}\label{class_cube_a9f4a7fe70d1017e112c5486268ccde48}
+shadow plane \hypertarget{class_cube_a50238beea54f1107761f375870b504ea}{\index{Cube@{Cube}!shadow\-Plane2@{shadow\-Plane2}}
+\index{shadow\-Plane2@{shadow\-Plane2}!Cube@{Cube}}
+\subsubsection[{shadow\-Plane2}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Plane Cube\-::shadow\-Plane2}}\label{class_cube_a50238beea54f1107761f375870b504ea}
+constructor
+
+shadow\-Node \hypertarget{class_cube_a26706404bc0586106f3ce0539b5aefb9}{\index{Cube@{Cube}!shadow\-Plane3@{shadow\-Plane3}}
+\index{shadow\-Plane3@{shadow\-Plane3}!Cube@{Cube}}
+\subsubsection[{shadow\-Plane3}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Plane Cube\-::shadow\-Plane3}}\label{class_cube_a26706404bc0586106f3ce0539b5aefb9}
+constructor \hypertarget{class_cube_a9af90d4cbb6956867599962f58144322}{\index{Cube@{Cube}!target\-Cube@{target\-Cube}}
+\index{target\-Cube@{target\-Cube}!Cube@{Cube}}
+\subsubsection[{target\-Cube}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Entity$\ast$ Cube\-::target\-Cube}}\label{class_cube_a9af90d4cbb6956867599962f58144322}
+the name of the enity node \hypertarget{class_cube_a8ff3abf1bb201413140c23d870961ea2}{\index{Cube@{Cube}!target\-Node@{target\-Node}}
+\index{target\-Node@{target\-Node}!Cube@{Cube}}
+\subsubsection[{target\-Node}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Scene\-Node$\ast$ Cube\-::target\-Node}}\label{class_cube_a8ff3abf1bb201413140c23d870961ea2}
+the name of the node \hypertarget{class_cube_a46f7e77fdc6bd86d23c36553356bded6}{\index{Cube@{Cube}!tick@{tick}}
+\index{tick@{tick}!Cube@{Cube}}
+\subsubsection[{tick}]{\setlength{\rightskip}{0pt plus 5cm}double Cube\-::tick}}\label{class_cube_a46f7e77fdc6bd86d23c36553356bded6}
+tick amount 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Aoibhinn/\-Desktop/finished/\-Project\-Colour/\-Project\-One/\-Project\-One/\-Project\-One/include/\hyperlink{_cube_8h}{Cube.\-h}\end{DoxyCompactItemize}

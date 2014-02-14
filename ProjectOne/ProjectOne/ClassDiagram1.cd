@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BaseApplication">
+    <Position X="8.5" Y="1.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="BaseApplication::CurrentShapeType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>include\BaseApplication.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>FngaDEABDAFtNXxNDAAYBYIEQCMtkSYYhMADSLIqeYg=</HashCode>
+      <FileName>include\BaseApplication.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lShape" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AERBQAAQRAAyQqgEAACUWAAAJAiAUAICEIABAAAgAEE=</HashCode>
+      <FileName>include\lShape.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lShapeOpp" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="lShapeOpp::DirectionFacing" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>include\lShapeOpp.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AERBQAAYRAAyQqgAAACUWAAAJAiAUAICEIABAAAgAEE=</HashCode>
+      <FileName>include\lShapeOpp.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjectOne" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIgAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ProjectOne.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tShape" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="tShape::DirectionFacing" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>include\tShape.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AARBQAAQRAAyQqwAAACEWAAAJAiAUAICEIABQAAgAEE=</HashCode>
+      <FileName>include\tShape.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tShapeOpp" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AERJQAAQRAAyQqgAAACEUAAAJAiAUAICEIABAAAgAEE=</HashCode>
+      <FileName>include\tShapeOpp.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="zShape" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="zShape::DirectionFacing" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>include\zShape.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EARBAABQRAAyQqiAAACEUAAABAiAAAIAEIAAAAAgAEE=</HashCode>
+      <FileName>include\zShape.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="MySimpleDemoPanelColors" Collapsed="true">
+    <Position X="3" Y="3.75" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\MySimpleDemoPanelColors.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,250 @@
+\hypertarget{classbox}{\section{box Class Reference}
+\label{classbox}\index{box@{box}}
+}
+
+
+{\ttfamily \#include $<$box.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classbox_a9cfa5b85cd77bd929b7611f5823fa3ba}{Orientation} \{ \hyperlink{classbox_a9cfa5b85cd77bd929b7611f5823fa3baa7c8d5f8365e0ee32bee3827910697355}{x\-Alligned}, 
+\hyperlink{classbox_a9cfa5b85cd77bd929b7611f5823fa3baab2cff0f5e8ace5ef979213e7091a7523}{z\-Alligned}, 
+\hyperlink{classbox_a9cfa5b85cd77bd929b7611f5823fa3baa598289cd38376f8f57691c61a030f41d}{y\-Alligned}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbox_a4a8fad0047fb04ef2fb2d7d0f18e7ff0}{box} (Ogre\-::\-Scene\-Manager $\ast$, string, string)
+\item 
+void \hyperlink{classbox_ad508ff824e4e7bc12f318e04d6261ca7}{Update} (double, O\-I\-S\-::\-Keyboard $\ast$, vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D, int main\-Tick\-Value)
+\item 
+void \hyperlink{classbox_a8a65009f32aea940426dddaa8acc0f2c}{is\-Dropping} (vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D)
+\item 
+void \hyperlink{classbox_a942225e95b59248056c66ab7cfb6169c}{rotate\-Right} (double, O\-I\-S\-::\-Keyboard $\ast$, vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classbox_aece931ab7a442ce512195e62d425f003}{cube0boundary\-X}
+\item 
+int \hyperlink{classbox_ac537ee9d62e0ce4d2547abf71e162ecc}{cube0boundary\-X2}
+\item 
+int \hyperlink{classbox_a977f1c22d1535732f20140b150d1bedf}{cube1boundary\-X}
+\item 
+int \hyperlink{classbox_a8f9f43fe283022beea21a5da3f7e31bd}{cube1boundary\-X2}
+\item 
+int \hyperlink{classbox_a6e87c5e202ad004d15e7f2d89700b89f}{cube2boundary\-X}
+\item 
+int \hyperlink{classbox_af34d8a2cf54602fb899ba5a93ef77a2f}{cube2boundary\-X2}
+\item 
+int \hyperlink{classbox_a90c20bbb34a5a9ae744e3fe77bf399d6}{cube0boundary\-Z}
+\item 
+int \hyperlink{classbox_a72efab0f58db398d43382cf8156f45f1}{cube0boundary\-Z2}
+\item 
+int \hyperlink{classbox_a061c1833454d8d4fc9c706b60259315b}{cube1boundary\-Z}
+\item 
+int \hyperlink{classbox_a2db514751a0641e59c25473615eb165b}{cube1boundary\-Z2}
+\item 
+int \hyperlink{classbox_a64c685cd4b334e1d72b7f14c8a55f970}{cube2boundary\-Z}
+\item 
+int \hyperlink{classbox_a16fb873fcc45bf9e0e3aec4f94bed5a1}{cube2boundary\-Z2}
+\item 
+int \hyperlink{classbox_a9e1a485f4294e148ae46da563fb59405}{cube0\-Boundary\-Y}
+\item 
+bool \hyperlink{classbox_ad8b435145432f780c4e056953e23e17f}{alive}
+\item 
+string \hyperlink{classbox_a2350aca4cfcf3a648ef649e1b5fccabe}{my\-Name}
+\item 
+bool \hyperlink{classbox_aede30efa073f3c74b5c625742ab99deb}{shadow\-Off}
+\item 
+int \hyperlink{classbox_a1b4e32a86f15ec53e16cdf1b963b5c34}{cube\-Amount}
+\item 
+enum \hyperlink{classbox_a9cfa5b85cd77bd929b7611f5823fa3ba}{box\-::\-Orientation} \hyperlink{classbox_ab36d34b3d985c2631f6e4feb864675ab}{orientation}
+\item 
+bool \hyperlink{classbox_abe346da44b7ef7b328b4a796b120d1e7}{cube\-Ready\-To\-Drop} \mbox{[}8\mbox{]}
+\item 
+int \hyperlink{classbox_a96f4d4f2e59525807d053b6972a72441}{cell\-Size}
+\item 
+int \hyperlink{classbox_a68fbb1af7f202fb26fce4dcfe9b62293}{time}
+\item 
+int \hyperlink{classbox_a4c72d37c31f8bca128ce436b5c5e7f04}{z\-Direction}
+\item 
+int \hyperlink{classbox_a415ffc44d6f1b1ea7c50b0d07971f017}{x\-Direction}
+\item 
+vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$ \hyperlink{classbox_a53e283c3448f79142666aedfea567b04}{cubes}
+\item 
+Ogre\-::\-Timer \hyperlink{classbox_abd44104db5f2b13def5813ee20d27dcb}{rotate\-\_\-timer}
+\item 
+double \hyperlink{classbox_a46d6bfaa2beca404b86a12ac33e849a3}{rotate\-Tick}
+\item 
+Ogre\-::\-Timer \hyperlink{classbox_a5eaf149a0b9bff3ee5cfd62ad4de1a08}{move\-\_\-timer}
+\item 
+double \hyperlink{classbox_aa37b652252a99b368309c11eb1647811}{move\-Tick}
+\item 
+Ogre\-::\-Timer \hyperlink{classbox_aa8731a3a737a73831f093b550e28f4a3}{\-\_\-timer}
+\item 
+double \hyperlink{classbox_ad2e3d5ed2adf37059cca8c814a45d892}{tick}
+\item 
+double \hyperlink{classbox_a3259d49a7e78981c7bbe64fe0d5e3e3d}{tick\-Value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classbox_a9cfa5b85cd77bd929b7611f5823fa3ba}{\index{box@{box}!Orientation@{Orientation}}
+\index{Orientation@{Orientation}!box@{box}}
+\subsubsection[{Orientation}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf box\-::\-Orientation}}}\label{classbox_a9cfa5b85cd77bd929b7611f5823fa3ba}
+tracks the orientation of the shape \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{x\-Alligned@{x\-Alligned}!box@{box}}\index{box@{box}!x\-Alligned@{x\-Alligned}}\item[{\em 
+\hypertarget{classbox_a9cfa5b85cd77bd929b7611f5823fa3baa7c8d5f8365e0ee32bee3827910697355}{x\-Alligned}\label{classbox_a9cfa5b85cd77bd929b7611f5823fa3baa7c8d5f8365e0ee32bee3827910697355}
+}]\index{z\-Alligned@{z\-Alligned}!box@{box}}\index{box@{box}!z\-Alligned@{z\-Alligned}}\item[{\em 
+\hypertarget{classbox_a9cfa5b85cd77bd929b7611f5823fa3baab2cff0f5e8ace5ef979213e7091a7523}{z\-Alligned}\label{classbox_a9cfa5b85cd77bd929b7611f5823fa3baab2cff0f5e8ace5ef979213e7091a7523}
+}]\index{y\-Alligned@{y\-Alligned}!box@{box}}\index{box@{box}!y\-Alligned@{y\-Alligned}}\item[{\em 
+\hypertarget{classbox_a9cfa5b85cd77bd929b7611f5823fa3baa598289cd38376f8f57691c61a030f41d}{y\-Alligned}\label{classbox_a9cfa5b85cd77bd929b7611f5823fa3baa598289cd38376f8f57691c61a030f41d}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbox_a4a8fad0047fb04ef2fb2d7d0f18e7ff0}{\index{box@{box}!box@{box}}
+\index{box@{box}!box@{box}}
+\subsubsection[{box}]{\setlength{\rightskip}{0pt plus 5cm}box\-::box (
+\begin{DoxyParamCaption}
+\item[{Ogre\-::\-Scene\-Manager $\ast$}]{, }
+\item[{string}]{, }
+\item[{string}]{}
+\end{DoxyParamCaption}
+)}}\label{classbox_a4a8fad0047fb04ef2fb2d7d0f18e7ff0}
+constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbox_a8a65009f32aea940426dddaa8acc0f2c}{\index{box@{box}!is\-Dropping@{is\-Dropping}}
+\index{is\-Dropping@{is\-Dropping}!box@{box}}
+\subsubsection[{is\-Dropping}]{\setlength{\rightskip}{0pt plus 5cm}void box\-::is\-Dropping (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D}
+\end{DoxyParamCaption}
+)}}\label{classbox_a8a65009f32aea940426dddaa8acc0f2c}
+checks if the cube is dropping method \hypertarget{classbox_a942225e95b59248056c66ab7cfb6169c}{\index{box@{box}!rotate\-Right@{rotate\-Right}}
+\index{rotate\-Right@{rotate\-Right}!box@{box}}
+\subsubsection[{rotate\-Right}]{\setlength{\rightskip}{0pt plus 5cm}void box\-::rotate\-Right (
+\begin{DoxyParamCaption}
+\item[{double}]{, }
+\item[{O\-I\-S\-::\-Keyboard $\ast$}]{, }
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D}
+\end{DoxyParamCaption}
+)}}\label{classbox_a942225e95b59248056c66ab7cfb6169c}
+rotate the shape right \hypertarget{classbox_ad508ff824e4e7bc12f318e04d6261ca7}{\index{box@{box}!Update@{Update}}
+\index{Update@{Update}!box@{box}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void box\-::\-Update (
+\begin{DoxyParamCaption}
+\item[{double}]{, }
+\item[{O\-I\-S\-::\-Keyboard $\ast$}]{, }
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D, }
+\item[{int}]{main\-Tick\-Value}
+\end{DoxyParamCaption}
+)}}\label{classbox_ad508ff824e4e7bc12f318e04d6261ca7}
+update method 
+
+\subsection{Member Data Documentation}
+\hypertarget{classbox_aa8731a3a737a73831f093b550e28f4a3}{\index{box@{box}!\-\_\-timer@{\-\_\-timer}}
+\index{\-\_\-timer@{\-\_\-timer}!box@{box}}
+\subsubsection[{\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Timer box\-::\-\_\-timer}}\label{classbox_aa8731a3a737a73831f093b550e28f4a3}
+oger timer \hypertarget{classbox_ad8b435145432f780c4e056953e23e17f}{\index{box@{box}!alive@{alive}}
+\index{alive@{alive}!box@{box}}
+\subsubsection[{alive}]{\setlength{\rightskip}{0pt plus 5cm}bool box\-::alive}}\label{classbox_ad8b435145432f780c4e056953e23e17f}
+stores if the shape is alive \hypertarget{classbox_a96f4d4f2e59525807d053b6972a72441}{\index{box@{box}!cell\-Size@{cell\-Size}}
+\index{cell\-Size@{cell\-Size}!box@{box}}
+\subsubsection[{cell\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::cell\-Size}}\label{classbox_a96f4d4f2e59525807d053b6972a72441}
+the size of the cells in the matrix \hypertarget{classbox_aece931ab7a442ce512195e62d425f003}{\index{box@{box}!cube0boundary\-X@{cube0boundary\-X}}
+\index{cube0boundary\-X@{cube0boundary\-X}!box@{box}}
+\subsubsection[{cube0boundary\-X}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::cube0boundary\-X}}\label{classbox_aece931ab7a442ce512195e62d425f003}
+keeps the cube at postion 0 inside the matrix \hypertarget{classbox_ac537ee9d62e0ce4d2547abf71e162ecc}{\index{box@{box}!cube0boundary\-X2@{cube0boundary\-X2}}
+\index{cube0boundary\-X2@{cube0boundary\-X2}!box@{box}}
+\subsubsection[{cube0boundary\-X2}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::cube0boundary\-X2}}\label{classbox_ac537ee9d62e0ce4d2547abf71e162ecc}
+\hypertarget{classbox_a9e1a485f4294e148ae46da563fb59405}{\index{box@{box}!cube0\-Boundary\-Y@{cube0\-Boundary\-Y}}
+\index{cube0\-Boundary\-Y@{cube0\-Boundary\-Y}!box@{box}}
+\subsubsection[{cube0\-Boundary\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::cube0\-Boundary\-Y}}\label{classbox_a9e1a485f4294e148ae46da563fb59405}
+keeps the cube at postion 0 inside the matrix \hypertarget{classbox_a90c20bbb34a5a9ae744e3fe77bf399d6}{\index{box@{box}!cube0boundary\-Z@{cube0boundary\-Z}}
+\index{cube0boundary\-Z@{cube0boundary\-Z}!box@{box}}
+\subsubsection[{cube0boundary\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::cube0boundary\-Z}}\label{classbox_a90c20bbb34a5a9ae744e3fe77bf399d6}
+keeps the cube at postion 0 inside the matrix \hypertarget{classbox_a72efab0f58db398d43382cf8156f45f1}{\index{box@{box}!cube0boundary\-Z2@{cube0boundary\-Z2}}
+\index{cube0boundary\-Z2@{cube0boundary\-Z2}!box@{box}}
+\subsubsection[{cube0boundary\-Z2}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::cube0boundary\-Z2}}\label{classbox_a72efab0f58db398d43382cf8156f45f1}
+\hypertarget{classbox_a977f1c22d1535732f20140b150d1bedf}{\index{box@{box}!cube1boundary\-X@{cube1boundary\-X}}
+\index{cube1boundary\-X@{cube1boundary\-X}!box@{box}}
+\subsubsection[{cube1boundary\-X}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::cube1boundary\-X}}\label{classbox_a977f1c22d1535732f20140b150d1bedf}
+keeps the cube at postion 1 inside the matrix \hypertarget{classbox_a8f9f43fe283022beea21a5da3f7e31bd}{\index{box@{box}!cube1boundary\-X2@{cube1boundary\-X2}}
+\index{cube1boundary\-X2@{cube1boundary\-X2}!box@{box}}
+\subsubsection[{cube1boundary\-X2}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::cube1boundary\-X2}}\label{classbox_a8f9f43fe283022beea21a5da3f7e31bd}
+\hypertarget{classbox_a061c1833454d8d4fc9c706b60259315b}{\index{box@{box}!cube1boundary\-Z@{cube1boundary\-Z}}
+\index{cube1boundary\-Z@{cube1boundary\-Z}!box@{box}}
+\subsubsection[{cube1boundary\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::cube1boundary\-Z}}\label{classbox_a061c1833454d8d4fc9c706b60259315b}
+keeps the cube at postion 1 inside the matrix \hypertarget{classbox_a2db514751a0641e59c25473615eb165b}{\index{box@{box}!cube1boundary\-Z2@{cube1boundary\-Z2}}
+\index{cube1boundary\-Z2@{cube1boundary\-Z2}!box@{box}}
+\subsubsection[{cube1boundary\-Z2}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::cube1boundary\-Z2}}\label{classbox_a2db514751a0641e59c25473615eb165b}
+\hypertarget{classbox_a6e87c5e202ad004d15e7f2d89700b89f}{\index{box@{box}!cube2boundary\-X@{cube2boundary\-X}}
+\index{cube2boundary\-X@{cube2boundary\-X}!box@{box}}
+\subsubsection[{cube2boundary\-X}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::cube2boundary\-X}}\label{classbox_a6e87c5e202ad004d15e7f2d89700b89f}
+keeps the cube at postion 2 inside the matrix \hypertarget{classbox_af34d8a2cf54602fb899ba5a93ef77a2f}{\index{box@{box}!cube2boundary\-X2@{cube2boundary\-X2}}
+\index{cube2boundary\-X2@{cube2boundary\-X2}!box@{box}}
+\subsubsection[{cube2boundary\-X2}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::cube2boundary\-X2}}\label{classbox_af34d8a2cf54602fb899ba5a93ef77a2f}
+\hypertarget{classbox_a64c685cd4b334e1d72b7f14c8a55f970}{\index{box@{box}!cube2boundary\-Z@{cube2boundary\-Z}}
+\index{cube2boundary\-Z@{cube2boundary\-Z}!box@{box}}
+\subsubsection[{cube2boundary\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::cube2boundary\-Z}}\label{classbox_a64c685cd4b334e1d72b7f14c8a55f970}
+keeps the cube at postion 2 inside the matrix \hypertarget{classbox_a16fb873fcc45bf9e0e3aec4f94bed5a1}{\index{box@{box}!cube2boundary\-Z2@{cube2boundary\-Z2}}
+\index{cube2boundary\-Z2@{cube2boundary\-Z2}!box@{box}}
+\subsubsection[{cube2boundary\-Z2}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::cube2boundary\-Z2}}\label{classbox_a16fb873fcc45bf9e0e3aec4f94bed5a1}
+\hypertarget{classbox_a1b4e32a86f15ec53e16cdf1b963b5c34}{\index{box@{box}!cube\-Amount@{cube\-Amount}}
+\index{cube\-Amount@{cube\-Amount}!box@{box}}
+\subsubsection[{cube\-Amount}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::cube\-Amount}}\label{classbox_a1b4e32a86f15ec53e16cdf1b963b5c34}
+the amount of cubes in the shapes array \hypertarget{classbox_abe346da44b7ef7b328b4a796b120d1e7}{\index{box@{box}!cube\-Ready\-To\-Drop@{cube\-Ready\-To\-Drop}}
+\index{cube\-Ready\-To\-Drop@{cube\-Ready\-To\-Drop}!box@{box}}
+\subsubsection[{cube\-Ready\-To\-Drop}]{\setlength{\rightskip}{0pt plus 5cm}bool box\-::cube\-Ready\-To\-Drop\mbox{[}8\mbox{]}}}\label{classbox_abe346da44b7ef7b328b4a796b120d1e7}
+checks if the last cube is ready to drop \hypertarget{classbox_a53e283c3448f79142666aedfea567b04}{\index{box@{box}!cubes@{cubes}}
+\index{cubes@{cubes}!box@{box}}
+\subsubsection[{cubes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Cube}$\ast$$>$ box\-::cubes}}\label{classbox_a53e283c3448f79142666aedfea567b04}
+array of cube objects \hypertarget{classbox_a5eaf149a0b9bff3ee5cfd62ad4de1a08}{\index{box@{box}!move\-\_\-timer@{move\-\_\-timer}}
+\index{move\-\_\-timer@{move\-\_\-timer}!box@{box}}
+\subsubsection[{move\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Timer box\-::move\-\_\-timer}}\label{classbox_a5eaf149a0b9bff3ee5cfd62ad4de1a08}
+tracks movement time \hypertarget{classbox_aa37b652252a99b368309c11eb1647811}{\index{box@{box}!move\-Tick@{move\-Tick}}
+\index{move\-Tick@{move\-Tick}!box@{box}}
+\subsubsection[{move\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}double box\-::move\-Tick}}\label{classbox_aa37b652252a99b368309c11eb1647811}
+counts movment ticks \hypertarget{classbox_a2350aca4cfcf3a648ef649e1b5fccabe}{\index{box@{box}!my\-Name@{my\-Name}}
+\index{my\-Name@{my\-Name}!box@{box}}
+\subsubsection[{my\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string box\-::my\-Name}}\label{classbox_a2350aca4cfcf3a648ef649e1b5fccabe}
+stores the shapes name \hypertarget{classbox_ab36d34b3d985c2631f6e4feb864675ab}{\index{box@{box}!orientation@{orientation}}
+\index{orientation@{orientation}!box@{box}}
+\subsubsection[{orientation}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf box\-::\-Orientation}  box\-::orientation}}\label{classbox_ab36d34b3d985c2631f6e4feb864675ab}
+\hypertarget{classbox_abd44104db5f2b13def5813ee20d27dcb}{\index{box@{box}!rotate\-\_\-timer@{rotate\-\_\-timer}}
+\index{rotate\-\_\-timer@{rotate\-\_\-timer}!box@{box}}
+\subsubsection[{rotate\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Timer box\-::rotate\-\_\-timer}}\label{classbox_abd44104db5f2b13def5813ee20d27dcb}
+oger timer \hypertarget{classbox_a46d6bfaa2beca404b86a12ac33e849a3}{\index{box@{box}!rotate\-Tick@{rotate\-Tick}}
+\index{rotate\-Tick@{rotate\-Tick}!box@{box}}
+\subsubsection[{rotate\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}double box\-::rotate\-Tick}}\label{classbox_a46d6bfaa2beca404b86a12ac33e849a3}
+counts ticks per rotation \hypertarget{classbox_aede30efa073f3c74b5c625742ab99deb}{\index{box@{box}!shadow\-Off@{shadow\-Off}}
+\index{shadow\-Off@{shadow\-Off}!box@{box}}
+\subsubsection[{shadow\-Off}]{\setlength{\rightskip}{0pt plus 5cm}bool box\-::shadow\-Off}}\label{classbox_aede30efa073f3c74b5c625742ab99deb}
+checks if shadow is on \hypertarget{classbox_ad2e3d5ed2adf37059cca8c814a45d892}{\index{box@{box}!tick@{tick}}
+\index{tick@{tick}!box@{box}}
+\subsubsection[{tick}]{\setlength{\rightskip}{0pt plus 5cm}double box\-::tick}}\label{classbox_ad2e3d5ed2adf37059cca8c814a45d892}
+stores ticks \hypertarget{classbox_a3259d49a7e78981c7bbe64fe0d5e3e3d}{\index{box@{box}!tick\-Value@{tick\-Value}}
+\index{tick\-Value@{tick\-Value}!box@{box}}
+\subsubsection[{tick\-Value}]{\setlength{\rightskip}{0pt plus 5cm}double box\-::tick\-Value}}\label{classbox_a3259d49a7e78981c7bbe64fe0d5e3e3d}
+tracks tick value \hypertarget{classbox_a68fbb1af7f202fb26fce4dcfe9b62293}{\index{box@{box}!time@{time}}
+\index{time@{time}!box@{box}}
+\subsubsection[{time}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::time}}\label{classbox_a68fbb1af7f202fb26fce4dcfe9b62293}
+stores time \hypertarget{classbox_a415ffc44d6f1b1ea7c50b0d07971f017}{\index{box@{box}!x\-Direction@{x\-Direction}}
+\index{x\-Direction@{x\-Direction}!box@{box}}
+\subsubsection[{x\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::x\-Direction}}\label{classbox_a415ffc44d6f1b1ea7c50b0d07971f017}
+strores x\-Diretion \hypertarget{classbox_a4c72d37c31f8bca128ce436b5c5e7f04}{\index{box@{box}!z\-Direction@{z\-Direction}}
+\index{z\-Direction@{z\-Direction}!box@{box}}
+\subsubsection[{z\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}int box\-::z\-Direction}}\label{classbox_a4c72d37c31f8bca128ce436b5c5e7f04}
+stores z\-Diretion 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Aoibhinn/\-Desktop/finished/\-Project\-Colour/\-Project\-One/\-Project\-One/\-Project\-One/include/\hyperlink{box_8h}{box.\-h}\end{DoxyCompactItemize}

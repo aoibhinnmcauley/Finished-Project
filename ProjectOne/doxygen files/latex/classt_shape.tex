@@ -1,0 +1,308 @@
+\hypertarget{classt_shape}{\section{t\-Shape Class Reference}
+\label{classt_shape}\index{t\-Shape@{t\-Shape}}
+}
+
+
+{\ttfamily \#include $<$t\-Shape.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classt_shape_a193bb18f526dc3f027748fc231b577ae}{Direction\-Facing} \{ \hyperlink{classt_shape_a193bb18f526dc3f027748fc231b577aeae74a49141e9f311876d422f8016b1a29}{x\-Axis}, 
+\hyperlink{classt_shape_a193bb18f526dc3f027748fc231b577aea5e1041e853e5ba9f0ec9461cc76f6fa4}{z\-Axis}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classt_shape_ad6e92496392d351fee71ffa004e53ec6}{t\-Shape} (Ogre\-::\-Scene\-Manager $\ast$, string, string)
+\item 
+void \hyperlink{classt_shape_a51c0e39d0e8d89872ba1973e9949d2bd}{Update} (double, O\-I\-S\-::\-Keyboard $\ast$, vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D, int main\-Tick\-Value)
+\item 
+void \hyperlink{classt_shape_ab4c52b54568e2934ade12889cbad9023}{rotate\-Right} (double, O\-I\-S\-::\-Keyboard $\ast$, vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D)
+\item 
+void \hyperlink{classt_shape_a8ac2a90e601d1c95122d00da5da2e035}{rotate\-Y} (double, O\-I\-S\-::\-Keyboard $\ast$, vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D)
+\item 
+void \hyperlink{classt_shape_a4abc7fa2f46c54ad12671cba522baef4}{is\-Dropping} (vector$<$ vector$<$ vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$$>$$>$ \&array3\-D)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classt_shape_a2df1bbbd7e785bd17cd4d63e8b3a6869}{cube0boundary\-X}
+\item 
+int \hyperlink{classt_shape_ac4ca3540f5d00586160f68272f60b060}{cube0boundary\-X2}
+\item 
+int \hyperlink{classt_shape_a5b7cbdbe623f5a877f84b82b70b5dbbb}{cube1boundary\-X}
+\item 
+int \hyperlink{classt_shape_afc1aab26cc9f3f2469d8080d3f4db30b}{cube1boundary\-X2}
+\item 
+int \hyperlink{classt_shape_a7cdc58c460ed0ff531971184532e4964}{cube2boundary\-X}
+\item 
+int \hyperlink{classt_shape_ad3e402834a2d3c1b95d171a0108c8716}{cube2boundary\-X2}
+\item 
+int \hyperlink{classt_shape_aa1aac01762ff03d22030cb0ed99189f6}{cube3boundary\-X}
+\item 
+int \hyperlink{classt_shape_a4c6aff9cf7e8fcc0b0fa8d8a0312f83c}{cube3boundary\-X2}
+\item 
+int \hyperlink{classt_shape_afe93811926d8189ec7a05f3837946d13}{cell\-X}
+\item 
+int \hyperlink{classt_shape_ac6f6ca34dbe77edc42bf1063f45704f3}{cell\-Y}
+\item 
+int \hyperlink{classt_shape_a472e4925e0aaa875df22dab7a6ed3551}{cell\-Z}
+\item 
+int \hyperlink{classt_shape_a6c726e8afc0847cea65901b74bb0f1a4}{cube0boundary\-Z}
+\item 
+int \hyperlink{classt_shape_ab587a6654689689ee6b94d10f6105082}{cube0boundary\-Z2}
+\item 
+int \hyperlink{classt_shape_ae1d93af37253f5dd2e59b35366fdd8ef}{cube1boundary\-Z}
+\item 
+int \hyperlink{classt_shape_af5ef08112c5ac489c6ab89a445563cbd}{cube1boundary\-Z2}
+\item 
+int \hyperlink{classt_shape_a16bd5d07b91ee4e24e6344c9241d8f95}{cube2boundary\-Z}
+\item 
+int \hyperlink{classt_shape_a6c6d6c35143aaa266ff75b76f41e38bc}{cube2boundary\-Z2}
+\item 
+int \hyperlink{classt_shape_a08534f9b32ceebaa5ca648d30a003d6f}{cube3boundary\-Z}
+\item 
+int \hyperlink{classt_shape_ac0932463ccf31060b93109584e7b142c}{cube3boundary\-Z2}
+\item 
+int \hyperlink{classt_shape_a39a906a952b50e774dd199829763ce1f}{cube\-Amount}
+\item 
+int \hyperlink{classt_shape_ab536ba2d1c2fc3e4f367ecf936e49f14}{cube0\-Boundary\-Y}
+\item 
+bool \hyperlink{classt_shape_a7c8f00d63a58a51843de002a9652cac7}{shadow\-Off}
+\item 
+bool \hyperlink{classt_shape_a1bb379051554beb845b42fb441e0939c}{alive}
+\item 
+bool \hyperlink{classt_shape_a2bafbe715483f3f4da44eafae17aac5f}{rotated\-Y}
+\item 
+bool \hyperlink{classt_shape_a502388884d8386251696471623158a76}{rotated\-X}
+\item 
+string \hyperlink{classt_shape_ab461221e1ac0abdef5007a6516303d8e}{my\-Name}
+\item 
+Ogre\-::\-Timer \hyperlink{classt_shape_ae50ef7ba28f10ebe97ab2c431fa27c08}{rotate\-\_\-timer}
+\item 
+double \hyperlink{classt_shape_ad7f4f8ddfe299bf838030cbc521acb6f}{rotate\-Tick}
+\item 
+Ogre\-::\-Timer \hyperlink{classt_shape_a8da32e43eeb8ca2a96682ddfd95de45f}{move\-\_\-timer}
+\item 
+double \hyperlink{classt_shape_a01c34bd393df7caa86a4ff785a1775bd}{move\-Tick}
+\item 
+Ogre\-::\-Timer \hyperlink{classt_shape_ade6208b0cd2a248227f8ac43e3c3b494}{\-\_\-timer}
+\item 
+double \hyperlink{classt_shape_a49dc22290f02a6e6ff0f106ffcb16083}{tick}
+\item 
+double \hyperlink{classt_shape_ad211ab24428076e438d6c9212cd0daa0}{tick\-Value}
+\item 
+int \hyperlink{classt_shape_a1692503641320662db249899a96465f4}{cell\-Size}
+\item 
+bool \hyperlink{classt_shape_a373d44cd6129f88aded56fd7a7ea7e43}{cube\-Ready\-To\-Drop} \mbox{[}4\mbox{]}
+\item 
+int \hyperlink{classt_shape_a959bedb9443f8d99092fe7e249354068}{time}
+\item 
+int \hyperlink{classt_shape_a5f192d399b118e50bf47c48f3acbd74c}{z\-Direction}
+\item 
+int \hyperlink{classt_shape_a7d7596d539b46bd0cf0935a1b49c025f}{x\-Direction}
+\item 
+int \hyperlink{classt_shape_a5049442ea1c882642d58bc384666a9d7}{y\-Direction}
+\item 
+vector$<$ \hyperlink{class_cube}{Cube} $\ast$ $>$ \hyperlink{classt_shape_a4007a5ffd638a42923b64d09c5d50a87}{cubes}
+\item 
+enum \hyperlink{classt_shape_a193bb18f526dc3f027748fc231b577ae}{t\-Shape\-::\-Direction\-Facing} \hyperlink{classt_shape_a989a7205be02a011dae710470973a3c4}{direction\-Facing}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classt_shape_a193bb18f526dc3f027748fc231b577ae}{\index{t\-Shape@{t\-Shape}!Direction\-Facing@{Direction\-Facing}}
+\index{Direction\-Facing@{Direction\-Facing}!tShape@{t\-Shape}}
+\subsubsection[{Direction\-Facing}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf t\-Shape\-::\-Direction\-Facing}}}\label{classt_shape_a193bb18f526dc3f027748fc231b577ae}
+keepstrack of the shapes orientation \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{x\-Axis@{x\-Axis}!t\-Shape@{t\-Shape}}\index{t\-Shape@{t\-Shape}!x\-Axis@{x\-Axis}}\item[{\em 
+\hypertarget{classt_shape_a193bb18f526dc3f027748fc231b577aeae74a49141e9f311876d422f8016b1a29}{x\-Axis}\label{classt_shape_a193bb18f526dc3f027748fc231b577aeae74a49141e9f311876d422f8016b1a29}
+}]\index{z\-Axis@{z\-Axis}!t\-Shape@{t\-Shape}}\index{t\-Shape@{t\-Shape}!z\-Axis@{z\-Axis}}\item[{\em 
+\hypertarget{classt_shape_a193bb18f526dc3f027748fc231b577aea5e1041e853e5ba9f0ec9461cc76f6fa4}{z\-Axis}\label{classt_shape_a193bb18f526dc3f027748fc231b577aea5e1041e853e5ba9f0ec9461cc76f6fa4}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classt_shape_ad6e92496392d351fee71ffa004e53ec6}{\index{t\-Shape@{t\-Shape}!t\-Shape@{t\-Shape}}
+\index{t\-Shape@{t\-Shape}!tShape@{t\-Shape}}
+\subsubsection[{t\-Shape}]{\setlength{\rightskip}{0pt plus 5cm}t\-Shape\-::t\-Shape (
+\begin{DoxyParamCaption}
+\item[{Ogre\-::\-Scene\-Manager $\ast$}]{, }
+\item[{string}]{, }
+\item[{string}]{}
+\end{DoxyParamCaption}
+)}}\label{classt_shape_ad6e92496392d351fee71ffa004e53ec6}
+constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classt_shape_a4abc7fa2f46c54ad12671cba522baef4}{\index{t\-Shape@{t\-Shape}!is\-Dropping@{is\-Dropping}}
+\index{is\-Dropping@{is\-Dropping}!tShape@{t\-Shape}}
+\subsubsection[{is\-Dropping}]{\setlength{\rightskip}{0pt plus 5cm}void t\-Shape\-::is\-Dropping (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D}
+\end{DoxyParamCaption}
+)}}\label{classt_shape_a4abc7fa2f46c54ad12671cba522baef4}
+makes the cube drop method \hypertarget{classt_shape_ab4c52b54568e2934ade12889cbad9023}{\index{t\-Shape@{t\-Shape}!rotate\-Right@{rotate\-Right}}
+\index{rotate\-Right@{rotate\-Right}!tShape@{t\-Shape}}
+\subsubsection[{rotate\-Right}]{\setlength{\rightskip}{0pt plus 5cm}void t\-Shape\-::rotate\-Right (
+\begin{DoxyParamCaption}
+\item[{double}]{, }
+\item[{O\-I\-S\-::\-Keyboard $\ast$}]{, }
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D}
+\end{DoxyParamCaption}
+)}}\label{classt_shape_ab4c52b54568e2934ade12889cbad9023}
+rotates the shape method \hypertarget{classt_shape_a8ac2a90e601d1c95122d00da5da2e035}{\index{t\-Shape@{t\-Shape}!rotate\-Y@{rotate\-Y}}
+\index{rotate\-Y@{rotate\-Y}!tShape@{t\-Shape}}
+\subsubsection[{rotate\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void t\-Shape\-::rotate\-Y (
+\begin{DoxyParamCaption}
+\item[{double}]{, }
+\item[{O\-I\-S\-::\-Keyboard $\ast$}]{, }
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D}
+\end{DoxyParamCaption}
+)}}\label{classt_shape_a8ac2a90e601d1c95122d00da5da2e035}
+rotates the shape method \hypertarget{classt_shape_a51c0e39d0e8d89872ba1973e9949d2bd}{\index{t\-Shape@{t\-Shape}!Update@{Update}}
+\index{Update@{Update}!tShape@{t\-Shape}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void t\-Shape\-::\-Update (
+\begin{DoxyParamCaption}
+\item[{double}]{, }
+\item[{O\-I\-S\-::\-Keyboard $\ast$}]{, }
+\item[{vector$<$ vector$<$ vector$<$ {\bf Cube} $\ast$ $>$$>$$>$ \&}]{array3\-D, }
+\item[{int}]{main\-Tick\-Value}
+\end{DoxyParamCaption}
+)}}\label{classt_shape_a51c0e39d0e8d89872ba1973e9949d2bd}
+update method 
+
+\subsection{Member Data Documentation}
+\hypertarget{classt_shape_ade6208b0cd2a248227f8ac43e3c3b494}{\index{t\-Shape@{t\-Shape}!\-\_\-timer@{\-\_\-timer}}
+\index{\-\_\-timer@{\-\_\-timer}!tShape@{t\-Shape}}
+\subsubsection[{\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Timer t\-Shape\-::\-\_\-timer}}\label{classt_shape_ade6208b0cd2a248227f8ac43e3c3b494}
+oger timer \hypertarget{classt_shape_a1bb379051554beb845b42fb441e0939c}{\index{t\-Shape@{t\-Shape}!alive@{alive}}
+\index{alive@{alive}!tShape@{t\-Shape}}
+\subsubsection[{alive}]{\setlength{\rightskip}{0pt plus 5cm}bool t\-Shape\-::alive}}\label{classt_shape_a1bb379051554beb845b42fb441e0939c}
+tracks if alive or not \hypertarget{classt_shape_a1692503641320662db249899a96465f4}{\index{t\-Shape@{t\-Shape}!cell\-Size@{cell\-Size}}
+\index{cell\-Size@{cell\-Size}!tShape@{t\-Shape}}
+\subsubsection[{cell\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cell\-Size}}\label{classt_shape_a1692503641320662db249899a96465f4}
+stores the size of a matrix cell \hypertarget{classt_shape_afe93811926d8189ec7a05f3837946d13}{\index{t\-Shape@{t\-Shape}!cell\-X@{cell\-X}}
+\index{cell\-X@{cell\-X}!tShape@{t\-Shape}}
+\subsubsection[{cell\-X}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cell\-X}}\label{classt_shape_afe93811926d8189ec7a05f3837946d13}
+stores m\-\_\-postion.\-X \hypertarget{classt_shape_ac6f6ca34dbe77edc42bf1063f45704f3}{\index{t\-Shape@{t\-Shape}!cell\-Y@{cell\-Y}}
+\index{cell\-Y@{cell\-Y}!tShape@{t\-Shape}}
+\subsubsection[{cell\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cell\-Y}}\label{classt_shape_ac6f6ca34dbe77edc42bf1063f45704f3}
+stores m\-\_\-postion.\-Y \hypertarget{classt_shape_a472e4925e0aaa875df22dab7a6ed3551}{\index{t\-Shape@{t\-Shape}!cell\-Z@{cell\-Z}}
+\index{cell\-Z@{cell\-Z}!tShape@{t\-Shape}}
+\subsubsection[{cell\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cell\-Z}}\label{classt_shape_a472e4925e0aaa875df22dab7a6ed3551}
+stores m\-\_\-postion.\-Z \hypertarget{classt_shape_a2df1bbbd7e785bd17cd4d63e8b3a6869}{\index{t\-Shape@{t\-Shape}!cube0boundary\-X@{cube0boundary\-X}}
+\index{cube0boundary\-X@{cube0boundary\-X}!tShape@{t\-Shape}}
+\subsubsection[{cube0boundary\-X}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube0boundary\-X}}\label{classt_shape_a2df1bbbd7e785bd17cd4d63e8b3a6869}
+keeps the cube at postion 0 inside the matrix \hypertarget{classt_shape_ac4ca3540f5d00586160f68272f60b060}{\index{t\-Shape@{t\-Shape}!cube0boundary\-X2@{cube0boundary\-X2}}
+\index{cube0boundary\-X2@{cube0boundary\-X2}!tShape@{t\-Shape}}
+\subsubsection[{cube0boundary\-X2}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube0boundary\-X2}}\label{classt_shape_ac4ca3540f5d00586160f68272f60b060}
+\hypertarget{classt_shape_ab536ba2d1c2fc3e4f367ecf936e49f14}{\index{t\-Shape@{t\-Shape}!cube0\-Boundary\-Y@{cube0\-Boundary\-Y}}
+\index{cube0\-Boundary\-Y@{cube0\-Boundary\-Y}!tShape@{t\-Shape}}
+\subsubsection[{cube0\-Boundary\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube0\-Boundary\-Y}}\label{classt_shape_ab536ba2d1c2fc3e4f367ecf936e49f14}
+keeps the cube at postion 0 inside the matrix \hypertarget{classt_shape_a6c726e8afc0847cea65901b74bb0f1a4}{\index{t\-Shape@{t\-Shape}!cube0boundary\-Z@{cube0boundary\-Z}}
+\index{cube0boundary\-Z@{cube0boundary\-Z}!tShape@{t\-Shape}}
+\subsubsection[{cube0boundary\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube0boundary\-Z}}\label{classt_shape_a6c726e8afc0847cea65901b74bb0f1a4}
+keeps the cube at postion 0 inside the matrix \hypertarget{classt_shape_ab587a6654689689ee6b94d10f6105082}{\index{t\-Shape@{t\-Shape}!cube0boundary\-Z2@{cube0boundary\-Z2}}
+\index{cube0boundary\-Z2@{cube0boundary\-Z2}!tShape@{t\-Shape}}
+\subsubsection[{cube0boundary\-Z2}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube0boundary\-Z2}}\label{classt_shape_ab587a6654689689ee6b94d10f6105082}
+\hypertarget{classt_shape_a5b7cbdbe623f5a877f84b82b70b5dbbb}{\index{t\-Shape@{t\-Shape}!cube1boundary\-X@{cube1boundary\-X}}
+\index{cube1boundary\-X@{cube1boundary\-X}!tShape@{t\-Shape}}
+\subsubsection[{cube1boundary\-X}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube1boundary\-X}}\label{classt_shape_a5b7cbdbe623f5a877f84b82b70b5dbbb}
+keeps the cube at postion 1 inside the matrix \hypertarget{classt_shape_afc1aab26cc9f3f2469d8080d3f4db30b}{\index{t\-Shape@{t\-Shape}!cube1boundary\-X2@{cube1boundary\-X2}}
+\index{cube1boundary\-X2@{cube1boundary\-X2}!tShape@{t\-Shape}}
+\subsubsection[{cube1boundary\-X2}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube1boundary\-X2}}\label{classt_shape_afc1aab26cc9f3f2469d8080d3f4db30b}
+\hypertarget{classt_shape_ae1d93af37253f5dd2e59b35366fdd8ef}{\index{t\-Shape@{t\-Shape}!cube1boundary\-Z@{cube1boundary\-Z}}
+\index{cube1boundary\-Z@{cube1boundary\-Z}!tShape@{t\-Shape}}
+\subsubsection[{cube1boundary\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube1boundary\-Z}}\label{classt_shape_ae1d93af37253f5dd2e59b35366fdd8ef}
+keeps the cube at postion 1 inside the matrix \hypertarget{classt_shape_af5ef08112c5ac489c6ab89a445563cbd}{\index{t\-Shape@{t\-Shape}!cube1boundary\-Z2@{cube1boundary\-Z2}}
+\index{cube1boundary\-Z2@{cube1boundary\-Z2}!tShape@{t\-Shape}}
+\subsubsection[{cube1boundary\-Z2}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube1boundary\-Z2}}\label{classt_shape_af5ef08112c5ac489c6ab89a445563cbd}
+\hypertarget{classt_shape_a7cdc58c460ed0ff531971184532e4964}{\index{t\-Shape@{t\-Shape}!cube2boundary\-X@{cube2boundary\-X}}
+\index{cube2boundary\-X@{cube2boundary\-X}!tShape@{t\-Shape}}
+\subsubsection[{cube2boundary\-X}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube2boundary\-X}}\label{classt_shape_a7cdc58c460ed0ff531971184532e4964}
+keeps the cube at postion 2 inside the matrix \hypertarget{classt_shape_ad3e402834a2d3c1b95d171a0108c8716}{\index{t\-Shape@{t\-Shape}!cube2boundary\-X2@{cube2boundary\-X2}}
+\index{cube2boundary\-X2@{cube2boundary\-X2}!tShape@{t\-Shape}}
+\subsubsection[{cube2boundary\-X2}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube2boundary\-X2}}\label{classt_shape_ad3e402834a2d3c1b95d171a0108c8716}
+\hypertarget{classt_shape_a16bd5d07b91ee4e24e6344c9241d8f95}{\index{t\-Shape@{t\-Shape}!cube2boundary\-Z@{cube2boundary\-Z}}
+\index{cube2boundary\-Z@{cube2boundary\-Z}!tShape@{t\-Shape}}
+\subsubsection[{cube2boundary\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube2boundary\-Z}}\label{classt_shape_a16bd5d07b91ee4e24e6344c9241d8f95}
+keeps the cube at postion 2 inside the matrix \hypertarget{classt_shape_a6c6d6c35143aaa266ff75b76f41e38bc}{\index{t\-Shape@{t\-Shape}!cube2boundary\-Z2@{cube2boundary\-Z2}}
+\index{cube2boundary\-Z2@{cube2boundary\-Z2}!tShape@{t\-Shape}}
+\subsubsection[{cube2boundary\-Z2}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube2boundary\-Z2}}\label{classt_shape_a6c6d6c35143aaa266ff75b76f41e38bc}
+\hypertarget{classt_shape_aa1aac01762ff03d22030cb0ed99189f6}{\index{t\-Shape@{t\-Shape}!cube3boundary\-X@{cube3boundary\-X}}
+\index{cube3boundary\-X@{cube3boundary\-X}!tShape@{t\-Shape}}
+\subsubsection[{cube3boundary\-X}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube3boundary\-X}}\label{classt_shape_aa1aac01762ff03d22030cb0ed99189f6}
+keeps the cube at postion 3 inside the matrix \hypertarget{classt_shape_a4c6aff9cf7e8fcc0b0fa8d8a0312f83c}{\index{t\-Shape@{t\-Shape}!cube3boundary\-X2@{cube3boundary\-X2}}
+\index{cube3boundary\-X2@{cube3boundary\-X2}!tShape@{t\-Shape}}
+\subsubsection[{cube3boundary\-X2}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube3boundary\-X2}}\label{classt_shape_a4c6aff9cf7e8fcc0b0fa8d8a0312f83c}
+\hypertarget{classt_shape_a08534f9b32ceebaa5ca648d30a003d6f}{\index{t\-Shape@{t\-Shape}!cube3boundary\-Z@{cube3boundary\-Z}}
+\index{cube3boundary\-Z@{cube3boundary\-Z}!tShape@{t\-Shape}}
+\subsubsection[{cube3boundary\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube3boundary\-Z}}\label{classt_shape_a08534f9b32ceebaa5ca648d30a003d6f}
+keeps the cube at postion 3 inside the matrix \hypertarget{classt_shape_ac0932463ccf31060b93109584e7b142c}{\index{t\-Shape@{t\-Shape}!cube3boundary\-Z2@{cube3boundary\-Z2}}
+\index{cube3boundary\-Z2@{cube3boundary\-Z2}!tShape@{t\-Shape}}
+\subsubsection[{cube3boundary\-Z2}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube3boundary\-Z2}}\label{classt_shape_ac0932463ccf31060b93109584e7b142c}
+\hypertarget{classt_shape_a39a906a952b50e774dd199829763ce1f}{\index{t\-Shape@{t\-Shape}!cube\-Amount@{cube\-Amount}}
+\index{cube\-Amount@{cube\-Amount}!tShape@{t\-Shape}}
+\subsubsection[{cube\-Amount}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::cube\-Amount}}\label{classt_shape_a39a906a952b50e774dd199829763ce1f}
+the amouunt of cubes in the array \hypertarget{classt_shape_a373d44cd6129f88aded56fd7a7ea7e43}{\index{t\-Shape@{t\-Shape}!cube\-Ready\-To\-Drop@{cube\-Ready\-To\-Drop}}
+\index{cube\-Ready\-To\-Drop@{cube\-Ready\-To\-Drop}!tShape@{t\-Shape}}
+\subsubsection[{cube\-Ready\-To\-Drop}]{\setlength{\rightskip}{0pt plus 5cm}bool t\-Shape\-::cube\-Ready\-To\-Drop\mbox{[}4\mbox{]}}}\label{classt_shape_a373d44cd6129f88aded56fd7a7ea7e43}
+tracks if cube readyto drop \hypertarget{classt_shape_a4007a5ffd638a42923b64d09c5d50a87}{\index{t\-Shape@{t\-Shape}!cubes@{cubes}}
+\index{cubes@{cubes}!tShape@{t\-Shape}}
+\subsubsection[{cubes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Cube}$\ast$$>$ t\-Shape\-::cubes}}\label{classt_shape_a4007a5ffd638a42923b64d09c5d50a87}
+array of cube objects \hypertarget{classt_shape_a989a7205be02a011dae710470973a3c4}{\index{t\-Shape@{t\-Shape}!direction\-Facing@{direction\-Facing}}
+\index{direction\-Facing@{direction\-Facing}!tShape@{t\-Shape}}
+\subsubsection[{direction\-Facing}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf t\-Shape\-::\-Direction\-Facing}  t\-Shape\-::direction\-Facing}}\label{classt_shape_a989a7205be02a011dae710470973a3c4}
+\hypertarget{classt_shape_a8da32e43eeb8ca2a96682ddfd95de45f}{\index{t\-Shape@{t\-Shape}!move\-\_\-timer@{move\-\_\-timer}}
+\index{move\-\_\-timer@{move\-\_\-timer}!tShape@{t\-Shape}}
+\subsubsection[{move\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Timer t\-Shape\-::move\-\_\-timer}}\label{classt_shape_a8da32e43eeb8ca2a96682ddfd95de45f}
+oger timer \hypertarget{classt_shape_a01c34bd393df7caa86a4ff785a1775bd}{\index{t\-Shape@{t\-Shape}!move\-Tick@{move\-Tick}}
+\index{move\-Tick@{move\-Tick}!tShape@{t\-Shape}}
+\subsubsection[{move\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}double t\-Shape\-::move\-Tick}}\label{classt_shape_a01c34bd393df7caa86a4ff785a1775bd}
+stores move tick \hypertarget{classt_shape_ab461221e1ac0abdef5007a6516303d8e}{\index{t\-Shape@{t\-Shape}!my\-Name@{my\-Name}}
+\index{my\-Name@{my\-Name}!tShape@{t\-Shape}}
+\subsubsection[{my\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string t\-Shape\-::my\-Name}}\label{classt_shape_ab461221e1ac0abdef5007a6516303d8e}
+shape name \hypertarget{classt_shape_ae50ef7ba28f10ebe97ab2c431fa27c08}{\index{t\-Shape@{t\-Shape}!rotate\-\_\-timer@{rotate\-\_\-timer}}
+\index{rotate\-\_\-timer@{rotate\-\_\-timer}!tShape@{t\-Shape}}
+\subsubsection[{rotate\-\_\-timer}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\-::\-Timer t\-Shape\-::rotate\-\_\-timer}}\label{classt_shape_ae50ef7ba28f10ebe97ab2c431fa27c08}
+oger timer \hypertarget{classt_shape_a502388884d8386251696471623158a76}{\index{t\-Shape@{t\-Shape}!rotated\-X@{rotated\-X}}
+\index{rotated\-X@{rotated\-X}!tShape@{t\-Shape}}
+\subsubsection[{rotated\-X}]{\setlength{\rightskip}{0pt plus 5cm}bool t\-Shape\-::rotated\-X}}\label{classt_shape_a502388884d8386251696471623158a76}
+rotate\-X \hypertarget{classt_shape_a2bafbe715483f3f4da44eafae17aac5f}{\index{t\-Shape@{t\-Shape}!rotated\-Y@{rotated\-Y}}
+\index{rotated\-Y@{rotated\-Y}!tShape@{t\-Shape}}
+\subsubsection[{rotated\-Y}]{\setlength{\rightskip}{0pt plus 5cm}bool t\-Shape\-::rotated\-Y}}\label{classt_shape_a2bafbe715483f3f4da44eafae17aac5f}
+rotate\-Y \hypertarget{classt_shape_ad7f4f8ddfe299bf838030cbc521acb6f}{\index{t\-Shape@{t\-Shape}!rotate\-Tick@{rotate\-Tick}}
+\index{rotate\-Tick@{rotate\-Tick}!tShape@{t\-Shape}}
+\subsubsection[{rotate\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}double t\-Shape\-::rotate\-Tick}}\label{classt_shape_ad7f4f8ddfe299bf838030cbc521acb6f}
+stores rotate tick \hypertarget{classt_shape_a7c8f00d63a58a51843de002a9652cac7}{\index{t\-Shape@{t\-Shape}!shadow\-Off@{shadow\-Off}}
+\index{shadow\-Off@{shadow\-Off}!tShape@{t\-Shape}}
+\subsubsection[{shadow\-Off}]{\setlength{\rightskip}{0pt plus 5cm}bool t\-Shape\-::shadow\-Off}}\label{classt_shape_a7c8f00d63a58a51843de002a9652cac7}
+checks if shadow is on \hypertarget{classt_shape_a49dc22290f02a6e6ff0f106ffcb16083}{\index{t\-Shape@{t\-Shape}!tick@{tick}}
+\index{tick@{tick}!tShape@{t\-Shape}}
+\subsubsection[{tick}]{\setlength{\rightskip}{0pt plus 5cm}double t\-Shape\-::tick}}\label{classt_shape_a49dc22290f02a6e6ff0f106ffcb16083}
+stores the tick \hypertarget{classt_shape_ad211ab24428076e438d6c9212cd0daa0}{\index{t\-Shape@{t\-Shape}!tick\-Value@{tick\-Value}}
+\index{tick\-Value@{tick\-Value}!tShape@{t\-Shape}}
+\subsubsection[{tick\-Value}]{\setlength{\rightskip}{0pt plus 5cm}double t\-Shape\-::tick\-Value}}\label{classt_shape_ad211ab24428076e438d6c9212cd0daa0}
+stores the tick value \hypertarget{classt_shape_a959bedb9443f8d99092fe7e249354068}{\index{t\-Shape@{t\-Shape}!time@{time}}
+\index{time@{time}!tShape@{t\-Shape}}
+\subsubsection[{time}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::time}}\label{classt_shape_a959bedb9443f8d99092fe7e249354068}
+stroes the time value \hypertarget{classt_shape_a7d7596d539b46bd0cf0935a1b49c025f}{\index{t\-Shape@{t\-Shape}!x\-Direction@{x\-Direction}}
+\index{x\-Direction@{x\-Direction}!tShape@{t\-Shape}}
+\subsubsection[{x\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::x\-Direction}}\label{classt_shape_a7d7596d539b46bd0cf0935a1b49c025f}
+stroes the x\-Direction value \hypertarget{classt_shape_a5049442ea1c882642d58bc384666a9d7}{\index{t\-Shape@{t\-Shape}!y\-Direction@{y\-Direction}}
+\index{y\-Direction@{y\-Direction}!tShape@{t\-Shape}}
+\subsubsection[{y\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::y\-Direction}}\label{classt_shape_a5049442ea1c882642d58bc384666a9d7}
+stroes the y\-Direction value \hypertarget{classt_shape_a5f192d399b118e50bf47c48f3acbd74c}{\index{t\-Shape@{t\-Shape}!z\-Direction@{z\-Direction}}
+\index{z\-Direction@{z\-Direction}!tShape@{t\-Shape}}
+\subsubsection[{z\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}int t\-Shape\-::z\-Direction}}\label{classt_shape_a5f192d399b118e50bf47c48f3acbd74c}
+stroes the z\-Direction value 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Aoibhinn/\-Desktop/finished/\-Project\-Colour/\-Project\-One/\-Project\-One/\-Project\-One/include/\hyperlink{t_shape_8h}{t\-Shape.\-h}\end{DoxyCompactItemize}

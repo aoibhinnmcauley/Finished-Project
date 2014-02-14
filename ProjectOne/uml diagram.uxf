@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>5</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>30</x>
+      <y>10</y>
+      <w>105</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>_BaseApplication: Class_
+
+--
+-&gt;FrameListener
+-&gt;WindowEventListener
+-&gt;KeyListener
+-&gt;MouseListener
+-&gt;sdkTrayListener</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>30</x>
+      <y>90</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>_ProjectOne: Class_
+--
+-&gt;BaseApplication</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>645</x>
+      <y>15</y>
+      <w>310</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>_box: Class_
+--
+Public:
+int cube0boundaryX, cube0boundaryX2;
+int cube1boundaryX, cube1boundaryX2;
+int cube2boundaryX, cube2boundaryX2;
+int cube0boundaryZ, cube0boundaryZ2;
+int cube1boundaryZ, cube1boundaryZ2;
+int cube2boundaryZ, cube2boundaryZ2;
+int cube0BoundaryY; 
+bool alive;
+string myName;
+bool shadowOff;
+int cubeAmount;
+enum Orientation {xAlligned, zAlligned, yAlligned} orientation;
+box(Ogre::SceneManager *, string, string); // constructor 
+void Update(double,OIS::Keyboard*,vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D,int mainTickValue); 
+void isDropping(vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D);
+bool cubeReadyToDrop[8];
+int cellSize;
+void rotateRight(double,OIS::Keyboard*,vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D);
+
+
+
+	int time; 
+	int zDirection;
+	int xDirection;
+	vector&lt;Cube*&gt; cubes;
+
+	Ogre::Timer rotate_timer;
+	double rotateTick;
+	Ogre::Timer move_timer;
+	double moveTick;
+	Ogre::Timer _timer;
+	double tick;
+	double tickValue;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>55</x>
+      <y>55</y>
+      <w>24</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>15;15;15;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>645</x>
+      <y>330</y>
+      <w>310</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_tShapeOpp: Class_
+--
+Public:
+int cube0boundaryX, cube0boundaryX2;
+int cube1boundaryX, cube1boundaryX2;
+int cube2boundaryX, cube2boundaryX2;
+int cube0boundaryZ, cube0boundaryZ2;
+int cube1boundaryZ, cube1boundaryZ2;
+int cube2boundaryZ, cube2boundaryZ2;
+int cube0BoundaryY; 
+bool alive;
+string myName;
+bool shadowOff;
+int cubeAmount;
+enum Orientation {xAlligned, zAlligned, yAlligned} orientation;
+box(Ogre::SceneManager *, string, string); // constructor 
+void Update(double,OIS::Keyboard*,vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D,int mainTickValue); 
+void isDropping(vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D);
+bool cubeReadyToDrop[8];
+int cellSize;
+void rotateRight(double,OIS::Keyboard*,vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D);
+
+
+
+	int time; 
+	int zDirection;
+	int xDirection;
+	vector&lt;Cube*&gt; cubes;
+
+	Ogre::Timer rotate_timer;
+	double rotateTick;
+	Ogre::Timer move_timer;
+	double moveTick;
+	Ogre::Timer _timer;
+	double tick;
+	double tickValue;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>645</x>
+      <y>400</y>
+      <w>310</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>_zShape: Class_
+--
+int cube0boundaryX, cube0boundaryX2;
+int cube1boundaryX, cube1boundaryX2;
+int cube2boundaryX, cube2boundaryX2;
+int cube0boundaryZ, cube0boundaryZ2;
+int cube1boundaryZ, cube1boundaryZ2;
+int cube2boundaryZ, cube2boundaryZ2;
+int cube0BoundaryY; 
+bool alive;
+string myName;
+bool shadowOff;
+int cubeAmount;
+enum Orientation {xAlligned, zAlligned, yAlligned} orientation;
+box(Ogre::SceneManager *, string, string); // constructor 
+void Update(double,OIS::Keyboard*,vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D,int mainTickValue); 
+void isDropping(vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D);
+bool cubeReadyToDrop[8];
+int cellSize;
+void rotateRight(double,OIS::Keyboard*,vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D);
+
+
+
+	int time; 
+	int zDirection;
+	int xDirection;
+	vector&lt;Cube*&gt; cubes;
+
+	Ogre::Timer rotate_timer;
+	double rotateTick;
+	Ogre::Timer move_timer;
+	double moveTick;
+	Ogre::Timer _timer;
+	double tick;
+	double tickValue;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>155</x>
+      <y>10</y>
+      <w>450</w>
+      <h>675</h>
+    </coordinates>
+    <panel_attributes>_cube: Class_
+--
+Public
+Cube(); // constructor 
+Cube(Ogre::SceneManager *,int,int,int,string, string,string, string,string, string,string,string, Ogre::Vector3,string); // constructor 
+~Cube(void); // destructor
+Ogre::Vector3 getPosition();// returns m_position
+Ogre::Vector3 getVelocity();//returns m_velocity
+Ogre::SceneNode* getNode();//returns SceneNode pointer
+double getLenth();  // returns m_radius
+bool getMove();  // returns m_move
+int getTime();
+void setPosition(Ogre::Vector3);// sets m_position
+void setVelocity(Ogre::Vector3);//sets m_velocity
+void setMove(bool);  // sets m_move	
+void setDropped(bool);
+void setChecked(bool);
+void setAlive(bool);
+void setBegin(bool);
+
+Ogre::Timer _timer;
+Ogre::Timer drop_timer;
+
+void setTime(int);  
+void setDrop(bool);
+void Update(double,OIS::Keyboard*, vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D, int boundaryX, int boundaryX2, int boundaryZ, int boundaryZ2); 
+void droppingCube(vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D);
+
+void instantDrop(vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D);
+void moveShadow(vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D);
+
+void turnShadowOffOn();
+int getGridPosX();
+int getGridPosY();
+int getGridPosZ();
+			
+bool alive;
+bool checked;
+bool mergeArray;
+				 
+std::clock_t clock;		
+Ogre::Vector3 moveLeft;
+Ogre::Vector3 moveRight;
+Ogre::Vector3 moveForward;
+Ogre::Vector3 moveBackward;
+Ogre::Vector3 moveDown;
+
+int gridPosX;
+int gridPosY;
+int gridPosZ;
+int gridBelow;
+
+string entityName;
+string nodeName;
+string entityName2;
+string nodeName2;
+string entityName3;
+string nodeName3;
+string shadowName3;
+string shadowNodeName3;
+
+Ogre::Entity *targetCube;
+Ogre::SceneNode *targetNode;
+bool m_move;	
+bool dropped;
+bool drop;
+bool finishedDrop;
+bool begin;
+bool flipVisibility;
+			
+//For shadow 
+Ogre::Plane shadowPlane;
+Ogre::Entity *shadow; 
+Ogre::SceneNode *shadowNode; 
+Ogre::Vector3 m_shadowPos; 
+float m_shadowLen; 
+
+//For shadow2
+Ogre::Plane shadowPlane2;
+Ogre::Entity *shadow2; 
+Ogre::SceneNode *shadowNode2; 
+Ogre::Vector3 m_shadowPos2; 
+		
+//For shadow3
+Ogre::Plane shadowPlane3;
+Ogre::Entity *shadow3; 	Ogre::SceneNode *shadowNode3; 
+Ogre::Vector3 m_shadowPos3; 
+Ogre::Vector3 m_position; // position
+
+int m_timer;
+double tick;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>645</x>
+      <y>365</y>
+      <w>310</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_tShape: Class_
+--
+int cube0boundaryX, cube0boundaryX2;
+int cube1boundaryX, cube1boundaryX2;
+int cube2boundaryX, cube2boundaryX2;
+int cube0boundaryZ, cube0boundaryZ2;
+int cube1boundaryZ, cube1boundaryZ2;
+int cube2boundaryZ, cube2boundaryZ2;
+int cube0BoundaryY; 
+bool alive;
+string myName;
+bool shadowOff;
+int cubeAmount;
+enum Orientation {xAlligned, zAlligned, yAlligned} orientation;
+box(Ogre::SceneManager *, string, string); // constructor 
+void Update(double,OIS::Keyboard*,vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D,int mainTickValue); 
+void isDropping(vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D);
+bool cubeReadyToDrop[8];
+int cellSize;
+void rotateRight(double,OIS::Keyboard*,vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D);
+
+
+
+	int time; 
+	int zDirection;
+	int xDirection;
+	vector&lt;Cube*&gt; cubes;
+
+	Ogre::Timer rotate_timer;
+	double rotateTick;
+	Ogre::Timer move_timer;
+	double moveTick;
+	Ogre::Timer _timer;
+	double tick;
+	double tickValue;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>645</x>
+      <y>295</y>
+      <w>310</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_lShape: Class_
+--
+Public:
+int cube0boundaryX, cube0boundaryX2;
+int cube1boundaryX, cube1boundaryX2;
+int cube2boundaryX, cube2boundaryX2;
+int cube0boundaryZ, cube0boundaryZ2;
+int cube1boundaryZ, cube1boundaryZ2;
+int cube2boundaryZ, cube2boundaryZ2;
+int cube0BoundaryY; 
+bool alive;
+string myName;
+bool shadowOff;
+int cubeAmount;
+enum Orientation {xAlligned, zAlligned, yAlligned} orientation;
+box(Ogre::SceneManager *, string, string); // constructor 
+void Update(double,OIS::Keyboard*,vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D,int mainTickValue); 
+void isDropping(vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D);
+bool cubeReadyToDrop[8];
+int cellSize;
+void rotateRight(double,OIS::Keyboard*,vector&lt;vector&lt;vector&lt;Cube*&gt;&gt;&gt; &amp; array3D);
+
+
+
+	int time; 
+	int zDirection;
+	int xDirection;
+	vector&lt;Cube*&gt; cubes;
+
+	Ogre::Timer rotate_timer;
+	double rotateTick;
+	Ogre::Timer move_timer;
+	double moveTick;
+	Ogre::Timer _timer;
+	double tick;
+	double tickValue;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>645</x>
+      <y>445</y>
+      <w>310</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_lShapeOpp: Class_
+--
+Class</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>25</x>
+      <y>145</y>
+      <w>105</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_MySimpleDemoPanelColour: Class_
+--
+-&gt;PanelColors</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>590</x>
+      <y>105</y>
+      <w>64</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>55;15;15;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>590</x>
+      <y>295</y>
+      <w>64</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>55;15;15;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>590</x>
+      <y>330</y>
+      <w>64</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>55;15;15;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>590</x>
+      <y>365</y>
+      <w>64</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>55;15;15;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>590</x>
+      <y>400</y>
+      <w>64</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>55;15;15;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>590</x>
+      <y>430</y>
+      <w>69</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>60;15;15;15</additional_attributes>
+  </element>
+</diagram>
